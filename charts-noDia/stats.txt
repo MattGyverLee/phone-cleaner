@@ -1,1 +1,1 @@
-Found 1455 groups with feature equivalence.
+Found 1454 groups with feature equivalence.

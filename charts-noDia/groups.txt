@@ -688,10 +688,6 @@ tsˤʰ
 tʃˤʼ
 tʃˤ
 tʃˤʰ
-tsʲː
-tsʼː
-tsː
-tsʰː
 dːʒ
 tːʃ
 tʃʼː
@@ -704,14 +700,16 @@ tʃʼ, tʃˀ
 tʃʰ
 ˀtʃ
 dzː
-dzˀ
-dz
-dð
 dʒː
 dʒˀ
 ɗʒ, ˀdʒ
 dʒ
 tʒ
+dzˀ
+ds
+dz
+dð
+dθ
 ʈʂː
 ɖʐ
 ʈʂʼ
@@ -720,21 +718,35 @@ tʒ
 ɖθ
 ʈθ
 tːs
-tsʼ, tsˀ
-tθʼ, tθˀ
-tsʰ
-tθʰ
-dθ
-tθ
 ˀts
+tsʰ
 ts
 tz
+tθ
+tθʰ
+tsʼ, tsˀ
+tθʼ, tθˀ
+ɖʐʷ
+ʈʂʷ
+tsʷː
+tʃʷː
+tɕʷ
+dʒʷ, dʒʷˠ
+tʃʷʼ
+tʃʷ, tʃʷˠ
+tʃʷʰ, tʃʷˠʰ
 dʑː
 dʑ
 tʑ
 tʃʲː
 tɕː
 tɕʰː
+dʒʲ
+dʒˠ
+tʃˠ
+tʃʲʼ
+tʃʲ
+tʃʲʰ
 dʑᶣ
 tɕᶣ
 dːʑ
@@ -742,32 +754,20 @@ tːɕ
 tɕʼ
 tɕ
 tɕʰ
-dzˠ
-tsˠ
-dzʲ
-tzʲ
-tsʲʼ
-tsʲ
-tsʲʰ
-dʒʲ
-dʒˠ
-tʃˠ
-tʃʲʼ
-tʃʲ
-tʃʲʰ
-ɖʐʷ
-ʈʂʷ
+tsʲː
+tsʼː
+tsː
+tsʰː
 dzʷ, dzʷˠ
-dʒʷ, dʒʷˠ
-tsʷː
 tsʷʼ
 tsʷ, tsʷˠ
 tsʷʰ, tsʷˠʰ
-tʃʷː
-tɕʷ
-tʃʷʼ
-tʃʷ, tʃʷˠ
-tʃʷʰ, tʃʷˠʰ
+dzʲ
+dzˠ
+tsˠ
+tsʲʼ
+tsʲ
+tsʲʰ
 zd
 ʐd
 ʃt
@@ -781,9 +781,8 @@ db
 tp
 ct
 pt
-vvː
 vf
-vv
+vfː
 ɣv
 ɣβ
 kf
