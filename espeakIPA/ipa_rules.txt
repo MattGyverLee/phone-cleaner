@@ -1,0 +1,434 @@
+﻿//IPA
+
+//.group ǃ
+//ǃ	!\	// click
+
+.group ǀ
+ǀ	|\	// dental click
+
+.group ǁ
+ǁ	|\|\	// alveolar lateral click
+
+.group ǂ
+ǂ	'=\	// alveolar click
+
+.group ɐ
+ɐ	6	// open-mid schwa
+
+.group ɑ
+ɑ	A	// open back unrounded
+
+.group a
+a	a	// open front unrounded
+
+.group ă
+ă	a_X	// extra short open front unrounded
+
+.group ɒ
+ɒ	Q	// open back rounded
+
+.group æ
+æ	{	// mid-open front unrounded vowel
+
+.group b
+b	b	// vd bilabial plosive
+
+.group ʙ
+ʙ	B\	// vd bilabial trill
+
+.group ɓ
+//ɓ	b_<	// vl bilabial implosive
+
+.group ç
+ç	C	// vl palatal fricative
+
+.group c
+c	c	// vl palatal plosive
+//cʼ	c_>	// ejective
+
+.group ɔ
+ɔ	O:	// open-mid back rounded
+
+.group ɕ
+ɕ	s\	// vl alveolopalatal fricative
+
+.group d
+d	d	// vd alveolar plosive
+
+.group ð
+ð	D	// vd dental fricative
+
+.group ɗ
+//ɗ	d_<	// vl alveolar implosive
+
+.group d
+d͡ʑ	dz\	// vd alveolo-palatal affricate
+dʑ	dz\	// vd alveolo-palatal affricate (untied)
+d͡ʒ	dZ	// vd postalveolar affricate
+dʒ	dZ	// vd postalveolar affricate (untied)
+
+.group ɖ
+//ɖ	d`	// vd retroflex plosive
+//ɖ͡ʐ	tz`	// vd retroflex affricate
+//ɖʐ	tz`	// vd retroflex affricate (untied)
+
+.group ə
+ə	@	// schwa
+
+.group ɘ
+ɘ	@\	// close-mid central unrounded vowel
+
+.group ɚ
+ɚ	3	// rhotacized schwa
+
+.group e
+e	e	// close-mid front unrounded
+
+.group ɜ
+//ɜ	3	// open-mid central
+
+.group ɞ
+//ɞ	3\	// open-mid central rounded
+
+.group ɝ
+//ɝ	3`	// rhotacized open-mid central
+
+.group ɛ
+ɛ	E	// open-mid front unrounded
+
+.group f
+f	f	// vl labiodental fricative
+
+.group ˠ
+//ˠ	_G	// velarized
+
+.group ɤ
+ɤ	o-	// close-mid back unrounded
+
+.group ɣ
+//ɣ	G	// vd velar fricative
+
+.group ɡ
+ɡ	g	// vd velar plosive
+
+.group ɢ
+//ɢ	G\	// vd uvular plosive
+
+.group ʛ
+//ʛ	G\_<	// vl uvular implosive
+
+.group ɠ
+//ɠ	g_<	// vl velar implosive
+
+.group g
+g͡b	gb	// vd labial-velar plosive
+gb	gb	// vd labial-velar plosive (untied)
+
+.group ʰ
+ʰ	_h	// aspirated
+
+.group ɥ
+//ɥ	H	// labial-palatal approximant
+
+.group h
+h	h	// vl glottal fricative
+
+.group ɦ
+ɦ	h\	// vd glottal fricative
+
+.group ʜ
+//ʜ	H\	// vl epiglottal fricative
+
+.group ħ
+ħ	X\	// vl pharyngeal fricative
+
+.group ɨ
+ɨ	1	// close central unrounded
+
+.group i
+i	i	// close front unrounded
+
+.group ɪ
+//ɪ	I	// lax close front unrounded
+
+.group ʲ
+ʲ	'	// palatalized
+
+.group j
+j	j	// vd palatal approximant
+
+.group ʝ
+ʝ	j\	// vd palatal fricative
+
+.group ɟ
+ɟ	J\	// vd palatal plosive
+
+.group ʄ
+//ʄ	J\_<	// vl palatal implosive
+
+.group k
+k	k	// ld velar plosive
+
+.group ƙ
+//ƙ	k_<	// vl velar implosive
+
+.group k
+//kʼ	k_>	// ejective
+k͡p	kp	// vl labial-velar plosive
+kp	kp	// vl labial-velar plosive (untied)
+
+.group ˡ
+ˡ	_l	// lateral release
+
+.group ɫ
+//ɫ	5	// velarized vl alveolar lateral
+
+.group ɬ
+//ɬ	K	// vl alveolar lateral fricative
+
+.group ɮ
+//ɮ	K\	// vd alveolar lateral fricative
+
+.group l
+l	l	// vd alveolar lateral approximant
+
+.group ʟ
+ʟ	L\	// vd velar lateral approximant
+
+.group ɭ
+//ɭ	l.	// vd retroflex lateral approximant
+
+.group ɱ
+//ɱ	F	// vl labiodental nasal
+
+.group m
+m	m	// bilabial nasal
+
+.group ɯ
+//ɯ	M	// close back unrounded
+
+.group ɰ
+//ɰ	M\	// vd velar approximant
+
+.group ⁿ
+ⁿ	_n	// nasal release
+
+.group ɲ
+ɲ	J	// vl palatal nasal
+
+.group n
+n	n	// alveolar nasal
+
+.group ɴ
+ɴ	N\	// vl uvular nasal
+
+.group ɳ
+//ɳ	n`	// vl retroflex nasal
+
+.group ŋ
+ŋ	N	// vl velar nasal
+ŋ͡m	Nm	// labial-velar nasal stop
+ŋm	Nm	// labial-velar nasal stop (untied)
+
+.group ɶ
+//ɶ	&	// front open rounded
+
+.group ø
+ø	Y	// front close-mid rounded
+
+.group ɵ
+ɵ	@.	// rounded schwa
+
+.group o
+o	o	// close-mid back rounded
+
+.group œ
+//œ	W	// front open-mid rounded
+
+.group p
+p	p	// vl bilabial plosive
+
+.group ɸ
+ɸ	p\	// vl bilabial fricative
+
+.group p
+//pʼ	p_>	// ejective
+
+.group q
+q	q	// vl uvular plosive
+//qʼ	q_>	// ejective
+
+.group ɾ
+//ɾ	4	// vl alveolar tap
+
+.group ɺ
+ɺ	l\	// vl alveolar lateral flap
+
+.group r
+r	r	// vd alveolar trill
+
+.group ʁ
+ʁ	R	// vd uvular fricative
+
+.group ɹ
+ɹ	r\	// vd (post)alveolar approximant
+
+.group ʀ
+ʀ	R\	// vl uvular trill
+
+.group ɻ
+//ɻ	r\`	// vd retroflex approximant
+
+.group ɽ
+ɽ	*.	// vl retroflex flap
+
+.group s
+s	s	// vl alveolar fricative
+
+.group ʃ
+ʃ	S	// vl postalveolar fricative
+
+.group ʂ
+ʂ	s.	// vl retroflex fricative
+
+.group t
+t	t	// vl alveolar plosive
+//tʼ	t_>	// ejective
+
+.group ʈ
+ʈ	t.	// vl retroflex plosive
+//ʈʼ	t`_>	// ejective
+
+.group t
+t͡ɕ	ts\	// vl alveolo-palatal affricate
+tɕ	ts\	// vl alveolo-palatal affricate (untied)
+//t͡ɬ	tK	// vl alveolar lateral affricate
+//tɬ	tK	// vl alveolar lateral affricate (untied)
+t͡ʃ	tS	// vl postalveolar affricate
+tʃ	tS	// vl postalveolar affricate (untied)
+
+.group ʈ
+//ʈ͡ʂ	ts`	// vl retroflex affricate
+//ʈʂ	ts`	// vl retroflex affricate (untied)
+
+.group ʉ
+//ʉ	}	// close central rounded
+
+.group u
+u	u	// close back rounded
+
+.group ʊ
+ʊ	U	// lax close back rounded
+
+.group ʋ
+ʋ	v#	// vd labiodental approximant
+
+.group ʌ
+//ʌ	V	// open-mid back unrounded
+
+.group v
+v	v	// vd labiodental fricative
+
+.group ʷ
+ʷ	_w	// labialized
+
+.group w
+w	w	// vd labio-velar approximant
+
+.group ʍ
+//ʍ	W	// vl labial-velar fricative
+
+.group x
+x	x	// vl velar fricative
+
+.group ʎ
+ʎ	L	// vd palatal lateral approximant
+
+.group y
+//y	y	// close front rounded
+
+.group ʏ
+//ʏ	Y	// lax close front rounded
+
+.group z
+z	z	// vd alveolar fricative
+
+.group ʑ
+ʑ	z\	// vl alveolopalatal fricative
+
+.group ʐ
+//ʐ	z`	// vd retroflex fricative
+
+.group ʒ
+ʒ	Z	// vd postalveolar fricative
+
+.group ʔ
+ʔ	?	// glottal plosive
+ʔ	?	// glottal plosive
+
+.group ʕ
+ʕ	?\	// vd pharyngeal fricative
+
+.group ʢ
+//ʢ	<\	// vl epiglottal fricative
+
+.group ʡ
+//ʡ	>\	// vl epiglottal plosive
+
+.group ʘ
+//ʘ	O\	// bilabial click
+
+.group β
+β	B	// vd bilabial fricative
+
+.group θ
+θ	T	// vl dental fricative
+
+.group χ
+χ	X	// vl uvular fricative
+
+
+
+
+.group
+ː	:	// length mark
+//ˈ	""""	// (primary) stress mark
+//̈	"_"""	// centralized
+ˌ	%	// secondary stress
+ˑ	:\	// half-length
+̠	_-	// retracted
+ˤ	_?\	// pharyngealized
+//̯	_^	// non-syllabic
+//̚	_}	// not audibly released
+//̟	_+	// advanced
+//ʼ	_>	// ejective
+//̥	_0	// voiceless
+//̘	_A	// advanced tongue root
+̺	_a	// apical
+˩	_B	// extra low tone
+̏	_B	// extra low tone
+̜	_c	// less rounded
+̪	_d	// dental
+̴	_e	// velarized or pharyngealized
+//́	_H	// high tone
+//˦	_H	// high tone
+̰	_k	// creaky voiced
+̀	_L	// low tone
+˨	_L	// low tone
+̻	_m	// laminal
+//̄	_M	// mid tone
+//˧	_M	// mid tone 
+̼	_N	// linguolabial
+̞	_o	// lowered
+//̹	_O	// more rounded
+̙	_q	// retracted tongue root
+̝	_r	// raised
+̤	_t	// breathy voiced
+̋	_T	// extra high tone
+˥	_T	// extra high tone
+̬	_v	// voiced
+̆	_X	// extra-short
+̽	_x	// mid-centralized
+//̃	~	// nasalized
+̩	=	// syllabic
+.	.	// syllable break

@@ -3,3 +3,7 @@ profiles/*
 attested_components/*
 components/*
 temp/*
+
+espeakIPA/phonemes.txt
+
+espeakIPA/phsource

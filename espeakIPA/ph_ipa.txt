@@ -1,0 +1,41 @@
+﻿
+//====================================================
+//  IPA
+//====================================================
+
+
+
+phoneme I
+  vwl  starttype #i  endtype #i
+  length 130
+  IfNextVowelAppend(;)
+  FMT(vowel/ii_2)
+endphoneme
+
+phoneme 6   // a(ㅏ)
+  ipa ɐ
+  vwl starttype #a endtype #a
+  length 200
+  FMT(vowel/aa_8)
+endphoneme
+
+phoneme A  // K[a]pp  ; kurz geschwate Vokal a
+  vwl starttype #a endtype #a
+  ipa ɑ
+  length 120
+  FMT(vowel/a)
+endphoneme
+
+phoneme {  // h[e]ll  ; kurzen oppenen Vokal e
+  vwl starttype #e endtype #e
+  ipa æ
+  length 120
+  FMT(vowel/e)
+endphoneme
+
+phoneme E   // ae(ㅐ)
+  ipa ɛ
+  vwl starttype #e endtype #e
+  length 200
+  FMT(vowel/ee_5)
+endphoneme
