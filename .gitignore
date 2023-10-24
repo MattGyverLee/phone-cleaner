@@ -6,4 +6,6 @@ temp/*
 
 espeakIPA/phonemes.txt
 
-espeakIPA/phsource
+espeakIPA/phsource/*
+
+espeakIPA/dictsource/*
