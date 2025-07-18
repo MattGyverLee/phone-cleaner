@@ -89,6 +89,52 @@ class AudioMusicSeparator:
         
         return offset_frames, offset_seconds, correlation[start_idx + peak_idx]
     
+    def find_earliest_audio_start(self, audio_data):
+        """Find the clip where meaningful audio starts earliest"""
+        earliest_starts = []
+        
+        for i, data in enumerate(audio_data):
+            audio = data['audio']
+            
+            # Calculate RMS energy in sliding windows
+            frame_length = int(0.1 * self.sr)  # 100ms windows
+            hop_length = int(0.05 * self.sr)   # 50ms hop
+            
+            rms_energy = []
+            for start in range(0, len(audio) - frame_length, hop_length):
+                window = audio[start:start + frame_length]
+                rms = np.sqrt(np.mean(window ** 2))
+                rms_energy.append(rms)
+            
+            rms_energy = np.array(rms_energy)
+            
+            # Find threshold for meaningful audio (above background noise)
+            noise_threshold = np.percentile(rms_energy, 20)  # Bottom 20% as noise floor
+            audio_threshold = noise_threshold * 3  # 3x above noise floor
+            
+            # Find first sustained audio activity
+            sustained_frames = 10  # Require 10 consecutive frames (0.5s) above threshold
+            
+            for j in range(len(rms_energy) - sustained_frames):
+                if np.all(rms_energy[j:j + sustained_frames] > audio_threshold):
+                    earliest_start = j * hop_length / self.sr
+                    earliest_starts.append(earliest_start)
+                    print(f"  {data['name']}: audio starts at {earliest_start:.2f}s")
+                    break
+            else:
+                # If no sustained activity found, use first frame above threshold
+                above_threshold = np.where(rms_energy > audio_threshold)[0]
+                if len(above_threshold) > 0:
+                    earliest_start = above_threshold[0] * hop_length / self.sr
+                    earliest_starts.append(earliest_start)
+                    print(f"  {data['name']}: audio starts at {earliest_start:.2f}s (weak detection)")
+                else:
+                    earliest_starts.append(0.0)
+                    print(f"  {data['name']}: audio starts at 0.00s (no clear start detected)")
+        
+        # Return index of clip with earliest start
+        return np.argmin(earliest_starts)
+    
     def align_clips(self, audio_data):
         """Align all clips to find common music timing"""
         print("\nAligning clips...")
@@ -100,22 +146,12 @@ class AudioMusicSeparator:
             chromas.append(chroma)
             data['chroma'] = chroma
         
-        # Find best reference clip (earliest music start)
-        # Try all pairs, find the one that is earliest relative to others
-        n = len(audio_data)
-        offsets_matrix = np.zeros((n, n))
-        for i in range(n):
-            for j in range(n):
-                if i == j:
-                    offsets_matrix[i, j] = 0
-                else:
-                    offset_frames, offset_seconds, score = self.find_alignment_offset(chromas[i], chromas[j])
-                    offsets_matrix[i, j] = offset_seconds
-        # For each clip, the minimum offset to any other clip (how early it starts)
-        min_offsets = offsets_matrix.min(axis=1)
-        ref_idx = np.argmin(min_offsets)
+        # Find best reference clip (earliest audio start)
+        ref_idx = self.find_earliest_audio_start(audio_data)
         ref_chroma = chromas[ref_idx]
-        print(f"Using '{audio_data[ref_idx]['name']}' as reference (earliest music start)")
+        
+        print(f"Using '{audio_data[ref_idx]['name']}' as reference (earliest audio start)")
+        
         # Align all clips to reference
         alignments = []
         for i, chroma in enumerate(chromas):
@@ -129,6 +165,7 @@ class AudioMusicSeparator:
                     'score': score
                 })
                 print(f"  {audio_data[i]['name']}: offset = {offset_seconds:.2f}s, score = {score:.3f}")
+        
         return alignments, ref_idx
     
     def extract_music(self, audio_data, alignments):
@@ -142,42 +179,79 @@ class AudioMusicSeparator:
             spectrograms.append(stft)
             data['stft'] = stft
         
-        # Find common time range
-        min_frames = min(spec.shape[1] for spec in spectrograms)
+        # Find the maximum length needed (longest clip + maximum alignment offset)
+        max_frames = max(spec.shape[1] for spec in spectrograms)
+        max_offset = max(abs(align['offset_frames']) for align in alignments)
         
-        # Align spectrograms
+        # Add buffer for alignment
+        max_frames += max_offset
+
+        print(f"Max frames: {max_frames}, approx. {max_frames * self.hop_length / self.sr:.1f}s")
+
+        # Align and pad spectrograms to same length
         aligned_spectrograms = []
         for i, spec in enumerate(spectrograms):
             offset = alignments[i]['offset_frames']
             
+            # Create a padded spectrogram of max length
+            aligned_spec = np.zeros((spec.shape[0], max_frames), dtype=spec.dtype)
+            
             if offset >= 0:
                 # Positive offset: music starts later in this clip
-                aligned_spec = spec[:, offset:offset + min_frames]
+                # Copy the available frames starting from offset
+                end_idx = min(max_frames, offset + spec.shape[1])
+                copy_frames = end_idx - offset
+                aligned_spec[:, offset:end_idx] = spec[:, :copy_frames]
             else:
                 # Negative offset: music starts earlier in this clip
-                aligned_spec = spec[:, :min_frames]
-                # Pad with zeros if needed
-                if aligned_spec.shape[1] < min_frames:
-                    pad_width = min_frames - aligned_spec.shape[1]
-                    aligned_spec = np.pad(aligned_spec, ((0, 0), (0, pad_width)), mode='constant')
+                # Copy frames starting from the beginning, skipping the offset
+                start_src = -offset
+                copy_frames = min(spec.shape[1] - start_src, max_frames)
+                if copy_frames > 0:
+                    aligned_spec[:, :copy_frames] = spec[:, start_src:start_src + copy_frames]
             
             aligned_spectrograms.append(aligned_spec)
         
-        # Stack and compute robust average (median)
+        # Stack and create a mask for valid (non-zero) regions across all spectrograms
         stacked_specs = np.stack(aligned_spectrograms, axis=0)
         
-        # Use median to suppress speech variations
-        music_magnitude = np.median(np.abs(stacked_specs), axis=0)
-        
+        # Create a mask where at least 2 clips have content (or all if only 2 clips)
+        min_clips = 2 if len(audio_data) > 2 else len(audio_data)
+        valid_mask = (np.abs(stacked_specs).sum(axis=1) > 0).sum(axis=0) >= min_clips
+
+        # Find the longest contiguous segment with valid data
+        from scipy import ndimage
+        labeled_mask, num_features = ndimage.label(valid_mask)
+
+        if num_features == 0:
+            print("Warning: No valid overlapping music found. Using entire range.")
+            start_idx, end_idx = 0, max_frames
+        else:
+            # Find largest continuous segment
+            segment_sizes = ndimage.sum(valid_mask, labeled_mask, range(1, num_features + 1))
+            largest_segment = np.argmax(segment_sizes) + 1
+            segment_indices = np.where(labeled_mask == largest_segment)[0]
+
+            start_idx, end_idx = segment_indices[0], segment_indices[-1] + 1
+            segment_duration = (end_idx - start_idx) * self.hop_length / self.sr
+            print(f"Found continuous music segment: {segment_duration:.1f}s")
+
+        # Use median to suppress speech variations, but only in the valid region
+        music_magnitude = np.zeros((stacked_specs.shape[1], end_idx - start_idx))
+
+        # Only process the valid segment to save memory
+        valid_segment = stacked_specs[:, :, start_idx:end_idx]
+        music_magnitude = np.median(np.abs(valid_segment), axis=0)
+
         # Use phase from the reference clip
-        ref_spec = aligned_spectrograms[0]  # Use first aligned spec for phase
+        ref_spec = aligned_spectrograms[0][:, start_idx:end_idx]
         music_phase = np.angle(ref_spec)
-        
+
         # Combine magnitude and phase
         music_stft = music_magnitude * np.exp(1j * music_phase)
-        
         # Convert back to time domain
         music_audio = librosa.istft(music_stft, hop_length=self.hop_length)
+        print(f"Extracted music length: {len(music_audio)/self.sr:.1f}s")
         
         return music_audio, music_stft
     
@@ -186,58 +260,69 @@ class AudioMusicSeparator:
         # Extract features for fine alignment
         music_chroma = self.extract_chromagram(music_audio)
         clip_chroma = self.extract_chromagram(clip_audio)
-        
+
         # Find best alignment
         offset_frames, offset_seconds, score = self.find_alignment_offset(clip_chroma, music_chroma)
-        
+
         return offset_frames, offset_seconds, score
-    
+
     def subtract_music(self, clip_audio, music_audio, offset_frames, alpha=None):
         """Subtract music from clip with adaptive gain"""
         # Convert to spectrograms
         clip_stft = librosa.stft(clip_audio, hop_length=self.hop_length, n_fft=self.n_fft)
         music_stft = librosa.stft(music_audio, hop_length=self.hop_length, n_fft=self.n_fft)
-        
-        # Align music spectrogram
+
+        # Ensure music_stft is at least as long as clip_stft
+        if music_stft.shape[1] < clip_stft.shape[1]:
+            # Pad music with zeros if it's shorter
+            pad_width = clip_stft.shape[1] - music_stft.shape[1]
+            music_stft = np.pad(music_stft, ((0, 0), (0, pad_width)), mode='constant')
+
+        # Align music spectrogram based on offset
         if offset_frames >= 0:
-            # Pad music at the beginning
+            # Positive offset: music starts later, pad music at the beginning
             music_stft_aligned = np.pad(music_stft, ((0, 0), (offset_frames, 0)), mode='constant')
         else:
-            # Crop music from the beginning
+            # Negative offset: music starts earlier, crop music from the beginning
             music_stft_aligned = music_stft[:, -offset_frames:]
-        
-        # Match lengths
+
+        # Match lengths - trim to shorter of the two
         min_frames = min(clip_stft.shape[1], music_stft_aligned.shape[1])
+
+        if min_frames <= 0:
+            print("Warning: No overlapping frames found, returning original audio")
+            return clip_audio, 0.0
+
         clip_stft = clip_stft[:, :min_frames]
         music_stft_aligned = music_stft_aligned[:, :min_frames]
-        
+
         # Estimate optimal gain if not provided
         if alpha is None:
             def objective(a):
                 residual = clip_stft - a * music_stft_aligned
                 return np.mean(np.abs(residual) ** 2)
-            
+
             result = minimize_scalar(objective, bounds=(0, 2), method='bounded')
             alpha = result.x
-        
+
         # Perform spectral subtraction with Wiener filtering
         music_power = np.abs(music_stft_aligned) ** 2
         clip_power = np.abs(clip_stft) ** 2
-        
+
         # Wiener filter
         wiener_gain = np.maximum(
             (clip_power - alpha * music_power) / (clip_power + 1e-10),
             0.1  # Minimum gain to avoid artifacts
         )
-        
+
         # Apply filter
         clean_stft = clip_stft * wiener_gain
-        
+
         # Convert back to time domain
         clean_audio = librosa.istft(clean_stft, hop_length=self.hop_length)
-        
+
         return clean_audio, alpha
-    
+
     def process_files(self):
         """Main processing pipeline"""
         print("Starting audio music separation pipeline...")
