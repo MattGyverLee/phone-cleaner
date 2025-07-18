@@ -139,41 +139,33 @@ class MusicSubtractor:
         return aligned_music
     
     def subtract_music_spectral(self, source_audio, aligned_music, alpha=None):
-        """Subtract music using spectral subtraction with Wiener filtering"""
+        """Subtract music using hard magnitude subtraction (more aggressive)"""
         # Convert to spectrograms
         source_stft = librosa.stft(source_audio, hop_length=self.hop_length, n_fft=self.n_fft)
         music_stft = librosa.stft(aligned_music, hop_length=self.hop_length, n_fft=self.n_fft)
-        
+
         # Ensure same length
         min_frames = min(source_stft.shape[1], music_stft.shape[1])
         source_stft = source_stft[:, :min_frames]
         music_stft = music_stft[:, :min_frames]
-        
+
         # Estimate optimal gain if not provided
         if alpha is None:
             def objective(a):
-                residual = source_stft - a * music_stft
-                return np.mean(np.abs(residual) ** 2)
-            
+                residual = np.abs(source_stft) - a * np.abs(music_stft)
+                residual = np.maximum(residual, 0)
+                return np.mean(residual ** 2)
             result = minimize_scalar(objective, bounds=(0, 2), method='bounded')
             alpha = result.x
-        
-        # Wiener filtering approach
-        music_power = np.abs(music_stft) ** 2
-        source_power = np.abs(source_stft) ** 2
-        
-        # Wiener filter with music suppression
-        wiener_gain = np.maximum(
-            (source_power - alpha * music_power) / (source_power + 1e-10),
-            0.1  # Minimum gain to avoid artifacts
-        )
-        
-        # Apply filter
-        clean_stft = source_stft * wiener_gain
-        
+
+        # Hard magnitude subtraction
+        clean_mag = np.abs(source_stft) - alpha * np.abs(music_stft)
+        clean_mag = np.maximum(clean_mag, 0)
+        clean_stft = clean_mag * np.exp(1j * np.angle(source_stft))
+
         # Convert back to time domain
         clean_audio = librosa.istft(clean_stft, hop_length=self.hop_length)
-        
+
         return clean_audio, alpha
     
     def process_files(self):
