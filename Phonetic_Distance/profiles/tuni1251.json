@@ -1,0 +1,170 @@
+{
+  "GlottoCode": "tuni1251",
+  "LanguageName": "Tounia",
+  "ISO6393": "tug",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b \u0253 b\u031a"
+    },
+    "0063": {
+      "glyph": "c",
+      "allophones": "c"
+    },
+    "0064": {
+      "glyph": "d",
+      "allophones": "d d\u031a \u0257"
+    },
+    "0068": {
+      "glyph": "h",
+      "allophones": "\u03c7 h"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j i"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006D+0062": {
+      "glyph": "mb",
+      "allophones": "mb"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "006E+0064": {
+      "glyph": "nd",
+      "allophones": "nd"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "r"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w w\u0303 u"
+    },
+    "014B+0261": {
+      "glyph": "\u014b\u0261",
+      "allophones": "\u014b \u014b\u0261"
+    },
+    "0253": {
+      "glyph": "\u0253",
+      "allophones": "\u0253 \u02c0\u0253 \u02c0m"
+    },
+    "0257": {
+      "glyph": "\u0257",
+      "allophones": "\u0257 \u02c0\u0257 \u02c0n"
+    },
+    "025F": {
+      "glyph": "\u025f",
+      "allophones": "\u025f \u025f\u031a \u0284"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "\u0261 \u0260 \u0261\u031a"
+    },
+    "0272": {
+      "glyph": "\u0272",
+      "allophones": "\u0272 i\u0303"
+    },
+    "0272+025F": {
+      "glyph": "\u0272\u025f",
+      "allophones": "\u0272\u025f"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "\u0294"
+    },
+    "02C0+0272": {
+      "glyph": "\u02c0\u0272",
+      "allophones": "\u02c0\u0272"
+    },
+    "02E6": {
+      "glyph": "\u02e6",
+      "allophones": "\u02e6"
+    },
+    "02E7": {
+      "glyph": "\u02e7",
+      "allophones": "\u02e7"
+    },
+    "02E8": {
+      "glyph": "\u02e8",
+      "allophones": "\u02e8"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a"
+    },
+    "0061+0303": {
+      "glyph": "a\u0303",
+      "allophones": "a\u0303"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i"
+    },
+    "0069+0303": {
+      "glyph": "i\u0303",
+      "allophones": "i\u0303"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u"
+    },
+    "0075+0303": {
+      "glyph": "u\u0303",
+      "allophones": "u\u0303"
+    },
+    "0254": {
+      "glyph": "\u0254",
+      "allophones": "\u0254"
+    },
+    "0254+0303": {
+      "glyph": "\u0254\u0303",
+      "allophones": "\u0254\u0303"
+    },
+    "0259": {
+      "glyph": "\u0259",
+      "allophones": "\u0259"
+    },
+    "025B": {
+      "glyph": "\u025b",
+      "allophones": "\u025b"
+    },
+    "025B+0303": {
+      "glyph": "\u025b\u0303",
+      "allophones": "\u025b\u0303"
+    }
+  },
+  "ComplexPhoneList": "a a\u0303 b c d e h i i\u0303 j k l m mb n nd o r s t u u\u0303 w \u014b\u0261 \u0253 \u0254 \u0254\u0303 \u0257 \u0259 \u025b \u025b\u0303 \u025f \u0261 \u0272 \u0272\u025f \u0294 \u02c0\u0272 \u02e6 \u02e7 \u02e8",
+  "ComponentList": "a a\u0303 b c d e h i i\u0303 j k l m n o r s t u u\u0303 w \u014b \u0253 \u0254 \u0254\u0303 \u0257 \u0259 \u025b \u025b\u0303 \u025f \u0261 \u0272 \u0294 \u02c0\u0272 \u02e6 \u02e7 \u02e8"
+}

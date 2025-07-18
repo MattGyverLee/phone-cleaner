@@ -1,0 +1,114 @@
+{
+  "GlottoCode": "isth1244",
+  "LanguageName": "Isthmus (Juchit\u00e1n) Zapotec",
+  "ISO6393": "zai",
+  "SpecificDialect": "Isthmus (Juchit\u00e1n) Zapotec (\u02bczapoteco de la planicie costera\u02bc; spoken on the Isthmus of Tehuantepec, Oaxaca, Mexico; typical of the city of Juchit\u00e1n de Zaragoza)",
+  "phones": {
+    "006A": {
+      "glyph": "j",
+      "allophones": "j j\u02d0"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k k\u02b0 k\u02d0"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l"
+    },
+    "006C+02D0": {
+      "glyph": "l\u02d0",
+      "allophones": "l\u02d0"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m m\u02d0"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "006E+02D0": {
+      "glyph": "n\u02d0",
+      "allophones": "n\u02d0 \u014b"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p p\u02b0 p\u02d0"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "r r\u02d0"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s s\u02d0"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t t\u02b0 t\u02d0"
+    },
+    "0074+0320+0283": {
+      "glyph": "t\u0320\u0283",
+      "allophones": "t\u0320\u0283 t\u0320\u0283\u02d0"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w w\u02d0"
+    },
+    "0272+031F": {
+      "glyph": "\u0272\u031f",
+      "allophones": "\u0272\u031f \u0272\u031f\u02d0"
+    },
+    "027E": {
+      "glyph": "\u027e",
+      "allophones": "\u027e"
+    },
+    "0283": {
+      "glyph": "\u0283",
+      "allophones": "\u0283 h \u0283\u02d0 n\u0325 l\u0325"
+    },
+    "02E6": {
+      "glyph": "\u02e6",
+      "allophones": "\u02e6"
+    },
+    "02E7+02E5": {
+      "glyph": "\u02e7\u02e5",
+      "allophones": "\u02e7\u02e5 \u02e9\u02e7"
+    },
+    "02E8": {
+      "glyph": "\u02e8",
+      "allophones": "\u02e8"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e e e\u0294 e\u0330 \u0258"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i i i\u0294 i\u0330"
+    },
+    "0069+0251": {
+      "glyph": "i\u0251",
+      "allophones": "i\u0251 i\u0306\u0251"
+    },
+    "0069+0330+0075": {
+      "glyph": "i\u0330u",
+      "allophones": "i\u0330u i\u0330u\u0330\u0306"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o o o\u0294 o\u0330"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u u u\u0294 u\u0330 \u0289"
+    },
+    "0251": {
+      "glyph": "\u0251",
+      "allophones": "\u0251 \u0250 \u0251 \u0251\u0330 \u0251\u0294"
+    }
+  },
+  "ComplexPhoneList": "e i i\u0251 i\u0330u j k l l\u02d0 m n n\u02d0 o p r s t t\u0320\u0283 u w \u0251 \u0272\u031f \u027e \u0283 \u02e6 \u02e7\u02e5 \u02e8",
+  "ComponentList": "e i i\u0330 j k l l\u02d0 m n n\u02d0 o p r s t t\u0320 u w \u0251 \u0272\u031f \u027e \u0283 \u02e5 \u02e6 \u02e7 \u02e8"
+}

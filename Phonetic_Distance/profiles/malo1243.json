@@ -1,0 +1,94 @@
+{
+  "GlottoCode": "malo1243",
+  "LanguageName": "Tamambo; Malo",
+  "ISO6393": "mla",
+  "SpecificDialect": "NA",
+  "phones": {
+    "006B": {
+      "glyph": "k",
+      "allophones": "k"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006D+0062": {
+      "glyph": "mb",
+      "allophones": "mb"
+    },
+    "006D+0062+02B7": {
+      "glyph": "mb\u02b7",
+      "allophones": "mb\u02b7"
+    },
+    "006D+02B7": {
+      "glyph": "m\u02b7",
+      "allophones": "m\u02b7"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "006E+0064": {
+      "glyph": "nd",
+      "allophones": "nd"
+    },
+    "006E+025F": {
+      "glyph": "n\u025f",
+      "allophones": "n\u025f"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "r"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t"
+    },
+    "0078": {
+      "glyph": "x",
+      "allophones": "x \u0263"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "\u014b"
+    },
+    "03B2": {
+      "glyph": "\u03b2",
+      "allophones": "\u03b2"
+    },
+    "03B2+02B7": {
+      "glyph": "\u03b2\u02b7",
+      "allophones": "\u03b2\u02b7"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a a\u0303"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e e\u0303"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i i\u0303"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o o\u0303"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u u\u0303"
+    }
+  },
+  "ComplexPhoneList": "a e i k l m mb mb\u02b7 m\u02b7 n nd n\u025f o r s t u x \u014b \u03b2 \u03b2\u02b7",
+  "ComponentList": "a b b\u02b7 d e i k l m m\u02b7 n o r s t u x \u014b \u025f \u03b2 \u03b2\u02b7"
+}

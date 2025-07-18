@@ -1,0 +1,106 @@
+{
+  "GlottoCode": "baru1269",
+  "LanguageName": "Baruga",
+  "ISO6393": "bjz",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b mb"
+    },
+    "0064": {
+      "glyph": "d",
+      "allophones": "d nd"
+    },
+    "0064+0320+0292": {
+      "glyph": "d\u0320\u0292",
+      "allophones": "d\u0320\u0292 n\u0320d\u0320\u0292"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k k\u02b0"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t t\u02b0"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "\u0261 \u014b\u0261"
+    },
+    "0263": {
+      "glyph": "\u0263",
+      "allophones": "\u0263"
+    },
+    "0278": {
+      "glyph": "\u0278",
+      "allophones": "\u0278"
+    },
+    "027E": {
+      "glyph": "\u027e",
+      "allophones": "\u027e l"
+    },
+    "03B2": {
+      "glyph": "\u03b2",
+      "allophones": "\u03b2 w"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a"
+    },
+    "0061+0303": {
+      "glyph": "a\u0303",
+      "allophones": "a\u0303"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e"
+    },
+    "0065+0303": {
+      "glyph": "e\u0303",
+      "allophones": "e\u0303"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i"
+    },
+    "0069+0303": {
+      "glyph": "i\u0303",
+      "allophones": "i\u0303"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o"
+    },
+    "006F+0303": {
+      "glyph": "o\u0303",
+      "allophones": "o\u0303"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u"
+    },
+    "0075+0303": {
+      "glyph": "u\u0303",
+      "allophones": "u\u0303"
+    }
+  },
+  "ComplexPhoneList": "a a\u0303 b d d\u0320\u0292 e e\u0303 i i\u0303 j k m n o o\u0303 s t u u\u0303 \u0261 \u0263 \u0278 \u027e \u03b2",
+  "ComponentList": "a a\u0303 b d d\u0320 e e\u0303 i i\u0303 j k m n o o\u0303 s t u u\u0303 \u0261 \u0263 \u0278 \u027e \u0292 \u03b2"
+}

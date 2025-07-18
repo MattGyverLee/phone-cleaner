@@ -1,0 +1,122 @@
+{
+  "GlottoCode": "bomi1238",
+  "LanguageName": "Leke",
+  "ISO6393": "zmx",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b"
+    },
+    "0064": {
+      "glyph": "d",
+      "allophones": "d l"
+    },
+    "0066": {
+      "glyph": "f",
+      "allophones": "f"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k k\u02b2"
+    },
+    "006B+0070": {
+      "glyph": "kp",
+      "allophones": "kp"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m \u0271"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n \u014b"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t"
+    },
+    "0076": {
+      "glyph": "v",
+      "allophones": "v"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "007A": {
+      "glyph": "z",
+      "allophones": "z dz"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "\u0261 \u0261\u02b2"
+    },
+    "0261+0062": {
+      "glyph": "\u0261b",
+      "allophones": "\u0261b"
+    },
+    "02E6": {
+      "glyph": "\u02e6",
+      "allophones": "\u02e6"
+    },
+    "02E8": {
+      "glyph": "\u02e8",
+      "allophones": "\u02e8"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a"
+    },
+    "0061+0303": {
+      "glyph": "a\u0303",
+      "allophones": "a\u0303"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i"
+    },
+    "0069+0303": {
+      "glyph": "i\u0303",
+      "allophones": "i\u0303"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o"
+    },
+    "006F+0303": {
+      "glyph": "o\u0303",
+      "allophones": "o\u0303"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u"
+    },
+    "0075+0303": {
+      "glyph": "u\u0303",
+      "allophones": "u\u0303"
+    },
+    "025B": {
+      "glyph": "\u025b",
+      "allophones": "\u025b"
+    }
+  },
+  "ComplexPhoneList": "a a\u0303 b d e f i i\u0303 j k kp m n o o\u0303 p s t u u\u0303 v w z \u025b \u0261 \u0261b \u02e6 \u02e8",
+  "ComponentList": "a a\u0303 b d e f i i\u0303 j k m n o o\u0303 p s t u u\u0303 v w z \u025b \u0261 \u02e6 \u02e8"
+}

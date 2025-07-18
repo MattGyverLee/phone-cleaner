@@ -1,0 +1,174 @@
+{
+  "GlottoCode": "mada1282",
+  "LanguageName": "mada",
+  "ISO6393": "mda",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b mb b\u02b2 b\u02b7"
+    },
+    "0064": {
+      "glyph": "d",
+      "allophones": "d nd"
+    },
+    "0064+007A": {
+      "glyph": "dz",
+      "allophones": "dz ndz d\u0320\u0292 dz\u02b7"
+    },
+    "0066": {
+      "glyph": "f",
+      "allophones": "f \u0271f"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j \u0265"
+    },
+    "006B+0070": {
+      "glyph": "kp",
+      "allophones": "kp \u014bmkp kp\u02b2"
+    },
+    "006B+02B0": {
+      "glyph": "k\u02b0",
+      "allophones": "k\u02b0 \u014bk\u02b0 k\u02b2 c k\u02b7"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l nl l\u02b7"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n n"
+    },
+    "0070+02B0": {
+      "glyph": "p\u02b0",
+      "allophones": "p\u02b0 mp\u02b0 p\u02b2 p\u02b7"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "r r\u02b2"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s \u0283 s\u02b7"
+    },
+    "0074+0073": {
+      "glyph": "ts",
+      "allophones": "ts nts t\u0320\u0283 ts\u02b7"
+    },
+    "0074+02B0": {
+      "glyph": "t\u02b0",
+      "allophones": "t\u02b0 nt\u02b0 t\u02b2"
+    },
+    "0076": {
+      "glyph": "v",
+      "allophones": "v \u0271v"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "\u014b \u0272 \u014b\u02b7"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "\u0261 \u014b\u0261 \u0261\u02b2 \u025f \u0261\u02b7"
+    },
+    "0261+0062": {
+      "glyph": "\u0261b",
+      "allophones": "\u0261b \u014bm\u0261b \u0261b\u02b2"
+    },
+    "027D": {
+      "glyph": "\u027d",
+      "allophones": "\u027d \u027d\u0303"
+    },
+    "027E": {
+      "glyph": "\u027e",
+      "allophones": "\u027e r\u0303"
+    },
+    "028D": {
+      "glyph": "\u028d",
+      "allophones": "\u028d \u028d\u02b2 h"
+    },
+    "02E6": {
+      "glyph": "\u02e6",
+      "allophones": "\u02e6"
+    },
+    "02E6+02E8": {
+      "glyph": "\u02e6\u02e8",
+      "allophones": "\u02e6\u02e8"
+    },
+    "02E7": {
+      "glyph": "\u02e7",
+      "allophones": "\u02e7"
+    },
+    "02E8": {
+      "glyph": "\u02e8",
+      "allophones": "\u02e8"
+    },
+    "02E8+02E6": {
+      "glyph": "\u02e8\u02e6",
+      "allophones": "\u02e8\u02e6"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a"
+    },
+    "0061+0303": {
+      "glyph": "a\u0303",
+      "allophones": "a\u0303"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e e\u02b2 e\u0303\u02b2"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i \u026a"
+    },
+    "0069+0303": {
+      "glyph": "i\u0303",
+      "allophones": "i\u0303"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o o\u0303"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u \u0268 \u0289"
+    },
+    "0075+0303": {
+      "glyph": "u\u0303",
+      "allophones": "u\u0303"
+    },
+    "0254": {
+      "glyph": "\u0254",
+      "allophones": "\u0254"
+    },
+    "0254+0303": {
+      "glyph": "\u0254\u0303",
+      "allophones": "\u0254\u0303"
+    },
+    "0259": {
+      "glyph": "\u0259",
+      "allophones": "\u0259 \u026a \u0268"
+    },
+    "025B": {
+      "glyph": "\u025b",
+      "allophones": "\u025b a\u02b2"
+    },
+    "025B+0303": {
+      "glyph": "\u025b\u0303",
+      "allophones": "\u025b\u0303 a\u0303\u02b2"
+    }
+  },
+  "ComplexPhoneList": "a a\u0303 b d dz e f i i\u0303 j kp k\u02b0 l m n o p\u02b0 r s ts t\u02b0 u u\u0303 v w \u014b \u0254 \u0254\u0303 \u0259 \u025b \u025b\u0303 \u0261 \u0261b \u027d \u027e \u028d \u02e6 \u02e6\u02e8 \u02e7 \u02e8 \u02e8\u02e6",
+  "ComponentList": "a a\u0303 b d e f i i\u0303 j k k\u02b0 l m n o p p\u02b0 r s t t\u02b0 u u\u0303 v w z \u014b \u0254 \u0254\u0303 \u0259 \u025b \u025b\u0303 \u0261 \u027d \u027e \u028d \u02e6 \u02e7 \u02e8"
+}

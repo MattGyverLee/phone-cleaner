@@ -1,0 +1,94 @@
+{
+  "GlottoCode": "ning1273",
+  "LanguageName": "Ningil",
+  "ISO6393": "niz",
+  "SpecificDialect": "NA",
+  "phones": {
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k k\u031a k\u02b0 \u0261"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p p\u031a b"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "r"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t t\u031a t\u02b0 d"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "\u014b"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "\u0261"
+    },
+    "0278": {
+      "glyph": "\u0278",
+      "allophones": "\u0278 p p\u02b0"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "\u0294"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i \u026a e"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u"
+    },
+    "0254": {
+      "glyph": "\u0254",
+      "allophones": "\u0254"
+    },
+    "025B": {
+      "glyph": "\u025b",
+      "allophones": "\u025b \u025bi \u025ba a"
+    },
+    "0268": {
+      "glyph": "\u0268",
+      "allophones": "\u0268 \u0259"
+    },
+    "028C": {
+      "glyph": "\u028c",
+      "allophones": "\u028c"
+    }
+  },
+  "ComplexPhoneList": "a i j k l m n p r s t u w \u014b \u0254 \u025b \u0261 \u0268 \u0278 \u028c \u0294",
+  "ComponentList": "a i j k l m n p r s t u w \u014b \u0254 \u025b \u0261 \u0268 \u0278 \u028c \u0294"
+}

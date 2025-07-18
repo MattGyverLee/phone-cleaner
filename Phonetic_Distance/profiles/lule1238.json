@@ -1,0 +1,94 @@
+{
+  "GlottoCode": "lule1238",
+  "LanguageName": "Lule",
+  "ISO6393": "ule",
+  "SpecificDialect": "",
+  "phones": {
+    "006A": {
+      "glyph": "j",
+      "allophones": "NA"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "NA"
+    },
+    "006B+02BC": {
+      "glyph": "k\u02bc",
+      "allophones": "NA"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "NA"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "NA"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "NA"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "NA"
+    },
+    "0070+02BC": {
+      "glyph": "p\u02bc",
+      "allophones": "NA"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "NA"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "NA"
+    },
+    "0074+0073": {
+      "glyph": "ts",
+      "allophones": "NA"
+    },
+    "0074+02BC": {
+      "glyph": "t\u02bc",
+      "allophones": "NA"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "NA"
+    },
+    "0078": {
+      "glyph": "x",
+      "allophones": "NA"
+    },
+    "026C": {
+      "glyph": "\u026c",
+      "allophones": "NA"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "NA"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "NA"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "NA"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "NA"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "NA"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "NA"
+    }
+  },
+  "ComplexPhoneList": "a e i j k k\u02bc l m n o p p\u02bc s t ts t\u02bc u w x \u026c \u0294",
+  "ComponentList": "a e i j k k\u02bc l m n o p p\u02bc s t t\u02bc u w x \u026c \u0294"
+}

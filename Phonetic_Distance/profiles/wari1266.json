@@ -1,0 +1,94 @@
+{
+  "GlottoCode": "wari1266",
+  "LanguageName": "WARIS",
+  "ISO6393": "wrs",
+  "SpecificDialect": "NA",
+  "phones": {
+    "006A": {
+      "glyph": "j",
+      "allophones": "NA"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "NA"
+    },
+    "006C+032A+007C+006C": {
+      "glyph": "l",
+      "allophones": "NA"
+    },
+    "006D+0062": {
+      "glyph": "mb",
+      "allophones": "NA"
+    },
+    "006E+032A+0064+032A+007C+006E+0064": {
+      "glyph": "nd",
+      "allophones": "NA"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "NA"
+    },
+    "0073+032A+007C+0073": {
+      "glyph": "s",
+      "allophones": "NA"
+    },
+    "0074+032A+007C+0074": {
+      "glyph": "t",
+      "allophones": "NA"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "NA"
+    },
+    "0078": {
+      "glyph": "x",
+      "allophones": "NA"
+    },
+    "014B+0261": {
+      "glyph": "\u014b\u0261",
+      "allophones": "NA"
+    },
+    "03B2": {
+      "glyph": "\u03b2",
+      "allophones": "NA"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "NA"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "NA"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "NA"
+    },
+    "006F+031E": {
+      "glyph": "o\u031e",
+      "allophones": "NA"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "NA"
+    },
+    "00E6": {
+      "glyph": "\u00e6",
+      "allophones": "NA"
+    },
+    "0252": {
+      "glyph": "\u0252",
+      "allophones": "NA"
+    },
+    "0259": {
+      "glyph": "\u0259",
+      "allophones": "NA"
+    },
+    "025B": {
+      "glyph": "\u025b",
+      "allophones": "NA"
+    }
+  },
+  "ComplexPhoneList": "a e i j k l mb nd o\u031e p s t u w x \u00e6 \u014b\u0261 \u0252 \u0259 \u025b \u03b2",
+  "ComponentList": "a b d e i j k l m n o\u031e p s t u w x \u00e6 \u014b \u0252 \u0259 \u025b \u0261 \u03b2"
+}

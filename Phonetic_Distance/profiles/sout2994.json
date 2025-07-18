@@ -1,0 +1,154 @@
+{
+  "GlottoCode": "sout2994",
+  "LanguageName": "SOUTHERN NAMBIQUARA",
+  "ISO6393": "nab",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0068": {
+      "glyph": "h",
+      "allophones": "NA"
+    },
+    "0068+02C0": {
+      "glyph": "h\u02c0",
+      "allophones": "NA"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "NA"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "NA"
+    },
+    "006B+02B0": {
+      "glyph": "k\u02b0",
+      "allophones": "NA"
+    },
+    "006B+02B7": {
+      "glyph": "k\u02b7",
+      "allophones": "NA"
+    },
+    "006B+02B7+02B0": {
+      "glyph": "k\u02b7\u02b0",
+      "allophones": "NA"
+    },
+    "006B+02B7+02BC": {
+      "glyph": "k\u02b7\u02bc",
+      "allophones": "NA"
+    },
+    "006B+02BC": {
+      "glyph": "k\u02bc",
+      "allophones": "NA"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "NA"
+    },
+    "006E+032A+0330+007C+006E+0330": {
+      "glyph": "n\u0330",
+      "allophones": "NA"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "NA"
+    },
+    "0070+02B0": {
+      "glyph": "p\u02b0",
+      "allophones": "NA"
+    },
+    "0070+02BC": {
+      "glyph": "p\u02bc",
+      "allophones": "NA"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "NA"
+    },
+    "0073+02C0": {
+      "glyph": "s\u02c0",
+      "allophones": "NA"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "NA"
+    },
+    "0074+02BC": {
+      "glyph": "t\u02bc",
+      "allophones": "NA"
+    },
+    "0074+032A+02B0+007C+0074+02B0": {
+      "glyph": "t\u02b0",
+      "allophones": "NA"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "NA"
+    },
+    "0253": {
+      "glyph": "\u0253",
+      "allophones": "NA"
+    },
+    "0257+032A+007C+0257": {
+      "glyph": "\u0257",
+      "allophones": "NA"
+    },
+    "027A+0320": {
+      "glyph": "\u027a\u0320",
+      "allophones": "NA"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "NA"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "NA"
+    },
+    "0061+0303": {
+      "glyph": "a\u0303",
+      "allophones": "NA"
+    },
+    "0061+0330": {
+      "glyph": "a\u0330",
+      "allophones": "NA"
+    },
+    "0061+0330+0303": {
+      "glyph": "a\u0330\u0303",
+      "allophones": "NA"
+    },
+    "0065+031E": {
+      "glyph": "e\u031e",
+      "allophones": "NA"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "NA"
+    },
+    "0069+0303": {
+      "glyph": "i\u0303",
+      "allophones": "NA"
+    },
+    "0069+0330": {
+      "glyph": "i\u0330",
+      "allophones": "NA"
+    },
+    "0069+0330+0303": {
+      "glyph": "i\u0330\u0303",
+      "allophones": "NA"
+    },
+    "006F+031E": {
+      "glyph": "o\u031e",
+      "allophones": "NA"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "NA"
+    },
+    "0075+0330": {
+      "glyph": "u\u0330",
+      "allophones": "NA"
+    }
+  },
+  "ComplexPhoneList": "a a\u0303 a\u0330 a\u0330\u0303 e\u031e h h\u02c0 i i\u0303 i\u0330 i\u0330\u0303 j k k\u02b0 k\u02b7 k\u02b7\u02b0 k\u02b7\u02bc k\u02bc n n\u0330 o\u031e p p\u02b0 p\u02bc s s\u02c0 t t\u02b0 t\u02bc u u\u0330 w \u0253 \u0257 \u027a\u0320 \u0294",
+  "ComponentList": "a a\u0303 a\u0330 a\u0330\u0303 e\u031e h h\u02c0 i i\u0303 i\u0330 i\u0330\u0303 j k k\u02b0 k\u02b7 k\u02b7\u02b0 k\u02b7\u02bc k\u02bc n n\u0330 o\u031e p p\u02b0 p\u02bc s s\u02c0 t t\u02b0 t\u02bc u u\u0330 w \u0253 \u0257 \u027a\u0320 \u0294"
+}

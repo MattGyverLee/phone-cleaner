@@ -1,0 +1,146 @@
+{
+  "GlottoCode": "paok1235",
+  "LanguageName": "Pa-O, Taungthu",
+  "ISO6393": "blk",
+  "SpecificDialect": "Huay Salop",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b"
+    },
+    "0063": {
+      "glyph": "c",
+      "allophones": "c"
+    },
+    "0063+02B0": {
+      "glyph": "c\u02b0",
+      "allophones": "c\u02b0"
+    },
+    "0064": {
+      "glyph": "d",
+      "allophones": "d"
+    },
+    "0068": {
+      "glyph": "h",
+      "allophones": "h"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k"
+    },
+    "006B+02B0": {
+      "glyph": "k\u02b0",
+      "allophones": "k\u02b0"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p"
+    },
+    "0070+02B0": {
+      "glyph": "p\u02b0",
+      "allophones": "p\u02b0"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "r"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t"
+    },
+    "0074+02B0": {
+      "glyph": "t\u02b0",
+      "allophones": "t\u02b0"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "\u014b"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "\u0294"
+    },
+    "02E5+02E9": {
+      "glyph": "\u02e5\u02e9",
+      "allophones": "\u02e5\u02e9"
+    },
+    "02E6+02E5": {
+      "glyph": "\u02e6\u02e5",
+      "allophones": "\u02e6\u02e5"
+    },
+    "02E7": {
+      "glyph": "\u02e7",
+      "allophones": "\u02e7"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a a\u02d0"
+    },
+    "0061+0069": {
+      "glyph": "ai",
+      "allophones": "ai"
+    },
+    "0061+0075": {
+      "glyph": "au",
+      "allophones": "au"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e e\u02d0"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i i\u02d0"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o o\u02d0"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u u\u02d0"
+    },
+    "0254": {
+      "glyph": "\u0254",
+      "allophones": "\u0254"
+    },
+    "0259": {
+      "glyph": "\u0259",
+      "allophones": "\u0259"
+    },
+    "025B": {
+      "glyph": "\u025b",
+      "allophones": "\u025b \u025b\u02d0"
+    },
+    "0289": {
+      "glyph": "\u0289",
+      "allophones": "\u0289 \u0289\u02d0"
+    }
+  },
+  "ComplexPhoneList": "a ai au b c c\u02b0 d e h i j k k\u02b0 l m n o p p\u02b0 r s t t\u02b0 u w \u014b \u0254 \u0259 \u025b \u0289 \u0294 \u02e5\u02e9 \u02e6\u02e5 \u02e7",
+  "ComponentList": "a b c c\u02b0 d e h i j k k\u02b0 l m n o p p\u02b0 r s t t\u02b0 u w \u014b \u0254 \u0259 \u025b \u0289 \u0294 \u02e5 \u02e6 \u02e7 \u02e9"
+}

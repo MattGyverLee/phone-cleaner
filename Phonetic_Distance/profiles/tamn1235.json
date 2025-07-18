@@ -1,0 +1,90 @@
+{
+  "GlottoCode": "tamn1235",
+  "LanguageName": "Asmat",
+  "ISO6393": "tml",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0066": {
+      "glyph": "f",
+      "allophones": "NA"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "NA"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "NA"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "NA"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "NA"
+    },
+    "0070+02B7": {
+      "glyph": "p\u02b7",
+      "allophones": "p\u02b7"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "NA"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "NA"
+    },
+    "0074+0320+0283": {
+      "glyph": "t\u0320\u0283",
+      "allophones": "NA"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "NA"
+    },
+    "027E": {
+      "glyph": "\u027e",
+      "allophones": "NA"
+    },
+    "0283": {
+      "glyph": "\u0283",
+      "allophones": "\u0283"
+    },
+    "029D": {
+      "glyph": "\u029d",
+      "allophones": "NA"
+    },
+    "03B8": {
+      "glyph": "\u03b8",
+      "allophones": "\u03b8"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "NA"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "NA"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "NA"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "NA"
+    },
+    "0254": {
+      "glyph": "\u0254",
+      "allophones": "NA"
+    },
+    "0259": {
+      "glyph": "\u0259",
+      "allophones": "NA"
+    }
+  },
+  "ComplexPhoneList": "a e f i k m n p p\u02b7 s t t\u0320\u0283 u w \u0254 \u0259 \u027e \u0283 \u029d \u03b8",
+  "ComponentList": "a e f i k m n p p\u02b7 s t t\u0320 u w \u0254 \u0259 \u027e \u0283 \u029d \u03b8"
+}

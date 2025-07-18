@@ -1,0 +1,106 @@
+{
+  "GlottoCode": "akur1238",
+  "LanguageName": "Akurio",
+  "ISO6393": "ako",
+  "SpecificDialect": "",
+  "phones": {
+    "006A": {
+      "glyph": "j",
+      "allophones": "NA"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "NA"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "NA"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "NA"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "NA"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "NA"
+    },
+    "0074+0320+0283": {
+      "glyph": "t\u0320\u0283",
+      "allophones": "NA"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "NA"
+    },
+    "027E": {
+      "glyph": "\u027e",
+      "allophones": "NA"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "NA"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "NA"
+    },
+    "0061+02D0": {
+      "glyph": "a\u02d0",
+      "allophones": "NA"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "NA"
+    },
+    "0065+02D0": {
+      "glyph": "e\u02d0",
+      "allophones": "NA"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "NA"
+    },
+    "0069+02D0": {
+      "glyph": "i\u02d0",
+      "allophones": "NA"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "NA"
+    },
+    "006F+02D0": {
+      "glyph": "o\u02d0",
+      "allophones": "NA"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "NA"
+    },
+    "0075+02D0": {
+      "glyph": "u\u02d0",
+      "allophones": "NA"
+    },
+    "0259": {
+      "glyph": "\u0259",
+      "allophones": "NA"
+    },
+    "0259+02D0": {
+      "glyph": "\u0259\u02d0",
+      "allophones": "NA"
+    },
+    "0268": {
+      "glyph": "\u0268",
+      "allophones": "NA"
+    },
+    "0268+02D0": {
+      "glyph": "\u0268\u02d0",
+      "allophones": "NA"
+    }
+  },
+  "ComplexPhoneList": "a a\u02d0 e e\u02d0 i i\u02d0 j k m n o o\u02d0 p t t\u0320\u0283 u u\u02d0 w \u0259 \u0259\u02d0 \u0268 \u0268\u02d0 \u027e \u0294",
+  "ComponentList": "a a\u02d0 e e\u02d0 i i\u02d0 j k m n o o\u02d0 p t t\u0320 u u\u02d0 w \u0259 \u0259\u02d0 \u0268 \u0268\u02d0 \u027e \u0283 \u0294"
+}

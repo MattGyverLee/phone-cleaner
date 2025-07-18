@@ -1,0 +1,74 @@
+{
+  "GlottoCode": "kala1378",
+  "LanguageName": "Kala Kawaw Ya",
+  "ISO6393": "mwp",
+  "SpecificDialect": "NA",
+  "phones": {
+    "006A": {
+      "glyph": "j",
+      "allophones": "NA"
+    },
+    "006C+033A": {
+      "glyph": "l\u033a",
+      "allophones": "NA"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "NA"
+    },
+    "006E+032A": {
+      "glyph": "n\u032a",
+      "allophones": "NA"
+    },
+    "006E+033A": {
+      "glyph": "n\u033a",
+      "allophones": "NA"
+    },
+    "0072+033A": {
+      "glyph": "r\u033a",
+      "allophones": "NA"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "NA"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "NA"
+    },
+    "0255": {
+      "glyph": "\u0255",
+      "allophones": "NA"
+    },
+    "0291": {
+      "glyph": "\u0291",
+      "allophones": "NA"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "NA"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "NA"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "NA"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "NA"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "NA"
+    },
+    "0268": {
+      "glyph": "\u0268",
+      "allophones": "NA"
+    }
+  },
+  "ComplexPhoneList": "a e i j l\u033a m n\u032a n\u033a o r\u033a u w \u014b \u0255 \u0268 \u0291",
+  "ComponentList": "a e i j l\u033a m n\u032a n\u033a o r\u033a u w \u014b \u0255 \u0268 \u0291"
+}

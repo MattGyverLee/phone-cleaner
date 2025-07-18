@@ -1,0 +1,174 @@
+{
+  "GlottoCode": "nezp1238",
+  "LanguageName": "Nez Perce",
+  "ISO6393": "nez",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0068": {
+      "glyph": "h",
+      "allophones": "NA"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "NA"
+    },
+    "006A+0330": {
+      "glyph": "j\u0330",
+      "allophones": "NA"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "NA"
+    },
+    "006B+02BC": {
+      "glyph": "k\u02bc",
+      "allophones": "NA"
+    },
+    "006C+033B": {
+      "glyph": "l\u033b",
+      "allophones": "l\u033b l\u033b\u0325 l\u033b\u02b2"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "NA"
+    },
+    "006D+0330": {
+      "glyph": "m\u0330",
+      "allophones": "NA"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n\u02b2 n\u0325 n \u014b"
+    },
+    "006E+0330": {
+      "glyph": "n\u0330",
+      "allophones": "n\u0330"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "NA"
+    },
+    "0070+02BC": {
+      "glyph": "p\u02bc",
+      "allophones": "NA"
+    },
+    "0071+02BC": {
+      "glyph": "q\u02bc",
+      "allophones": "NA"
+    },
+    "0071+03C7": {
+      "glyph": "q\u03c7",
+      "allophones": "NA"
+    },
+    "0073+033B": {
+      "glyph": "s\u033b",
+      "allophones": "s\u033b\u02b2 s\u033b"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "NA"
+    },
+    "0074+02BC": {
+      "glyph": "t\u02bc",
+      "allophones": "NA"
+    },
+    "0074+032A": {
+      "glyph": "t\u032a",
+      "allophones": "NA"
+    },
+    "0074+032A+02BC": {
+      "glyph": "t\u032a\u02bc",
+      "allophones": "NA"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "NA"
+    },
+    "0077+0330": {
+      "glyph": "w\u0330",
+      "allophones": "NA"
+    },
+    "0078": {
+      "glyph": "x",
+      "allophones": "NA"
+    },
+    "026C": {
+      "glyph": "\u026c",
+      "allophones": "NA"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "NA"
+    },
+    "03C7": {
+      "glyph": "\u03c7",
+      "allophones": "\u03c7 \u0280\u0325 \u03c7"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "NA"
+    },
+    "0061+02D0": {
+      "glyph": "a\u02d0",
+      "allophones": "a\u02d0 \u0250\u02d0"
+    },
+    "0069+02D0": {
+      "glyph": "i\u02d0",
+      "allophones": "\u0259\u032fi\u02d0 i\u02d0"
+    },
+    "00E6": {
+      "glyph": "\u00e6",
+      "allophones": "NA"
+    },
+    "00E6+02D0": {
+      "glyph": "\u00e6\u02d0",
+      "allophones": "\u025b\u02d0 \u00e6\u02d0"
+    },
+    "0254": {
+      "glyph": "\u0254",
+      "allophones": "NA"
+    },
+    "0254+02D0": {
+      "glyph": "\u0254\u02d0",
+      "allophones": "\u0254\u02d0 o\u031e\u02d0"
+    },
+    "026A": {
+      "glyph": "\u026a",
+      "allophones": "NA"
+    },
+    "026F+02D0": {
+      "glyph": "\u026f\u02d0",
+      "allophones": "u\u02d0 \u026f\u02d0"
+    },
+    "026F+031E": {
+      "glyph": "\u026f\u031e",
+      "allophones": "\u028a \u026f\u031e"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "NA"
+    },
+    "006C+0330": {
+      "glyph": "l\u0330",
+      "allophones": "NA"
+    },
+    "006E+032A": {
+      "glyph": "n\u032a",
+      "allophones": "NA"
+    },
+    "006E+032A+0330": {
+      "glyph": "n\u032a\u0330",
+      "allophones": "NA"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "NA"
+    },
+    "026F": {
+      "glyph": "\u026f",
+      "allophones": "NA"
+    }
+  },
+  "ComplexPhoneList": "a a\u02d0 h i\u02d0 j j\u0330 k k\u02bc l l\u0330 l\u033b m m\u0330 n n\u032a n\u032a\u0330 n\u0330 p p\u02bc q\u02bc q\u03c7 s s\u033b t t\u02bc t\u032a t\u032a\u02bc w w\u0330 x \u00e6 \u00e6\u02d0 \u0254 \u0254\u02d0 \u026a \u026c \u026f \u026f\u02d0 \u026f\u031e \u0294 \u03c7",
+  "ComponentList": "a a\u02d0 h i\u02d0 j j\u0330 k k\u02bc l l\u0330 l\u033b m m\u0330 n n\u032a n\u032a\u0330 n\u0330 p p\u02bc q q\u02bc s s\u033b t t\u02bc t\u032a t\u032a\u02bc w w\u0330 x \u00e6 \u00e6\u02d0 \u0254 \u0254\u02d0 \u026a \u026c \u026f \u026f\u02d0 \u026f\u031e \u0294 \u03c7"
+}

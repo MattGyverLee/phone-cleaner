@@ -1,0 +1,102 @@
+{
+  "GlottoCode": "hang1263",
+  "LanguageName": "Hanga Hundi; Kwasengen; West Wosera",
+  "ISO6393": "wos",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b mb"
+    },
+    "0064": {
+      "glyph": "d",
+      "allophones": "d nd"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k h k\u02b0"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s c\u0327"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t t\u02b0"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "025F": {
+      "glyph": "\u025f",
+      "allophones": "\u025f \u0272\u025f"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "\u0261 \u014b\u0261"
+    },
+    "0263": {
+      "glyph": "\u0263",
+      "allophones": "\u0263"
+    },
+    "0272": {
+      "glyph": "\u0272",
+      "allophones": "\u0272 \u0272\u02b2"
+    },
+    "0278": {
+      "glyph": "\u0278",
+      "allophones": "\u0278 p"
+    },
+    "027E": {
+      "glyph": "\u027e",
+      "allophones": "\u027e"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a a\u0294a"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e \u025b"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i j\u026a \u026a"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o \u0254"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u w w\u028a \u028a"
+    },
+    "0259": {
+      "glyph": "\u0259",
+      "allophones": "\u0259 e a o"
+    },
+    "0268": {
+      "glyph": "\u0268",
+      "allophones": "\u0268 i u"
+    }
+  },
+  "ComplexPhoneList": "a b d e i j k l m n o s t u w \u0259 \u025f \u0261 \u0263 \u0268 \u0272 \u0278 \u027e",
+  "ComponentList": "a b d e i j k l m n o s t u w \u0259 \u025f \u0261 \u0263 \u0268 \u0272 \u0278 \u027e"
+}

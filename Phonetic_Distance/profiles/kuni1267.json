@@ -1,0 +1,110 @@
+{
+  "GlottoCode": "kuni1267",
+  "LanguageName": "Kunimaipa",
+  "ISO6393": "kup",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "NA"
+    },
+    "0064+032A": {
+      "glyph": "d\u032a",
+      "allophones": "NA"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "NA"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l\u02d0 l\u0325 l dl"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "NA"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "NA"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s\u02b2 s ts s"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t\u032a\u03b8 t\u02b0 t"
+    },
+    "007A": {
+      "glyph": "z",
+      "allophones": "z z z\u02b2 j"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "NA"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "NA"
+    },
+    "0262": {
+      "glyph": "\u0262",
+      "allophones": "NA"
+    },
+    "027D": {
+      "glyph": "\u027d",
+      "allophones": "NA"
+    },
+    "03B2+031E": {
+      "glyph": "\u03b2\u031e",
+      "allophones": "NA"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "NA"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "NA"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "NA"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "NA"
+    },
+    "028A": {
+      "glyph": "\u028a",
+      "allophones": "NA"
+    },
+    "006C+032A+007C+006C": {
+      "glyph": "l",
+      "allophones": "NA"
+    },
+    "006E+032A+007C+006E": {
+      "glyph": "n",
+      "allophones": "NA"
+    },
+    "0073+032A+007C+0073": {
+      "glyph": "s",
+      "allophones": "NA"
+    },
+    "0074+032A+007C+0074": {
+      "glyph": "t",
+      "allophones": "NA"
+    },
+    "007A+032A+007C+007A": {
+      "glyph": "z",
+      "allophones": "NA"
+    }
+  },
+  "ComplexPhoneList": "a b d\u032a e i k l m n p s t u z \u014b \u0261 \u0262 \u027d \u028a \u03b2\u031e",
+  "ComponentList": "a b d\u032a e i k l m n p s t u z \u014b \u0261 \u0262 \u027d \u028a \u03b2\u031e"
+}

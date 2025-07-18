@@ -1,0 +1,90 @@
+{
+  "GlottoCode": "onei1249",
+  "LanguageName": "Oneida",
+  "ISO6393": "one",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0068": {
+      "glyph": "h",
+      "allophones": "h \u0266"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j j j\u0325"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k\u0348\u031a k\u0348 \u0261 k"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l\u0325 l l"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n n n\u0325"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "\u0283\u0348 s\u0348 s z"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t\u0348 t d t\u0348\u031a"
+    },
+    "0074+0320+0283": {
+      "glyph": "t\u0320\u0283",
+      "allophones": "t\u0320\u0283 d\u0320\u0292"
+    },
+    "0270": {
+      "glyph": "\u0270",
+      "allophones": "f \u0278 v \u03b2 \u0270\u0325 \u0270 \u0270"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "\u0294"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a\u0325 a"
+    },
+    "0061+02D0": {
+      "glyph": "a\u02d0",
+      "allophones": "a\u02d0"
+    },
+    "0065+031E": {
+      "glyph": "e\u031e",
+      "allophones": "e\u031e\u0325 e\u031e"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i i\u0325"
+    },
+    "0069+02D0": {
+      "glyph": "i\u02d0",
+      "allophones": "i\u02d0"
+    },
+    "0259+0303": {
+      "glyph": "\u0259\u0303",
+      "allophones": "\u0259\u0303 \u0259\u0325\u0303"
+    },
+    "0259+0303+02D0": {
+      "glyph": "\u0259\u0303\u02d0",
+      "allophones": "\u0259\u0303\u02d0"
+    },
+    "0264+031E": {
+      "glyph": "\u0264\u031e",
+      "allophones": "\u0264\u031e \u0264\u031e\u0325"
+    },
+    "026F+0303": {
+      "glyph": "\u026f\u0303",
+      "allophones": "\u026f\u0325\u0303 \u026f\u0303"
+    },
+    "026F+0303+02D0": {
+      "glyph": "\u026f\u0303\u02d0",
+      "allophones": "\u026f\u0303\u02d0"
+    }
+  },
+  "ComplexPhoneList": "a a\u02d0 e\u031e h i i\u02d0 j k l n s t t\u0320\u0283 \u0259\u0303 \u0259\u0303\u02d0 \u0264\u031e \u026f\u0303 \u026f\u0303\u02d0 \u0270 \u0294",
+  "ComponentList": "a a\u02d0 e\u031e h i i\u02d0 j k l n s t t\u0320 \u0259\u0303 \u0259\u0303\u02d0 \u0264\u031e \u026f\u0303 \u026f\u0303\u02d0 \u0270 \u0283 \u0294"
+}

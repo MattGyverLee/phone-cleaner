@@ -1,0 +1,122 @@
+{
+  "GlottoCode": "nyan1307",
+  "LanguageName": "Runyankore",
+  "ISO6393": "nyn",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b \u03b2"
+    },
+    "0064": {
+      "glyph": "d",
+      "allophones": "d"
+    },
+    "0064+0320+0292": {
+      "glyph": "d\u0320\u0292",
+      "allophones": "d\u0320\u0292"
+    },
+    "0066": {
+      "glyph": "f",
+      "allophones": "f"
+    },
+    "0068": {
+      "glyph": "h",
+      "allophones": "h"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k t\u0320\u0283"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m n \u014b \u0272"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n m \u014b \u0272"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "r d"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t"
+    },
+    "0074+0320+0283": {
+      "glyph": "t\u0320\u0283",
+      "allophones": "t\u0320\u0283"
+    },
+    "0076": {
+      "glyph": "v",
+      "allophones": "v"
+    },
+    "007A": {
+      "glyph": "z",
+      "allophones": "z"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "\u014b n m \u0272"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "\u0261 d\u0320\u0292"
+    },
+    "0272": {
+      "glyph": "\u0272",
+      "allophones": "\u0272 n \u014b m"
+    },
+    "0283": {
+      "glyph": "\u0283",
+      "allophones": "\u0283"
+    },
+    "0292": {
+      "glyph": "\u0292",
+      "allophones": "\u0292"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a"
+    },
+    "0061+0069": {
+      "glyph": "ai",
+      "allophones": "ai"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e"
+    },
+    "0065+0069": {
+      "glyph": "ei",
+      "allophones": "ei"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o"
+    },
+    "006F+0069": {
+      "glyph": "oi",
+      "allophones": "oi"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u"
+    }
+  },
+  "ComplexPhoneList": "a ai b d d\u0320\u0292 e ei f h i k m n o oi p r s t t\u0320\u0283 u v z \u014b \u0261 \u0272 \u0283 \u0292",
+  "ComponentList": "a b d d\u0320 e f h i k m n o p r s t t\u0320 u v z \u014b \u0261 \u0272 \u0283 \u0292"
+}

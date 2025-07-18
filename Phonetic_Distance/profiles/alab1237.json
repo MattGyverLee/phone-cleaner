@@ -1,0 +1,110 @@
+{
+  "GlottoCode": "alab1237",
+  "LanguageName": "Alabama",
+  "ISO6393": "akz",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "NA"
+    },
+    "0068": {
+      "glyph": "h",
+      "allophones": "NA"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "NA"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "NA"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "NA"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n\u02d0 n\u0325\u02d0 \u014b \u0272 n"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "NA"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "NA"
+    },
+    "0074+0320+0283": {
+      "glyph": "t\u0320\u0283",
+      "allophones": "NA"
+    },
+    "0074+032A": {
+      "glyph": "t\u032a",
+      "allophones": "NA"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "NA"
+    },
+    "026C": {
+      "glyph": "\u026c",
+      "allophones": "\u026c t\u026c"
+    },
+    "0278": {
+      "glyph": "\u0278",
+      "allophones": "NA"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "\u0294"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "NA"
+    },
+    "0061+02D0": {
+      "glyph": "a\u02d0",
+      "allophones": "a\u02d0 a\u02d0 a\u0303\u02d0"
+    },
+    "0065+02D0": {
+      "glyph": "e\u02d0",
+      "allophones": "e\u02d0 e\u02d0 e\u0303\u02d0"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "NA"
+    },
+    "006F+02D0": {
+      "glyph": "o\u02d0",
+      "allophones": "o\u02d0 o\u0303\u02d0 o\u02d0"
+    },
+    "026A": {
+      "glyph": "\u026a",
+      "allophones": "\u026a\u0303 i \u026a \u026a\u0325"
+    },
+    "006C+032A+007C+006C": {
+      "glyph": "l",
+      "allophones": "NA"
+    },
+    "006E+032A+007C+006E": {
+      "glyph": "n",
+      "allophones": "NA"
+    },
+    "026C+032A+007C+026C": {
+      "glyph": "\u026c",
+      "allophones": "NA"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "NA"
+    }
+  },
+  "ComplexPhoneList": "a a\u02d0 b e e\u02d0 h j k l m n o o\u02d0 p s t\u0320\u0283 t\u032a w \u026a \u026c \u0278 \u0294",
+  "ComponentList": "a a\u02d0 b e e\u02d0 h j k l m n o o\u02d0 p s t\u0320 t\u032a w \u026a \u026c \u0278 \u0283 \u0294"
+}

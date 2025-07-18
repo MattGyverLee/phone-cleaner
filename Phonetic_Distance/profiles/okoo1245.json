@@ -1,0 +1,130 @@
+{
+  "GlottoCode": "okoo1245",
+  "LanguageName": "Oko",
+  "ISO6393": "oks",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b"
+    },
+    "0064": {
+      "glyph": "d",
+      "allophones": "d"
+    },
+    "0064+0320+0292": {
+      "glyph": "d\u0320\u0292",
+      "allophones": "d\u0320\u0292"
+    },
+    "0066": {
+      "glyph": "f",
+      "allophones": "f"
+    },
+    "0068": {
+      "glyph": "h",
+      "allophones": "h"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j \u0272"
+    },
+    "006B+0070": {
+      "glyph": "kp",
+      "allophones": "kp"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "r"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t"
+    },
+    "0074+0320+0283": {
+      "glyph": "t\u0320\u0283",
+      "allophones": "t\u0320\u0283"
+    },
+    "0076": {
+      "glyph": "v",
+      "allophones": "v"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w \u014b\u02b7"
+    },
+    "0261+0062": {
+      "glyph": "\u0261b",
+      "allophones": "\u0261b"
+    },
+    "02E6": {
+      "glyph": "\u02e6",
+      "allophones": "\u02e6"
+    },
+    "02E7": {
+      "glyph": "\u02e7",
+      "allophones": "\u02e7"
+    },
+    "02E7+02E8": {
+      "glyph": "\u02e7\u02e8",
+      "allophones": "\u02e7\u02e8"
+    },
+    "02E8": {
+      "glyph": "\u02e8",
+      "allophones": "\u02e8"
+    },
+    "02E8+02E6": {
+      "glyph": "\u02e8\u02e6",
+      "allophones": "\u02e8\u02e6"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a a\u0303"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e e\u0303"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i i\u0303 j"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o o\u0303"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u u\u0303 w"
+    },
+    "0254": {
+      "glyph": "\u0254",
+      "allophones": "\u0254 \u0254\u0303"
+    },
+    "025B": {
+      "glyph": "\u025b",
+      "allophones": "\u025b \u025b\u0303"
+    }
+  },
+  "ComplexPhoneList": "a b d d\u0320\u0292 e f h i j kp l m n o p r s t t\u0320\u0283 u v w \u0254 \u025b \u0261b \u02e6 \u02e7 \u02e7\u02e8 \u02e8 \u02e8\u02e6",
+  "ComponentList": "a b d d\u0320 e f h i j k l m n o p r s t t\u0320 u v w \u0254 \u025b \u0261 \u0283 \u0292 \u02e6 \u02e7 \u02e8"
+}

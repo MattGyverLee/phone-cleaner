@@ -1,0 +1,98 @@
+{
+  "GlottoCode": "mufi1238",
+  "LanguageName": "Muhiang",
+  "ISO6393": "aoj",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b"
+    },
+    "0064": {
+      "glyph": "d",
+      "allophones": "d"
+    },
+    "0066": {
+      "glyph": "f",
+      "allophones": "f"
+    },
+    "0068": {
+      "glyph": "h",
+      "allophones": "h"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k"
+    },
+    "006B+02B7": {
+      "glyph": "k\u02b7",
+      "allophones": "k\u02b7"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "\u0261"
+    },
+    "0261+02B7": {
+      "glyph": "\u0261\u02b7",
+      "allophones": "\u0261\u02b7"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "\u0294"
+    },
+    "0294+02B7": {
+      "glyph": "\u0294\u02b7",
+      "allophones": "\u0294\u02b7"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u"
+    },
+    "0259": {
+      "glyph": "\u0259",
+      "allophones": "\u0259"
+    }
+  },
+  "ComplexPhoneList": "a b d e f h i k k\u02b7 l m n p s t u w \u0259 \u0261 \u0261\u02b7 \u0294 \u0294\u02b7",
+  "ComponentList": "a b d e f h i k k\u02b7 l m n p s t u w \u0259 \u0261 \u0261\u02b7 \u0294 \u0294\u02b7"
+}

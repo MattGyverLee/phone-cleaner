@@ -1,0 +1,102 @@
+{
+  "GlottoCode": "dhuw1249",
+  "LanguageName": "YOLNGU",
+  "ISO6393": "duj",
+  "SpecificDialect": "NA",
+  "phones": {
+    "006A": {
+      "glyph": "j",
+      "allophones": "NA"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "NA"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "NA"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "NA"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "NA"
+    },
+    "006E+0320": {
+      "glyph": "n\u0320",
+      "allophones": "NA"
+    },
+    "006E+032A": {
+      "glyph": "n\u032a",
+      "allophones": "NA"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "NA"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "NA"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "NA"
+    },
+    "0074+0320": {
+      "glyph": "t\u0320",
+      "allophones": "NA"
+    },
+    "0074+032A": {
+      "glyph": "t\u032a",
+      "allophones": "NA"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "NA"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "NA"
+    },
+    "026D": {
+      "glyph": "\u026d",
+      "allophones": "NA"
+    },
+    "0273": {
+      "glyph": "\u0273",
+      "allophones": "NA"
+    },
+    "027B": {
+      "glyph": "\u027b",
+      "allophones": "NA"
+    },
+    "027D": {
+      "glyph": "\u027d",
+      "allophones": "NA"
+    },
+    "0288": {
+      "glyph": "\u0288",
+      "allophones": "NA"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "NA"
+    },
+    "0250": {
+      "glyph": "\u0250",
+      "allophones": "NA"
+    },
+    "026A": {
+      "glyph": "\u026a",
+      "allophones": "NA"
+    },
+    "028A": {
+      "glyph": "\u028a",
+      "allophones": "NA"
+    }
+  },
+  "ComplexPhoneList": "j k l m n n\u0320 n\u032a p r t t\u0320 t\u032a w \u014b \u0250 \u026a \u026d \u0273 \u027b \u027d \u0288 \u028a \u0294",
+  "ComponentList": "j k l m n n\u0320 n\u032a p r t t\u0320 t\u032a w \u014b \u0250 \u026a \u026d \u0273 \u027b \u027d \u0288 \u028a \u0294"
+}

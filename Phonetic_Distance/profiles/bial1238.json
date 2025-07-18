@@ -1,0 +1,118 @@
+{
+  "GlottoCode": "bial1238",
+  "LanguageName": "Biali",
+  "ISO6393": "beh",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b"
+    },
+    "0064": {
+      "glyph": "d",
+      "allophones": "d"
+    },
+    "0066": {
+      "glyph": "f",
+      "allophones": "f"
+    },
+    "0068": {
+      "glyph": "h",
+      "allophones": "h"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k x \u0261 \u0263"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l d"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n \u0272 \u014b"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s z"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "027E": {
+      "glyph": "\u027e",
+      "allophones": "\u027e"
+    },
+    "02E6": {
+      "glyph": "\u02e6",
+      "allophones": "\u02e6"
+    },
+    "02E7": {
+      "glyph": "\u02e7",
+      "allophones": "\u02e7"
+    },
+    "02E8": {
+      "glyph": "\u02e8",
+      "allophones": "\u02e8"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a"
+    },
+    "0061+0303": {
+      "glyph": "a\u0303",
+      "allophones": "a\u0303"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e \u025b"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i \u026a"
+    },
+    "0069+0303": {
+      "glyph": "i\u0303",
+      "allophones": "i\u0303"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o \u0254"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u \u028a"
+    },
+    "0075+0303": {
+      "glyph": "u\u0303",
+      "allophones": "u\u0303"
+    },
+    "0259": {
+      "glyph": "\u0259",
+      "allophones": "\u0259"
+    },
+    "0259+0303": {
+      "glyph": "\u0259\u0303",
+      "allophones": "\u0259\u0303"
+    }
+  },
+  "ComplexPhoneList": "a a\u0303 b d e f h i i\u0303 j k l m n o p s t u u\u0303 w \u0259 \u0259\u0303 \u027e \u02e6 \u02e7 \u02e8",
+  "ComponentList": "a a\u0303 b d e f h i i\u0303 j k l m n o p s t u u\u0303 w \u0259 \u0259\u0303 \u027e \u02e6 \u02e7 \u02e8"
+}

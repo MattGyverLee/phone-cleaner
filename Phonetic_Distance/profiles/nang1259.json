@@ -1,0 +1,150 @@
+{
+  "GlottoCode": "nang1259",
+  "LanguageName": "Nganikurungkurr",
+  "ISO6393": "nam",
+  "SpecificDialect": "Daly River Area, Northern Territory",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b"
+    },
+    "0063": {
+      "glyph": "c",
+      "allophones": "c"
+    },
+    "0064": {
+      "glyph": "d",
+      "allophones": "\u0257 d"
+    },
+    "0066": {
+      "glyph": "f",
+      "allophones": "f \u0278 \u03b2"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "NA"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "NA"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "r"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t d"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "NA"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "NA"
+    },
+    "0255": {
+      "glyph": "\u0255",
+      "allophones": "NA"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "\u0261 \u0263 \u03c7"
+    },
+    "0272": {
+      "glyph": "\u0272",
+      "allophones": "\u0272"
+    },
+    "027E": {
+      "glyph": "\u027e",
+      "allophones": "\u027e"
+    },
+    "0282": {
+      "glyph": "\u0282",
+      "allophones": "\u0282"
+    },
+    "028E": {
+      "glyph": "\u028e",
+      "allophones": "\u028e"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "NA"
+    },
+    "0061+02D0": {
+      "glyph": "a\u02d0",
+      "allophones": "a\u02d0"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "NA"
+    },
+    "0065+02D0": {
+      "glyph": "e\u02d0",
+      "allophones": "e\u02d0"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "NA"
+    },
+    "0069+02D0": {
+      "glyph": "i\u02d0",
+      "allophones": "i\u02d0"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "NA"
+    },
+    "0075+02D0": {
+      "glyph": "u\u02d0",
+      "allophones": "u\u02d0"
+    },
+    "006C+033A": {
+      "glyph": "l\u033a",
+      "allophones": "NA"
+    },
+    "006E+033A": {
+      "glyph": "n\u033a",
+      "allophones": "NA"
+    },
+    "0072+033A": {
+      "glyph": "r\u033a",
+      "allophones": "NA"
+    },
+    "0078": {
+      "glyph": "x",
+      "allophones": "NA"
+    },
+    "007A+033A": {
+      "glyph": "z\u033a",
+      "allophones": "NA"
+    },
+    "0278": {
+      "glyph": "\u0278",
+      "allophones": "NA"
+    },
+    "0279+033A": {
+      "glyph": "\u0279\u033a",
+      "allophones": "NA"
+    }
+  },
+  "ComplexPhoneList": "a a\u02d0 b c d e e\u02d0 f i i\u02d0 j k l l\u033a m n n\u033a p r r\u033a t u u\u02d0 w x z\u033a \u014b \u0255 \u0261 \u0272 \u0278 \u0279\u033a \u027e \u0282 \u028e",
+  "ComponentList": "a a\u02d0 b c d e e\u02d0 f i i\u02d0 j k l l\u033a m n n\u033a p r r\u033a t u u\u02d0 w x z\u033a \u014b \u0255 \u0261 \u0272 \u0278 \u0279\u033a \u027e \u0282 \u028e"
+}

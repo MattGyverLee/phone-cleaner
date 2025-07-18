@@ -1,0 +1,106 @@
+{
+  "GlottoCode": "wari1268",
+  "LanguageName": "Wari; Wari''; Wari\u0294; Oro Nao'",
+  "ISO6393": "pav",
+  "SpecificDialect": "Oro Nao",
+  "phones": {
+    "0068": {
+      "glyph": "h",
+      "allophones": "NA"
+    },
+    "0068+02B7": {
+      "glyph": "h\u02b7",
+      "allophones": "NA"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "NA"
+    },
+    "006B+02B7": {
+      "glyph": "k\u02b7",
+      "allophones": "NA"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "NA"
+    },
+    "006D+02C0": {
+      "glyph": "m\u02c0",
+      "allophones": "m\u02c0"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "NA"
+    },
+    "006E+02C0": {
+      "glyph": "n\u02c0",
+      "allophones": "n\u02c0"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "NA"
+    },
+    "0074+0320+0283": {
+      "glyph": "t\u0320\u0283",
+      "allophones": "NA"
+    },
+    "0074+033A": {
+      "glyph": "t\u033a",
+      "allophones": "t\u033a \u0294t t\u033a\u03b2"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "NA"
+    },
+    "027E": {
+      "glyph": "\u027e",
+      "allophones": "NA"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "NA"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "NA"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "NA"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "NA"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "NA"
+    },
+    "0079": {
+      "glyph": "y",
+      "allophones": "NA"
+    },
+    "00F8": {
+      "glyph": "\u00f8",
+      "allophones": "NA"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "NA"
+    },
+    "006D+0330": {
+      "glyph": "m\u0330",
+      "allophones": "NA"
+    },
+    "006E+0330": {
+      "glyph": "n\u0330",
+      "allophones": "NA"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "NA"
+    }
+  },
+  "ComplexPhoneList": "a e h h\u02b7 i j k k\u02b7 m m\u02c0 m\u0330 n n\u02c0 n\u0330 o p t t\u0320\u0283 t\u033a w y \u00f8 \u027e \u0294",
+  "ComponentList": "a e h h\u02b7 i j k k\u02b7 m m\u02c0 m\u0330 n n\u02c0 n\u0330 o p t t\u0320 t\u033a w y \u00f8 \u027e \u0283 \u0294"
+}

@@ -1,0 +1,142 @@
+{
+  "GlottoCode": "sida1246",
+  "LanguageName": "Sidaama; Sidamo; Sidamic",
+  "ISO6393": "sid",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b w"
+    },
+    "0064+0320+0292": {
+      "glyph": "d\u0320\u0292",
+      "allophones": "d\u0320\u0292"
+    },
+    "0064+032A": {
+      "glyph": "d\u032a",
+      "allophones": "d\u032a"
+    },
+    "0066": {
+      "glyph": "f",
+      "allophones": "f"
+    },
+    "0068": {
+      "glyph": "h",
+      "allophones": "h"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k h"
+    },
+    "006B+02BC": {
+      "glyph": "k\u02bc",
+      "allophones": "k\u02bc"
+    },
+    "006C+032A": {
+      "glyph": "l\u032a",
+      "allophones": "l\u032a"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m n\u032a"
+    },
+    "006E+032A": {
+      "glyph": "n\u032a",
+      "allophones": "n\u032a m"
+    },
+    "0070+02BC": {
+      "glyph": "p\u02bc",
+      "allophones": "p\u02bc"
+    },
+    "0073+032A": {
+      "glyph": "s\u032a",
+      "allophones": "s\u032a"
+    },
+    "0074+0320+0283": {
+      "glyph": "t\u0320\u0283",
+      "allophones": "t\u0320\u0283"
+    },
+    "0074+0320+0283+02BC": {
+      "glyph": "t\u0320\u0283\u02bc",
+      "allophones": "t\u0320\u0283\u02bc"
+    },
+    "0074+032A": {
+      "glyph": "t\u032a",
+      "allophones": "t\u032a"
+    },
+    "0074+032A+02BC": {
+      "glyph": "t\u032a\u02bc",
+      "allophones": "t\u032a\u02bc"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "007A+032A": {
+      "glyph": "z\u032a",
+      "allophones": "z\u032a"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "\u0261"
+    },
+    "0272": {
+      "glyph": "\u0272",
+      "allophones": "\u0272"
+    },
+    "0283": {
+      "glyph": "\u0283",
+      "allophones": "\u0283"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "\u0294"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a"
+    },
+    "0061+02D0": {
+      "glyph": "a\u02d0",
+      "allophones": "a\u02d0"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e"
+    },
+    "0065+02D0": {
+      "glyph": "e\u02d0",
+      "allophones": "e\u02d0"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i"
+    },
+    "0069+02D0": {
+      "glyph": "i\u02d0",
+      "allophones": "i\u02d0"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o"
+    },
+    "006F+02D0": {
+      "glyph": "o\u02d0",
+      "allophones": "o\u02d0"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u"
+    },
+    "0075+02D0": {
+      "glyph": "u\u02d0",
+      "allophones": "u\u02d0"
+    }
+  },
+  "ComplexPhoneList": "a a\u02d0 b d\u0320\u0292 d\u032a e e\u02d0 f h i i\u02d0 j k k\u02bc l\u032a m n\u032a o o\u02d0 p\u02bc s\u032a t\u0320\u0283 t\u0320\u0283\u02bc t\u032a t\u032a\u02bc u u\u02d0 w z\u032a \u0261 \u0272 \u0283 \u0294",
+  "ComponentList": "a a\u02d0 b d\u0320 d\u032a e e\u02d0 f h i i\u02d0 j k k\u02bc l\u032a m n\u032a o o\u02d0 p\u02bc s\u032a t\u0320 t\u032a t\u032a\u02bc u u\u02d0 w z\u032a \u0261 \u0272 \u0283 \u0283\u02bc \u0292 \u0294"
+}

@@ -1,0 +1,78 @@
+{
+  "GlottoCode": "pisa1245",
+  "LanguageName": "Pisamira",
+  "ISO6393": "mis",
+  "SpecificDialect": "",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "NA"
+    },
+    "0064": {
+      "glyph": "d",
+      "allophones": "NA"
+    },
+    "0068": {
+      "glyph": "h",
+      "allophones": "NA"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "NA"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "NA"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "NA"
+    },
+    "0074+0320+0283": {
+      "glyph": "t\u0320\u0283",
+      "allophones": "NA"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "NA"
+    },
+    "0270": {
+      "glyph": "\u0270",
+      "allophones": "NA"
+    },
+    "029D": {
+      "glyph": "\u029d",
+      "allophones": "NA"
+    },
+    "03B2": {
+      "glyph": "\u03b2",
+      "allophones": "NA"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "NA"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "NA"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "NA"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "NA"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "NA"
+    },
+    "0268": {
+      "glyph": "\u0268",
+      "allophones": "NA"
+    }
+  },
+  "ComplexPhoneList": "a b d e h i k o p t t\u0320\u0283 u \u0261 \u0268 \u0270 \u029d \u03b2",
+  "ComponentList": "a b d e h i k o p t t\u0320 u \u0261 \u0268 \u0270 \u0283 \u029d \u03b2"
+}

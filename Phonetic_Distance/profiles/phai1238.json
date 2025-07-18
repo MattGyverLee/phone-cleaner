@@ -1,0 +1,146 @@
+{
+  "GlottoCode": "phai1238",
+  "LanguageName": "Pray",
+  "ISO6393": "prt",
+  "SpecificDialect": "Ban Wang Saw",
+  "phones": {
+    "0063": {
+      "glyph": "c",
+      "allophones": "\u025f c"
+    },
+    "0068": {
+      "glyph": "h",
+      "allophones": "h"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "\u0261 k"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p b"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "r"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "d t"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "\u014b"
+    },
+    "0253": {
+      "glyph": "\u0253",
+      "allophones": "\u0253"
+    },
+    "0257": {
+      "glyph": "\u0257",
+      "allophones": "\u0257"
+    },
+    "0272": {
+      "glyph": "\u0272",
+      "allophones": "\u0272"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "\u0294"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a a\u02d1"
+    },
+    "0061+02D0": {
+      "glyph": "a\u02d0",
+      "allophones": "a\u02d0"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e e\u02d1"
+    },
+    "0065+02D0": {
+      "glyph": "e\u02d0",
+      "allophones": "e\u02d0"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i\u02d1 i"
+    },
+    "0069+02D0": {
+      "glyph": "i\u02d0",
+      "allophones": "i\u02d0"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o o\u02d1"
+    },
+    "006F+02D0": {
+      "glyph": "o\u02d0",
+      "allophones": "o\u02d0"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u u\u02d1"
+    },
+    "0075+02D0": {
+      "glyph": "u\u02d0",
+      "allophones": "u\u02d0"
+    },
+    "00E6": {
+      "glyph": "\u00e6",
+      "allophones": "\u00e6 \u00e6\u02d1"
+    },
+    "00E6+02D0": {
+      "glyph": "\u00e6\u02d0",
+      "allophones": "\u00e6\u02d0"
+    },
+    "0254": {
+      "glyph": "\u0254",
+      "allophones": "\u0254 \u0254\u02d1"
+    },
+    "0254+02D0": {
+      "glyph": "\u0254\u02d0",
+      "allophones": "\u0254\u02d0"
+    },
+    "0259": {
+      "glyph": "\u0259",
+      "allophones": "\u0259 \u0259\u02d1"
+    },
+    "0259+02D0": {
+      "glyph": "\u0259\u02d0",
+      "allophones": "\u0259\u02d0"
+    },
+    "026F": {
+      "glyph": "\u026f",
+      "allophones": "\u026f \u026f\u02d1"
+    },
+    "026F+02D0": {
+      "glyph": "\u026f\u02d0",
+      "allophones": "\u026f\u02d0"
+    }
+  },
+  "ComplexPhoneList": "a a\u02d0 c e e\u02d0 h i i\u02d0 j k l m n o o\u02d0 p r t u u\u02d0 w \u00e6 \u00e6\u02d0 \u014b \u0253 \u0254 \u0254\u02d0 \u0257 \u0259 \u0259\u02d0 \u026f \u026f\u02d0 \u0272 \u0294",
+  "ComponentList": "a a\u02d0 c e e\u02d0 h i i\u02d0 j k l m n o o\u02d0 p r t u u\u02d0 w \u00e6 \u00e6\u02d0 \u014b \u0253 \u0254 \u0254\u02d0 \u0257 \u0259 \u0259\u02d0 \u026f \u026f\u02d0 \u0272 \u0294"
+}

@@ -1,0 +1,158 @@
+{
+  "GlottoCode": "utes1238",
+  "LanguageName": "Southern Ute; Ute; Ute-Southern Paiute",
+  "ISO6393": "ute",
+  "SpecificDialect": "NA",
+  "phones": {
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k \u0263 x q"
+    },
+    "006B+02B7": {
+      "glyph": "k\u02b7",
+      "allophones": "k\u02b7"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p v"
+    },
+    "0071": {
+      "glyph": "q",
+      "allophones": "q \u0281 \u03c7"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t \u027e"
+    },
+    "0074+0320+0283": {
+      "glyph": "t\u0320\u0283",
+      "allophones": "t\u0320\u0283"
+    },
+    "0076": {
+      "glyph": "v",
+      "allophones": "v"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w \u0278"
+    },
+    "0078": {
+      "glyph": "x",
+      "allophones": "x"
+    },
+    "0261+02B7": {
+      "glyph": "\u0261\u02b7",
+      "allophones": "\u0261\u02b7"
+    },
+    "0263": {
+      "glyph": "\u0263",
+      "allophones": "\u0263"
+    },
+    "027E": {
+      "glyph": "\u027e",
+      "allophones": "\u027e"
+    },
+    "0281": {
+      "glyph": "\u0281",
+      "allophones": "\u0281"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "\u0294"
+    },
+    "03C7": {
+      "glyph": "\u03c7",
+      "allophones": "\u03c7"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i i\u0325"
+    },
+    "0069+02D0": {
+      "glyph": "i\u02d0",
+      "allophones": "i\u02d0"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o o\u0325"
+    },
+    "006F+02D0": {
+      "glyph": "o\u02d0",
+      "allophones": "o\u02d0"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u u\u0325"
+    },
+    "0075+02D0": {
+      "glyph": "u\u02d0",
+      "allophones": "u\u02d0"
+    },
+    "00E6": {
+      "glyph": "\u00e6",
+      "allophones": "\u00e6 \u00e6\u0325"
+    },
+    "00E6+02D0": {
+      "glyph": "\u00e6\u02d0",
+      "allophones": "\u00e6\u02d0"
+    },
+    "00F8": {
+      "glyph": "\u00f8",
+      "allophones": "\u00f8 \u00f8\u0325"
+    },
+    "00F8+02D0": {
+      "glyph": "\u00f8\u02d0",
+      "allophones": "\u00f8\u02d0"
+    },
+    "0251": {
+      "glyph": "\u0251",
+      "allophones": "\u0251 \u0251\u0325"
+    },
+    "0251+02D0": {
+      "glyph": "\u0251\u02d0",
+      "allophones": "\u0251\u02d0"
+    },
+    "025B": {
+      "glyph": "\u025b",
+      "allophones": "\u025b \u025b\u0325"
+    },
+    "025B+02D0": {
+      "glyph": "\u025b\u02d0",
+      "allophones": "\u025b\u02d0"
+    },
+    "0268": {
+      "glyph": "\u0268",
+      "allophones": "\u0268 \u0268\u0325"
+    },
+    "0268+02D0": {
+      "glyph": "\u0268\u02d0",
+      "allophones": "\u0268\u02d0"
+    },
+    "026F": {
+      "glyph": "\u026f",
+      "allophones": "\u026f \u026f\u0325"
+    },
+    "026F+02D0": {
+      "glyph": "\u026f\u02d0",
+      "allophones": "\u026f\u02d0"
+    }
+  },
+  "ComplexPhoneList": "i i\u02d0 j k k\u02b7 m n o o\u02d0 p q s t t\u0320\u0283 u u\u02d0 v w x \u00e6 \u00e6\u02d0 \u00f8 \u00f8\u02d0 \u0251 \u0251\u02d0 \u025b \u025b\u02d0 \u0261\u02b7 \u0263 \u0268 \u0268\u02d0 \u026f \u026f\u02d0 \u027e \u0281 \u0294 \u03c7",
+  "ComponentList": "i i\u02d0 j k k\u02b7 m n o o\u02d0 p q s t t\u0320 u u\u02d0 v w x \u00e6 \u00e6\u02d0 \u00f8 \u00f8\u02d0 \u0251 \u0251\u02d0 \u025b \u025b\u02d0 \u0261\u02b7 \u0263 \u0268 \u0268\u02d0 \u026f \u026f\u02d0 \u027e \u0281 \u0283 \u0294 \u03c7"
+}

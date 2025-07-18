@@ -1,0 +1,118 @@
+{
+  "GlottoCode": "asha1243",
+  "LanguageName": "Campa",
+  "ISO6393": "cni",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0063+031F": {
+      "glyph": "c\u031f",
+      "allophones": "c\u031f \u025f\u031f"
+    },
+    "0068": {
+      "glyph": "h",
+      "allophones": "NA"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "NA"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "NA"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "NA"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "NA"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "NA"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "NA"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "NA"
+    },
+    "0074+0073": {
+      "glyph": "ts",
+      "allophones": "NA"
+    },
+    "0074+0320+0283": {
+      "glyph": "t\u0320\u0283",
+      "allophones": "NA"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "0272+031F": {
+      "glyph": "\u0272\u031f",
+      "allophones": "\u0272\u031f"
+    },
+    "027E": {
+      "glyph": "\u027e",
+      "allophones": "NA"
+    },
+    "0283": {
+      "glyph": "\u0283",
+      "allophones": "NA"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "\u0294"
+    },
+    "03B2": {
+      "glyph": "\u03b2",
+      "allophones": "NA"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "NA"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "NA"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "NA"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "NA"
+    },
+    "006E+0320": {
+      "glyph": "n\u0320",
+      "allophones": "NA"
+    },
+    "0074+0320": {
+      "glyph": "t\u0320",
+      "allophones": "NA"
+    },
+    "0061+02D0": {
+      "glyph": "a\u02d0",
+      "allophones": "NA"
+    },
+    "0065+02D0": {
+      "glyph": "e\u02d0",
+      "allophones": "NA"
+    },
+    "0069+02D0": {
+      "glyph": "i\u02d0",
+      "allophones": "NA"
+    },
+    "006F+02D0": {
+      "glyph": "o\u02d0",
+      "allophones": "NA"
+    }
+  },
+  "ComplexPhoneList": "a a\u02d0 c\u031f e e\u02d0 h i i\u02d0 j k m n n\u0320 o o\u02d0 p s t ts t\u0320 t\u0320\u0283 w \u0272\u031f \u027e \u0283 \u0294 \u03b2",
+  "ComponentList": "a a\u02d0 c\u031f e e\u02d0 h i i\u02d0 j k m n n\u0320 o o\u02d0 p s t t\u0320 w \u0272\u031f \u027e \u0283 \u0294 \u03b2"
+}

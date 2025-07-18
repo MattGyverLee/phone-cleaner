@@ -1,0 +1,142 @@
+{
+  "GlottoCode": "west2392",
+  "LanguageName": "Hill Mari",
+  "ISO6393": "mrj",
+  "SpecificDialect": "Hill Mari (Kozmodemjansk)",
+  "phones": {
+    "006A": {
+      "glyph": "j",
+      "allophones": "NA"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "NA"
+    },
+    "006C+033A": {
+      "glyph": "l\u033a",
+      "allophones": "NA"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "NA"
+    },
+    "006E+033A": {
+      "glyph": "n\u033a",
+      "allophones": "NA"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "NA"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "NA"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "NA"
+    },
+    "0073+02B2": {
+      "glyph": "s\u02b2",
+      "allophones": "NA"
+    },
+    "0074+0255": {
+      "glyph": "t\u0255",
+      "allophones": "NA"
+    },
+    "0074+032A+033A": {
+      "glyph": "t\u032a\u033a",
+      "allophones": "NA"
+    },
+    "0074+033A+0073+033A": {
+      "glyph": "t\u033as\u033a",
+      "allophones": "NA"
+    },
+    "0078": {
+      "glyph": "x",
+      "allophones": "NA"
+    },
+    "007A": {
+      "glyph": "z",
+      "allophones": "NA"
+    },
+    "007A+02B2": {
+      "glyph": "z\u02b2",
+      "allophones": "NA"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "NA"
+    },
+    "0263": {
+      "glyph": "\u0263",
+      "allophones": "NA"
+    },
+    "0272": {
+      "glyph": "\u0272",
+      "allophones": "NA"
+    },
+    "0278": {
+      "glyph": "\u0278",
+      "allophones": "NA"
+    },
+    "0282": {
+      "glyph": "\u0282",
+      "allophones": "NA"
+    },
+    "028E": {
+      "glyph": "\u028e",
+      "allophones": "NA"
+    },
+    "0290": {
+      "glyph": "\u0290",
+      "allophones": "NA"
+    },
+    "03B2": {
+      "glyph": "\u03b2",
+      "allophones": "NA"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "NA"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "NA"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "NA"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "NA"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "NA"
+    },
+    "0079+031E": {
+      "glyph": "y\u031e",
+      "allophones": "NA"
+    },
+    "00E6": {
+      "glyph": "\u00e6",
+      "allophones": "NA"
+    },
+    "0153": {
+      "glyph": "\u0153",
+      "allophones": "NA"
+    },
+    "026A": {
+      "glyph": "\u026a",
+      "allophones": "NA"
+    },
+    "026A+0308": {
+      "glyph": "\u026a\u0308",
+      "allophones": "NA"
+    }
+  },
+  "ComplexPhoneList": "a e i j k l\u033a m n\u033a o p r s s\u02b2 t\u0255 t\u032a\u033a t\u033as\u033a u x y\u031e z z\u02b2 \u00e6 \u014b \u0153 \u0263 \u026a \u026a\u0308 \u0272 \u0278 \u0282 \u028e \u0290 \u03b2",
+  "ComponentList": "a e i j k l\u033a m n\u033a o p r s s\u02b2 s\u033a t t\u032a\u033a t\u033a u x y\u031e z z\u02b2 \u00e6 \u014b \u0153 \u0255 \u0263 \u026a \u026a\u0308 \u0272 \u0278 \u0282 \u028e \u0290 \u03b2"
+}

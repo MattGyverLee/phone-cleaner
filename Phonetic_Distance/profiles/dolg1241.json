@@ -1,0 +1,178 @@
+{
+  "GlottoCode": "dolg1241",
+  "LanguageName": "Dolgan",
+  "ISO6393": "dlg",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "NA"
+    },
+    "0063": {
+      "glyph": "c",
+      "allophones": "NA"
+    },
+    "0064": {
+      "glyph": "d",
+      "allophones": "NA"
+    },
+    "0064+0320+0292": {
+      "glyph": "d\u0320\u0292",
+      "allophones": "NA"
+    },
+    "0068": {
+      "glyph": "h",
+      "allophones": "NA"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "NA"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "NA"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "NA"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "NA"
+    },
+    "0071": {
+      "glyph": "q",
+      "allophones": "NA"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "NA"
+    },
+    "0072+0325": {
+      "glyph": "r\u0325",
+      "allophones": "NA"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "NA"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "NA"
+    },
+    "0074+0320+0283": {
+      "glyph": "t\u0320\u0283",
+      "allophones": "NA"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "NA"
+    },
+    "025F": {
+      "glyph": "\u025f",
+      "allophones": "NA"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "NA"
+    },
+    "0262": {
+      "glyph": "\u0262",
+      "allophones": "NA"
+    },
+    "026B": {
+      "glyph": "\u026b",
+      "allophones": "NA"
+    },
+    "026C": {
+      "glyph": "\u026c",
+      "allophones": "NA"
+    },
+    "0272": {
+      "glyph": "\u0272",
+      "allophones": "NA"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "NA"
+    },
+    "0069+025B": {
+      "glyph": "i\u025b",
+      "allophones": "NA"
+    },
+    "0069+02D0": {
+      "glyph": "i\u02d0",
+      "allophones": "NA"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "NA"
+    },
+    "0075+0254": {
+      "glyph": "u\u0254",
+      "allophones": "NA"
+    },
+    "0075+02D0": {
+      "glyph": "u\u02d0",
+      "allophones": "NA"
+    },
+    "0079": {
+      "glyph": "y",
+      "allophones": "NA"
+    },
+    "0079+0153": {
+      "glyph": "y\u0153",
+      "allophones": "NA"
+    },
+    "0079+02D0": {
+      "glyph": "y\u02d0",
+      "allophones": "NA"
+    },
+    "0153": {
+      "glyph": "\u0153",
+      "allophones": "NA"
+    },
+    "0153+02D0": {
+      "glyph": "\u0153\u02d0",
+      "allophones": "NA"
+    },
+    "0251": {
+      "glyph": "\u0251",
+      "allophones": "NA"
+    },
+    "0251+02D0": {
+      "glyph": "\u0251\u02d0",
+      "allophones": "NA"
+    },
+    "0254": {
+      "glyph": "\u0254",
+      "allophones": "NA"
+    },
+    "0254+02D0": {
+      "glyph": "\u0254\u02d0",
+      "allophones": "NA"
+    },
+    "025B": {
+      "glyph": "\u025b",
+      "allophones": "NA"
+    },
+    "025B+02D0": {
+      "glyph": "\u025b\u02d0",
+      "allophones": "NA"
+    },
+    "026F": {
+      "glyph": "\u026f",
+      "allophones": "NA"
+    },
+    "026F+0251": {
+      "glyph": "\u026f\u0251",
+      "allophones": "NA"
+    },
+    "026F+02D0": {
+      "glyph": "\u026f\u02d0",
+      "allophones": "NA"
+    }
+  },
+  "ComplexPhoneList": "b c d d\u0320\u0292 h i i\u025b i\u02d0 j m n p q r r\u0325 s t t\u0320\u0283 u u\u0254 u\u02d0 y y\u0153 y\u02d0 \u014b \u0153 \u0153\u02d0 \u0251 \u0251\u02d0 \u0254 \u0254\u02d0 \u025b \u025b\u02d0 \u025f \u0261 \u0262 \u026b \u026c \u026f \u026f\u0251 \u026f\u02d0 \u0272",
+  "ComponentList": "b c d d\u0320 h i i\u02d0 j m n p q r r\u0325 s t t\u0320 u u\u02d0 y y\u02d0 \u014b \u0153 \u0153\u02d0 \u0251 \u0251\u02d0 \u0254 \u0254\u02d0 \u025b \u025b\u02d0 \u025f \u0261 \u0262 \u026b \u026c \u026f \u026f\u02d0 \u0272 \u0283 \u0292"
+}

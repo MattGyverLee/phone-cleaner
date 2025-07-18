@@ -1,0 +1,182 @@
+{
+  "GlottoCode": "russ1264",
+  "LanguageName": "Buriat",
+  "ISO6393": "bxr",
+  "SpecificDialect": "Buriat (Standard)",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "NA"
+    },
+    "0062+02B2": {
+      "glyph": "b\u02b2",
+      "allophones": "NA"
+    },
+    "0064+02B2": {
+      "glyph": "d\u02b2",
+      "allophones": "NA"
+    },
+    "0064+033A": {
+      "glyph": "d\u033a",
+      "allophones": "NA"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "NA"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "NA"
+    },
+    "006C+02B2": {
+      "glyph": "l\u02b2",
+      "allophones": "NA"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "NA"
+    },
+    "006D+02B2": {
+      "glyph": "m\u02b2",
+      "allophones": "NA"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "NA"
+    },
+    "006E+02B2": {
+      "glyph": "n\u02b2",
+      "allophones": "NA"
+    },
+    "0070+02B0": {
+      "glyph": "p\u02b0",
+      "allophones": "NA"
+    },
+    "0070+02B2+02B0": {
+      "glyph": "p\u02b2\u02b0",
+      "allophones": "NA"
+    },
+    "0072+033A": {
+      "glyph": "r\u033a",
+      "allophones": "NA"
+    },
+    "0073+033A": {
+      "glyph": "s\u033a",
+      "allophones": "NA"
+    },
+    "0074+02B2+02B0": {
+      "glyph": "t\u02b2\u02b0",
+      "allophones": "NA"
+    },
+    "0078+02B2": {
+      "glyph": "x\u02b2",
+      "allophones": "NA"
+    },
+    "007A+033A": {
+      "glyph": "z\u033a",
+      "allophones": "NA"
+    },
+    "0127": {
+      "glyph": "\u0127",
+      "allophones": "NA"
+    },
+    "0261+02B2": {
+      "glyph": "\u0261\u02b2",
+      "allophones": "NA"
+    },
+    "0262": {
+      "glyph": "\u0262",
+      "allophones": "NA"
+    },
+    "0274": {
+      "glyph": "\u0274",
+      "allophones": "NA"
+    },
+    "0283": {
+      "glyph": "\u0283",
+      "allophones": "NA"
+    },
+    "0292": {
+      "glyph": "\u0292",
+      "allophones": "NA"
+    },
+    "03C7": {
+      "glyph": "\u03c7",
+      "allophones": "NA"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "NA"
+    },
+    "0069+02D0": {
+      "glyph": "i\u02d0",
+      "allophones": "NA"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "NA"
+    },
+    "0075+0069": {
+      "glyph": "ui",
+      "allophones": "NA"
+    },
+    "0075+02D0": {
+      "glyph": "u\u02d0",
+      "allophones": "NA"
+    },
+    "0153+031E+025B+031E": {
+      "glyph": "\u0153\u031e\u025b\u031e",
+      "allophones": "NA"
+    },
+    "0251": {
+      "glyph": "\u0251",
+      "allophones": "NA"
+    },
+    "0251+02D0": {
+      "glyph": "\u0251\u02d0",
+      "allophones": "NA"
+    },
+    "0254": {
+      "glyph": "\u0254",
+      "allophones": "NA"
+    },
+    "0254+02D0": {
+      "glyph": "\u0254\u02d0",
+      "allophones": "NA"
+    },
+    "025B+02D0": {
+      "glyph": "\u025b\u02d0",
+      "allophones": "NA"
+    },
+    "0264+02D0": {
+      "glyph": "\u0264\u02d0",
+      "allophones": "NA"
+    },
+    "0264+031F": {
+      "glyph": "\u0264\u031f",
+      "allophones": "NA"
+    },
+    "0268+02D0": {
+      "glyph": "\u0268\u02d0",
+      "allophones": "NA"
+    },
+    "0275+02D0": {
+      "glyph": "\u0275\u02d0",
+      "allophones": "NA"
+    },
+    "028A": {
+      "glyph": "\u028a",
+      "allophones": "NA"
+    },
+    "028A+0069": {
+      "glyph": "\u028ai",
+      "allophones": "NA"
+    },
+    "028A+02D0": {
+      "glyph": "\u028a\u02d0",
+      "allophones": "NA"
+    }
+  },
+  "ComplexPhoneList": "b b\u02b2 d\u02b2 d\u033a i i\u02d0 j l l\u02b2 m m\u02b2 n n\u02b2 p\u02b0 p\u02b2\u02b0 r\u033a s\u033a t\u02b2\u02b0 u ui u\u02d0 x\u02b2 z\u033a \u0127 \u0153\u031e\u025b\u031e \u0251 \u0251\u02d0 \u0254 \u0254\u02d0 \u025b\u02d0 \u0261\u02b2 \u0262 \u0264\u02d0 \u0264\u031f \u0268\u02d0 \u0274 \u0275\u02d0 \u0283 \u028a \u028ai \u028a\u02d0 \u0292 \u03c7",
+  "ComponentList": "b b\u02b2 d\u02b2 d\u033a i i\u02d0 j l l\u02b2 m m\u02b2 n n\u02b2 p\u02b0 p\u02b2\u02b0 r\u033a s\u033a t\u02b2\u02b0 u u\u02d0 x\u02b2 z\u033a \u0127 \u0153\u031e \u0251 \u0251\u02d0 \u0254 \u0254\u02d0 \u025b\u02d0 \u025b\u031e \u0261\u02b2 \u0262 \u0264\u02d0 \u0264\u031f \u0268\u02d0 \u0274 \u0275\u02d0 \u0283 \u028a \u028a\u02d0 \u0292 \u03c7"
+}

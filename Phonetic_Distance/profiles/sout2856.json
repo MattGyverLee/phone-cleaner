@@ -1,0 +1,90 @@
+{
+  "GlottoCode": "sout2856",
+  "LanguageName": "South Efate",
+  "ISO6393": "erk",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0066": {
+      "glyph": "f",
+      "allophones": "f"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k k\u031a \u0261 \u0263 h"
+    },
+    "006B+0070": {
+      "glyph": "kp",
+      "allophones": "kp p k"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "006E+0064+0072": {
+      "glyph": "ndr",
+      "allophones": "ndr"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p p\u031a b"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "r"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t t\u031a d"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "\u014b"
+    },
+    "014B+006D": {
+      "glyph": "\u014bm",
+      "allophones": "\u014bm m"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e \u025b"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "\u0268 \u0259 j i"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "\u0254 o"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "w u"
+    }
+  },
+  "ComplexPhoneList": "a e f i j k kp l m n ndr o p r s t u w \u014b \u014bm",
+  "ComponentList": "a d e f i j k l m n o p r s t u w \u014b"
+}

@@ -1,0 +1,102 @@
+{
+  "GlottoCode": "goli1247",
+  "LanguageName": "Golin",
+  "ISO6393": "gvf",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b"
+    },
+    "0064": {
+      "glyph": "d",
+      "allophones": "d"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l \u026c"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n \u014b"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "r"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s \u0283"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "\u0261"
+    },
+    "0251": {
+      "glyph": "\u0251",
+      "allophones": "\u0251"
+    },
+    "0251+02D0": {
+      "glyph": "\u0251\u02d0",
+      "allophones": "\u0251\u02d0"
+    },
+    "0254": {
+      "glyph": "\u0254",
+      "allophones": "\u0254"
+    },
+    "0254+02D0": {
+      "glyph": "\u0254\u02d0",
+      "allophones": "\u0254\u02d0"
+    },
+    "025B": {
+      "glyph": "\u025b",
+      "allophones": "\u025b"
+    },
+    "025B+02D0": {
+      "glyph": "\u025b\u02d0",
+      "allophones": "\u025b\u02d0"
+    },
+    "026A": {
+      "glyph": "\u026a",
+      "allophones": "\u026a"
+    },
+    "026A+02D0": {
+      "glyph": "\u026a\u02d0",
+      "allophones": "\u026a\u02d0"
+    },
+    "028A": {
+      "glyph": "\u028a",
+      "allophones": "\u028a"
+    },
+    "028A+02D0": {
+      "glyph": "\u028a\u02d0",
+      "allophones": "\u028a\u02d0"
+    }
+  },
+  "ComplexPhoneList": "b d j k l m n p r s t w \u0251 \u0251\u02d0 \u0254 \u0254\u02d0 \u025b \u025b\u02d0 \u0261 \u026a \u026a\u02d0 \u028a \u028a\u02d0",
+  "ComponentList": "b d j k l m n p r s t w \u0251 \u0251\u02d0 \u0254 \u0254\u02d0 \u025b \u025b\u02d0 \u0261 \u026a \u026a\u02d0 \u028a \u028a\u02d0"
+}

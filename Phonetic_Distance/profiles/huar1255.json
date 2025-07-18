@@ -1,0 +1,114 @@
+{
+  "GlottoCode": "huar1255",
+  "LanguageName": "Warihio",
+  "ISO6393": "var",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0068": {
+      "glyph": "h",
+      "allophones": "h"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t"
+    },
+    "0074+0320+0283": {
+      "glyph": "t\u0320\u0283",
+      "allophones": "t\u0320\u0283"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "027E": {
+      "glyph": "\u027e",
+      "allophones": "\u027e"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "\u0294"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a"
+    },
+    "0061+0069": {
+      "glyph": "ai",
+      "allophones": "ai"
+    },
+    "0061+0075": {
+      "glyph": "au",
+      "allophones": "au"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e"
+    },
+    "0065+0069": {
+      "glyph": "ei",
+      "allophones": "ei"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i"
+    },
+    "0069+0061": {
+      "glyph": "ia",
+      "allophones": "ia"
+    },
+    "0069+0065": {
+      "glyph": "ie",
+      "allophones": "ie"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o"
+    },
+    "006F+0069": {
+      "glyph": "oi",
+      "allophones": "oi"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u"
+    },
+    "0075+0061": {
+      "glyph": "ua",
+      "allophones": "ua"
+    },
+    "0075+0065": {
+      "glyph": "ue",
+      "allophones": "ue"
+    },
+    "0075+0069": {
+      "glyph": "ui",
+      "allophones": "ui"
+    }
+  },
+  "ComplexPhoneList": "a ai au e ei h i ia ie j k m n o oi p s t t\u0320\u0283 u ua ue ui w \u027e \u0294",
+  "ComponentList": "a e h i j k m n o p s t t\u0320 u w \u027e \u0283 \u0294"
+}

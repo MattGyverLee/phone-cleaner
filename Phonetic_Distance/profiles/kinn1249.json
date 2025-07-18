@@ -1,0 +1,186 @@
+{
+  "GlottoCode": "kinn1249",
+  "LanguageName": "Kinnauri; Kanauri",
+  "ISO6393": "kfk",
+  "SpecificDialect": "Himachal Pradesh; Kalpa, Nichar, and Pooh areas",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b"
+    },
+    "0064+032A": {
+      "glyph": "d\u032a",
+      "allophones": "d\u032a"
+    },
+    "0064+032A+0324": {
+      "glyph": "d\u032a\u0324",
+      "allophones": "d\u032a\u0324"
+    },
+    "0066": {
+      "glyph": "f",
+      "allophones": "f"
+    },
+    "0068": {
+      "glyph": "h",
+      "allophones": "h"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k k\u0320"
+    },
+    "006B+02B0": {
+      "glyph": "k\u02b0",
+      "allophones": "k\u02b0"
+    },
+    "006C+032A": {
+      "glyph": "l\u032a",
+      "allophones": "l\u032a"
+    },
+    "006E+032A": {
+      "glyph": "n\u032a",
+      "allophones": "n\u032a \u0272 n"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p"
+    },
+    "0070+02B0": {
+      "glyph": "p\u02b0",
+      "allophones": "p\u02b0"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "r"
+    },
+    "0073+032A": {
+      "glyph": "s\u032a",
+      "allophones": "s\u032a"
+    },
+    "0074+032A": {
+      "glyph": "t\u032a",
+      "allophones": "t\u032a"
+    },
+    "0074+032A+02B0": {
+      "glyph": "t\u032a\u02b0",
+      "allophones": "t\u032a\u02b0"
+    },
+    "0076": {
+      "glyph": "v",
+      "allophones": "v"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "007A+032A": {
+      "glyph": "z\u032a",
+      "allophones": "z\u032a"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "\u014b"
+    },
+    "0256": {
+      "glyph": "\u0256",
+      "allophones": "\u0256"
+    },
+    "025F+029D": {
+      "glyph": "\u025f\u029d",
+      "allophones": "\u025f\u029d"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "\u0261 \u0261\u0320"
+    },
+    "026D": {
+      "glyph": "\u026d",
+      "allophones": "\u026d"
+    },
+    "0273": {
+      "glyph": "\u0273",
+      "allophones": "\u0273"
+    },
+    "0282": {
+      "glyph": "\u0282",
+      "allophones": "\u0282"
+    },
+    "0288": {
+      "glyph": "\u0288",
+      "allophones": "\u0288"
+    },
+    "0288+02B0": {
+      "glyph": "\u0288\u02b0",
+      "allophones": "\u0288\u02b0"
+    },
+    "0290": {
+      "glyph": "\u0290",
+      "allophones": "\u0290"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a"
+    },
+    "0061+02D0": {
+      "glyph": "a\u02d0",
+      "allophones": "a\u02d0"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e"
+    },
+    "0065+02D0": {
+      "glyph": "e\u02d0",
+      "allophones": "e\u02d0"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i"
+    },
+    "0069+02D0": {
+      "glyph": "i\u02d0",
+      "allophones": "i\u02d0"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o"
+    },
+    "006F+02D0": {
+      "glyph": "o\u02d0",
+      "allophones": "o\u02d0"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u"
+    },
+    "0075+02D0": {
+      "glyph": "u\u02d0",
+      "allophones": "u\u02d0"
+    },
+    "00E6": {
+      "glyph": "\u00e6",
+      "allophones": "\u00e6"
+    },
+    "00E6+02D0": {
+      "glyph": "\u00e6\u02d0",
+      "allophones": "\u00e6\u02d0"
+    },
+    "0254": {
+      "glyph": "\u0254",
+      "allophones": "\u0254"
+    },
+    "0259": {
+      "glyph": "\u0259",
+      "allophones": "\u0259"
+    },
+    "0268": {
+      "glyph": "\u0268",
+      "allophones": "\u0268"
+    }
+  },
+  "ComplexPhoneList": "a a\u02d0 b d\u032a d\u032a\u0324 e e\u02d0 f h i i\u02d0 j k k\u02b0 l\u032a n\u032a o o\u02d0 p p\u02b0 r s\u032a t\u032a t\u032a\u02b0 u u\u02d0 v w z\u032a \u00e6 \u00e6\u02d0 \u014b \u0254 \u0256 \u0259 \u025f\u029d \u0261 \u0268 \u026d \u0273 \u0282 \u0288 \u0288\u02b0 \u0290",
+  "ComponentList": "a a\u02d0 b d\u032a d\u032a\u0324 e e\u02d0 f h i i\u02d0 j k k\u02b0 l\u032a n\u032a o o\u02d0 p p\u02b0 r s\u032a t\u032a t\u032a\u02b0 u u\u02d0 v w z\u032a \u00e6 \u00e6\u02d0 \u014b \u0254 \u0256 \u0259 \u025f \u0261 \u0268 \u026d \u0273 \u0282 \u0288 \u0288\u02b0 \u0290 \u029d"
+}

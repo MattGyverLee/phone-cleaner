@@ -1,0 +1,182 @@
+{
+  "GlottoCode": "sout2965",
+  "LanguageName": "Salish",
+  "ISO6393": "slh",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "NA"
+    },
+    "0064": {
+      "glyph": "d",
+      "allophones": "NA"
+    },
+    "0064+007A": {
+      "glyph": "dz",
+      "allophones": "NA"
+    },
+    "0064+0320+0292": {
+      "glyph": "d\u0320\u0292",
+      "allophones": "NA"
+    },
+    "0068": {
+      "glyph": "h",
+      "allophones": "NA"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "NA"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "NA"
+    },
+    "006B+02B7": {
+      "glyph": "k\u02b7",
+      "allophones": "NA"
+    },
+    "006B+02B7+02BC": {
+      "glyph": "k\u02b7\u02bc",
+      "allophones": "NA"
+    },
+    "006B+02BC": {
+      "glyph": "k\u02bc",
+      "allophones": "NA"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "NA"
+    },
+    "0070+02BC": {
+      "glyph": "p\u02bc",
+      "allophones": "NA"
+    },
+    "0071": {
+      "glyph": "q",
+      "allophones": "NA"
+    },
+    "0071+02B7": {
+      "glyph": "q\u02b7",
+      "allophones": "NA"
+    },
+    "0071+02B7+02BC": {
+      "glyph": "q\u02b7\u02bc",
+      "allophones": "NA"
+    },
+    "0071+02BC": {
+      "glyph": "q\u02bc",
+      "allophones": "NA"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "NA"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "NA"
+    },
+    "0074+0073": {
+      "glyph": "ts",
+      "allophones": "NA"
+    },
+    "0074+0073+02BC": {
+      "glyph": "ts\u02bc",
+      "allophones": "NA"
+    },
+    "0074+026C+02BC": {
+      "glyph": "t\u026c\u02bc",
+      "allophones": "NA"
+    },
+    "0074+02BC": {
+      "glyph": "t\u02bc",
+      "allophones": "NA"
+    },
+    "0074+0320+0283": {
+      "glyph": "t\u0320\u0283",
+      "allophones": "NA"
+    },
+    "0074+0320+0283+02BC": {
+      "glyph": "t\u0320\u0283\u02bc",
+      "allophones": "NA"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "NA"
+    },
+    "0078+02B7": {
+      "glyph": "x\u02b7",
+      "allophones": "NA"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "NA"
+    },
+    "0261+02B7": {
+      "glyph": "\u0261\u02b7",
+      "allophones": "NA"
+    },
+    "026C": {
+      "glyph": "\u026c",
+      "allophones": "NA"
+    },
+    "0283": {
+      "glyph": "\u0283",
+      "allophones": "NA"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "NA"
+    },
+    "03C7": {
+      "glyph": "\u03c7",
+      "allophones": "NA"
+    },
+    "03C7+02B7": {
+      "glyph": "\u03c7\u02b7",
+      "allophones": "NA"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "NA"
+    },
+    "0061+02D0": {
+      "glyph": "a\u02d0",
+      "allophones": "a\u02d0"
+    },
+    "0065+02D0": {
+      "glyph": "e\u02d0",
+      "allophones": "e\u02d0"
+    },
+    "0259": {
+      "glyph": "\u0259",
+      "allophones": "NA"
+    },
+    "026A": {
+      "glyph": "\u026a",
+      "allophones": "NA"
+    },
+    "028A": {
+      "glyph": "\u028a",
+      "allophones": "NA"
+    },
+    "028A+02D0": {
+      "glyph": "\u028a\u02d0",
+      "allophones": "\u028a\u02d0"
+    }
+  },
+  "ComplexPhoneList": "a a\u02d0 b d dz d\u0320\u0292 e\u02d0 h j k k\u02b7 k\u02b7\u02bc k\u02bc l m n p p\u02bc q q\u02b7 q\u02b7\u02bc q\u02bc s t ts ts\u02bc t\u026c\u02bc t\u02bc t\u0320\u0283 t\u0320\u0283\u02bc w x\u02b7 \u0259 \u0261 \u0261\u02b7 \u026a \u026c \u0283 \u028a \u028a\u02d0 \u0294 \u03c7 \u03c7\u02b7",
+  "ComponentList": "a a\u02d0 b d d\u0320 e\u02d0 h j k k\u02b7 k\u02b7\u02bc k\u02bc l m n p p\u02bc q q\u02b7 q\u02b7\u02bc q\u02bc s s\u02bc t t\u02bc t\u0320 w x\u02b7 z \u0259 \u0261 \u0261\u02b7 \u026a \u026c \u026c\u02bc \u0283 \u0283\u02bc \u028a \u028a\u02d0 \u0292 \u0294 \u03c7 \u03c7\u02b7"
+}

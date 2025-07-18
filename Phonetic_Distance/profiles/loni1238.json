@@ -1,0 +1,102 @@
+{
+  "GlottoCode": "loni1238",
+  "LanguageName": "Loniu",
+  "ISO6393": "los",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0068": {
+      "glyph": "h",
+      "allophones": "h"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l n"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006D+02B7": {
+      "glyph": "m\u02b7",
+      "allophones": "m\u02b7 m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p b"
+    },
+    "0070+02B7": {
+      "glyph": "p\u02b7",
+      "allophones": "p\u02b7 p"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "r \u027e nr"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t d \u027e"
+    },
+    "0074+0320+0283": {
+      "glyph": "t\u0320\u0283",
+      "allophones": "t\u0320\u0283"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "\u014b"
+    },
+    "0272": {
+      "glyph": "\u0272",
+      "allophones": "\u0272"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a \u0259"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e \u026a"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i \u026a u"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u"
+    },
+    "0254": {
+      "glyph": "\u0254",
+      "allophones": "\u0254 \u0259"
+    },
+    "025B": {
+      "glyph": "\u025b",
+      "allophones": "\u025b \u0259 \u026a e"
+    }
+  },
+  "ComplexPhoneList": "a e h i j k l m m\u02b7 n o p p\u02b7 r s t t\u0320\u0283 u w \u014b \u0254 \u025b \u0272",
+  "ComponentList": "a e h i j k l m m\u02b7 n o p p\u02b7 r s t t\u0320 u w \u014b \u0254 \u025b \u0272 \u0283"
+}

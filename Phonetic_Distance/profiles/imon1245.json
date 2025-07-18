@@ -1,0 +1,102 @@
+{
+  "GlottoCode": "imon1245",
+  "LanguageName": "Imonda",
+  "ISO6393": "imn",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b mb bw"
+    },
+    "0064": {
+      "glyph": "d",
+      "allophones": "d nd"
+    },
+    "0066": {
+      "glyph": "f",
+      "allophones": "f fw"
+    },
+    "0068": {
+      "glyph": "h",
+      "allophones": "h xw \u0266"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k kw"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m mw"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p f pw"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "r"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "\u0261 \u014b\u0261 \u0261w"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i j \u0268"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u w \u0289"
+    },
+    "00E6": {
+      "glyph": "\u00e6",
+      "allophones": "\u00e6"
+    },
+    "0252": {
+      "glyph": "\u0252",
+      "allophones": "\u0252"
+    },
+    "0254": {
+      "glyph": "\u0254",
+      "allophones": "\u0254"
+    },
+    "0259": {
+      "glyph": "\u0259",
+      "allophones": "\u0259"
+    },
+    "025B": {
+      "glyph": "\u025b",
+      "allophones": "\u025b"
+    }
+  },
+  "ComplexPhoneList": "a b d e f h i k l m n o p r s t u \u00e6 \u0252 \u0254 \u0259 \u025b \u0261",
+  "ComponentList": "a b d e f h i k l m n o p r s t u \u00e6 \u0252 \u0254 \u0259 \u025b \u0261"
+}

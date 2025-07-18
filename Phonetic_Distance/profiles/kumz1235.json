@@ -1,0 +1,142 @@
+{
+  "GlottoCode": "kumz1235",
+  "LanguageName": "Kumzari",
+  "ISO6393": "zum",
+  "SpecificDialect": "Kumzari spoken in Khasab, Oman",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b"
+    },
+    "0064": {
+      "glyph": "d",
+      "allophones": "d"
+    },
+    "0064+02E0": {
+      "glyph": "d\u02e0",
+      "allophones": "d\u02e0"
+    },
+    "0064+0320+0292": {
+      "glyph": "d\u0320\u0292",
+      "allophones": "d\u0320\u0292"
+    },
+    "0066": {
+      "glyph": "f",
+      "allophones": "f"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p"
+    },
+    "0071": {
+      "glyph": "q",
+      "allophones": "q"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s"
+    },
+    "0073+02E0": {
+      "glyph": "s\u02e0",
+      "allophones": "s\u02e0"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t"
+    },
+    "0074+02E0": {
+      "glyph": "t\u02e0",
+      "allophones": "t\u02e0"
+    },
+    "0074+0320+0283": {
+      "glyph": "t\u0320\u0283",
+      "allophones": "t\u0320\u0283"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "007A+02E0": {
+      "glyph": "z\u02e0",
+      "allophones": "z\u02e0"
+    },
+    "0127": {
+      "glyph": "\u0127",
+      "allophones": "\u0127"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "\u0261"
+    },
+    "0266": {
+      "glyph": "\u0266",
+      "allophones": "\u0266"
+    },
+    "027B": {
+      "glyph": "\u027b",
+      "allophones": "\u027b \u027e \u027d r"
+    },
+    "0281": {
+      "glyph": "\u0281",
+      "allophones": "\u0281"
+    },
+    "0283": {
+      "glyph": "\u0283",
+      "allophones": "\u0283"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "\u0294"
+    },
+    "03C7": {
+      "glyph": "\u03c7",
+      "allophones": "\u03c7"
+    },
+    "0061+02D0": {
+      "glyph": "a\u02d0",
+      "allophones": "a\u02d0"
+    },
+    "0065+02D0": {
+      "glyph": "e\u02d0",
+      "allophones": "e\u02d0"
+    },
+    "0069+02D0": {
+      "glyph": "i\u02d0",
+      "allophones": "i\u02d0"
+    },
+    "006F+02D0": {
+      "glyph": "o\u02d0",
+      "allophones": "o\u02d0"
+    },
+    "0075+02D0": {
+      "glyph": "u\u02d0",
+      "allophones": "u\u02d0"
+    },
+    "0250+031F": {
+      "glyph": "\u0250\u031f",
+      "allophones": "\u0250\u031f"
+    }
+  },
+  "ComplexPhoneList": "a\u02d0 b d d\u02e0 d\u0320\u0292 e\u02d0 f i\u02d0 j k l m n o\u02d0 p q s s\u02e0 t t\u02e0 t\u0320\u0283 u\u02d0 w z\u02e0 \u0127 \u0250\u031f \u0261 \u0266 \u027b \u0281 \u0283 \u0294 \u03c7",
+  "ComponentList": "a\u02d0 b d d\u02e0 d\u0320 e\u02d0 f i\u02d0 j k l m n o\u02d0 p q s s\u02e0 t t\u02e0 t\u0320 u\u02d0 w z\u02e0 \u0127 \u0250\u031f \u0261 \u0266 \u027b \u0281 \u0283 \u0292 \u0294 \u03c7"
+}

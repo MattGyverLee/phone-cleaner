@@ -1,0 +1,122 @@
+{
+  "GlottoCode": "anta1253",
+  "LanguageName": "Western Desert",
+  "ISO6393": "ant",
+  "SpecificDialect": "NA",
+  "phones": {
+    "006A": {
+      "glyph": "j",
+      "allophones": "NA"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "NA"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "NA"
+    },
+    "006C+033B": {
+      "glyph": "l\u033b",
+      "allophones": "l\u033b l\u032a"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "NA"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "NA"
+    },
+    "006E+033B": {
+      "glyph": "n\u033b",
+      "allophones": "n\u033b n\u032a"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "NA"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "NA"
+    },
+    "0074+033B": {
+      "glyph": "t\u033b",
+      "allophones": "d\u033b t\u032a t\u033b d\u032a"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "NA"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "NA"
+    },
+    "026D": {
+      "glyph": "\u026d",
+      "allophones": "NA"
+    },
+    "0273": {
+      "glyph": "\u0273",
+      "allophones": "NA"
+    },
+    "027B": {
+      "glyph": "\u027b",
+      "allophones": "NA"
+    },
+    "027E": {
+      "glyph": "\u027e",
+      "allophones": "NA"
+    },
+    "0288": {
+      "glyph": "\u0288",
+      "allophones": "NA"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "NA"
+    },
+    "0061+02D0": {
+      "glyph": "a\u02d0",
+      "allophones": "NA"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "NA"
+    },
+    "0069+02D0": {
+      "glyph": "i\u02d0",
+      "allophones": "NA"
+    },
+    "0075+02D0": {
+      "glyph": "u\u02d0",
+      "allophones": "NA"
+    },
+    "028A": {
+      "glyph": "\u028a",
+      "allophones": "o \u028a\u0325 \u028a\u02de u \u028a"
+    },
+    "006C+0320": {
+      "glyph": "l\u0320",
+      "allophones": "NA"
+    },
+    "006E+0320": {
+      "glyph": "n\u0320",
+      "allophones": "NA"
+    },
+    "0074+0320": {
+      "glyph": "t\u0320",
+      "allophones": "NA"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "NA"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "NA"
+    }
+  },
+  "ComplexPhoneList": "a a\u02d0 i i\u02d0 j k l l\u0320 l\u033b m n n\u0320 n\u033b p r t t\u0320 t\u033b u u\u02d0 w \u014b \u026d \u0273 \u027b \u027e \u0288 \u028a",
+  "ComponentList": "a a\u02d0 i i\u02d0 j k l l\u0320 l\u033b m n n\u0320 n\u033b p r t t\u0320 t\u033b u u\u02d0 w \u014b \u026d \u0273 \u027b \u027e \u0288 \u028a"
+}

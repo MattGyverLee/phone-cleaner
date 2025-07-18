@@ -1,0 +1,110 @@
+{
+  "GlottoCode": "boik1241",
+  "LanguageName": "Boiken",
+  "ISO6393": "bzf",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0066": {
+      "glyph": "f",
+      "allophones": "f \u0278 \u03b2"
+    },
+    "0068": {
+      "glyph": "h",
+      "allophones": "h x \u0263"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k \u0261 \u0294"
+    },
+    "006C+032A": {
+      "glyph": "l\u032a",
+      "allophones": "l\u032a"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "006E+032A": {
+      "glyph": "n\u032a",
+      "allophones": "n\u032a"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p b"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "r r\u0325"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s z"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t d"
+    },
+    "0074+0073": {
+      "glyph": "ts",
+      "allophones": "ts dz"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "\u014b"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "\u0261"
+    },
+    "027A": {
+      "glyph": "\u027a",
+      "allophones": "\u027a"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "\u025b e \u0259"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o \u0254"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u \u028a"
+    },
+    "00E6": {
+      "glyph": "\u00e6",
+      "allophones": "\u00e6"
+    },
+    "0252": {
+      "glyph": "\u0252",
+      "allophones": "\u0252"
+    },
+    "0268": {
+      "glyph": "\u0268",
+      "allophones": "\u0268 \u026a"
+    }
+  },
+  "ComplexPhoneList": "a e f h i j k l\u032a m n n\u032a o p r s t ts u w \u00e6 \u014b \u0252 \u0261 \u0268 \u027a",
+  "ComponentList": "a e f h i j k l\u032a m n n\u032a o p r s t u w \u00e6 \u014b \u0252 \u0261 \u0268 \u027a"
+}

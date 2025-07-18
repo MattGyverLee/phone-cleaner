@@ -1,0 +1,98 @@
+{
+  "GlottoCode": "usar1243",
+  "LanguageName": "Usarufa",
+  "ISO6393": "usa",
+  "SpecificDialect": "NA",
+  "phones": {
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006D+02D0": {
+      "glyph": "m\u02d0",
+      "allophones": "m\u02d0"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "006E+02D0": {
+      "glyph": "n\u02d0",
+      "allophones": "n\u02d0"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "r"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "\u0294"
+    },
+    "02C0+006A": {
+      "glyph": "\u02c0j",
+      "allophones": "\u02c0j"
+    },
+    "02C0+006D": {
+      "glyph": "\u02c0m",
+      "allophones": "\u02c0m"
+    },
+    "02C0+006E": {
+      "glyph": "\u02c0n",
+      "allophones": "\u02c0n"
+    },
+    "02C0+0070": {
+      "glyph": "\u02c0p",
+      "allophones": "\u02c0p"
+    },
+    "02C0+0074": {
+      "glyph": "\u02c0t",
+      "allophones": "\u02c0t"
+    },
+    "02C0+0077": {
+      "glyph": "\u02c0w",
+      "allophones": "\u02c0w"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u"
+    },
+    "0251": {
+      "glyph": "\u0251",
+      "allophones": "\u0251"
+    }
+  },
+  "ComplexPhoneList": "e i j k m m\u02d0 n n\u02d0 o p r t u w \u0251 \u0294 \u02c0j \u02c0m \u02c0n \u02c0p \u02c0t \u02c0w",
+  "ComponentList": "e i j k m m\u02d0 n n\u02d0 o p r t u w \u0251 \u0294 \u02c0j \u02c0m \u02c0n \u02c0p \u02c0t \u02c0w"
+}

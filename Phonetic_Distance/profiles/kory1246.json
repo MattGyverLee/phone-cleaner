@@ -1,0 +1,94 @@
+{
+  "GlottoCode": "kory1246",
+  "LanguageName": "KORYAK",
+  "ISO6393": "kpy",
+  "SpecificDialect": "NA",
+  "phones": {
+    "006B": {
+      "glyph": "k",
+      "allophones": "NA"
+    },
+    "006C+032A+007C+006C": {
+      "glyph": "l",
+      "allophones": "NA"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "NA"
+    },
+    "006E+032A+007C+006E": {
+      "glyph": "n",
+      "allophones": "NA"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "NA"
+    },
+    "0071": {
+      "glyph": "q",
+      "allophones": "NA"
+    },
+    "0072+032A+007C+0072": {
+      "glyph": "r",
+      "allophones": "NA"
+    },
+    "0074+0320+0283": {
+      "glyph": "t\u0320\u0283",
+      "allophones": "NA"
+    },
+    "0074+032A+007C+0074": {
+      "glyph": "t",
+      "allophones": "NA"
+    },
+    "0076": {
+      "glyph": "v",
+      "allophones": "NA"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "NA"
+    },
+    "0263": {
+      "glyph": "\u0263",
+      "allophones": "NA"
+    },
+    "028E": {
+      "glyph": "\u028e",
+      "allophones": "NA"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "NA"
+    },
+    "029D": {
+      "glyph": "\u029d",
+      "allophones": "NA"
+    },
+    "03B2+031E": {
+      "glyph": "\u03b2\u031e",
+      "allophones": "NA"
+    },
+    "0061+031F": {
+      "glyph": "a\u031f",
+      "allophones": "NA"
+    },
+    "0065+031E": {
+      "glyph": "e\u031e",
+      "allophones": "NA"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "NA"
+    },
+    "006F+031E": {
+      "glyph": "o\u031e",
+      "allophones": "NA"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "NA"
+    }
+  },
+  "ComplexPhoneList": "a\u031f e\u031e i k l m n o\u031e p q r t t\u0320\u0283 u v \u014b \u0263 \u028e \u0294 \u029d \u03b2\u031e",
+  "ComponentList": "a\u031f e\u031e i k l m n o\u031e p q r t t\u0320 u v \u014b \u0263 \u0283 \u028e \u0294 \u029d \u03b2\u031e"
+}

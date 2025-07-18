@@ -1,0 +1,82 @@
+{
+  "GlottoCode": "orow1243",
+  "LanguageName": "Oro Win",
+  "ISO6393": "orw",
+  "SpecificDialect": "",
+  "phones": {
+    "006A": {
+      "glyph": "j",
+      "allophones": "NA"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "NA"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "NA"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "NA"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "NA"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "NA"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "NA"
+    },
+    "0074+032A+0299": {
+      "glyph": "t\u032a\u0299",
+      "allophones": "NA"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "NA"
+    },
+    "027E": {
+      "glyph": "\u027e",
+      "allophones": "NA"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "NA"
+    },
+    "03B2": {
+      "glyph": "\u03b2",
+      "allophones": "NA"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "NA"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "NA"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "NA"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "NA"
+    },
+    "00F8": {
+      "glyph": "\u00f8",
+      "allophones": "NA"
+    },
+    "028F": {
+      "glyph": "\u028f",
+      "allophones": "NA"
+    }
+  },
+  "ComplexPhoneList": "a e i j k m n o p s t t\u032a\u0299 w \u00f8 \u027e \u028f \u0294 \u03b2",
+  "ComponentList": "a e i j k m n o p s t t\u032a w \u00f8 \u027e \u028f \u0294 \u0299 \u03b2"
+}

@@ -1,0 +1,94 @@
+{
+  "GlottoCode": "hoav1238",
+  "LanguageName": "Hoava",
+  "ISO6393": "hoa",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b mb"
+    },
+    "0064": {
+      "glyph": "d",
+      "allophones": "d nd"
+    },
+    "0064+0320+0292": {
+      "glyph": "d\u0320\u0292",
+      "allophones": "d\u0320\u0292 n\u0320d\u0320\u0292"
+    },
+    "0068": {
+      "glyph": "h",
+      "allophones": "h"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k k\u02b0"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "r"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s s\u02b2"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t t\u02b0"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "\u014b"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "\u0261 \u014b\u0261"
+    },
+    "0263": {
+      "glyph": "\u0263",
+      "allophones": "\u0263"
+    },
+    "03B2": {
+      "glyph": "\u03b2",
+      "allophones": "\u03b2 \u03b2\u02b7"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u"
+    },
+    "0254": {
+      "glyph": "\u0254",
+      "allophones": "\u0254"
+    },
+    "025B": {
+      "glyph": "\u025b",
+      "allophones": "\u025b"
+    }
+  },
+  "ComplexPhoneList": "a b d d\u0320\u0292 h i k l m n p r s t u \u014b \u0254 \u025b \u0261 \u0263 \u03b2",
+  "ComponentList": "a b d d\u0320 h i k l m n p r s t u \u014b \u0254 \u025b \u0261 \u0263 \u0292 \u03b2"
+}

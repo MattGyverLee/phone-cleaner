@@ -1,0 +1,182 @@
+{
+  "GlottoCode": "hopi1249",
+  "LanguageName": "Hopi",
+  "ISO6393": "hop",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0068": {
+      "glyph": "h",
+      "allophones": "NA"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "NA"
+    },
+    "006A+0325": {
+      "glyph": "j\u0325",
+      "allophones": "NA"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "NA"
+    },
+    "006B+02B7": {
+      "glyph": "k\u02b7",
+      "allophones": "NA"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l"
+    },
+    "006C+0325": {
+      "glyph": "l\u0325",
+      "allophones": "l\u0325"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "NA"
+    },
+    "006D+0325": {
+      "glyph": "m\u0325",
+      "allophones": "NA"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "NA"
+    },
+    "006E+0325": {
+      "glyph": "n\u0325",
+      "allophones": "NA"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "NA"
+    },
+    "0071": {
+      "glyph": "q",
+      "allophones": "NA"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "NA"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "NA"
+    },
+    "0074+0073": {
+      "glyph": "ts",
+      "allophones": "ts\u02b2 ts"
+    },
+    "0076": {
+      "glyph": "v",
+      "allophones": "NA"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "NA"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "NA"
+    },
+    "014B+02B7": {
+      "glyph": "\u014b\u02b7",
+      "allophones": "NA"
+    },
+    "014B+0325": {
+      "glyph": "\u014b\u0325",
+      "allophones": "NA"
+    },
+    "0272": {
+      "glyph": "\u0272",
+      "allophones": "NA"
+    },
+    "028D": {
+      "glyph": "\u028d",
+      "allophones": "NA"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "NA"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "NA"
+    },
+    "0061+02D0": {
+      "glyph": "a\u02d0",
+      "allophones": "a\u02d0"
+    },
+    "0061+0306": {
+      "glyph": "a\u0306",
+      "allophones": "a\u031f\u0306 a\u0306 a\u0306 \u0259\u0306"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "NA"
+    },
+    "0069+02D0": {
+      "glyph": "i\u02d0",
+      "allophones": "i\u02d0"
+    },
+    "0069+0306": {
+      "glyph": "i\u0306",
+      "allophones": "i\u0306 i\u0306 \u026a\u0306"
+    },
+    "006F+0075": {
+      "glyph": "ou",
+      "allophones": "ou"
+    },
+    "006F+02D0+0075": {
+      "glyph": "o\u02d0u",
+      "allophones": "o\u02d0u"
+    },
+    "0075+0306": {
+      "glyph": "u\u0306",
+      "allophones": "u\u0306"
+    },
+    "0079+0306": {
+      "glyph": "y\u0306",
+      "allophones": "y\u0306 \u0254\u0306 \u00f8\u0306"
+    },
+    "00F8": {
+      "glyph": "\u00f8",
+      "allophones": "NA"
+    },
+    "00F8+02D0": {
+      "glyph": "\u00f8\u02d0",
+      "allophones": "\u00f8\u02d0"
+    },
+    "025B": {
+      "glyph": "\u025b",
+      "allophones": "\u025b"
+    },
+    "025B+0306": {
+      "glyph": "\u025b\u0306",
+      "allophones": "\u025b\u0306 \u025b\u0306"
+    },
+    "0264": {
+      "glyph": "\u0264",
+      "allophones": "NA"
+    },
+    "0264+02D0": {
+      "glyph": "\u0264\u02d0",
+      "allophones": "\u0264\u02d0 \u026f\u02d0"
+    },
+    "026F+0306": {
+      "glyph": "\u026f\u0306",
+      "allophones": "\u026f\u0306 \u026f\u0306"
+    },
+    "006F+031E+0075": {
+      "glyph": "o\u031eu",
+      "allophones": "NA"
+    },
+    "00E6": {
+      "glyph": "\u00e6",
+      "allophones": "NA"
+    }
+  },
+  "ComplexPhoneList": "a a\u02d0 a\u0306 h i i\u02d0 i\u0306 j j\u0325 k k\u02b7 l l\u0325 m m\u0325 n n\u0325 ou o\u02d0u o\u031eu p q s t ts u\u0306 v w y\u0306 \u00e6 \u00f8 \u00f8\u02d0 \u014b \u014b\u02b7 \u014b\u0325 \u025b \u025b\u0306 \u0264 \u0264\u02d0 \u026f\u0306 \u0272 \u028d \u0294",
+  "ComponentList": "a a\u02d0 a\u0306 h i i\u02d0 i\u0306 j j\u0325 k k\u02b7 l l\u0325 m m\u0325 n n\u0325 o o\u02d0 o\u031e p q s t u u\u0306 v w y\u0306 \u00e6 \u00f8 \u00f8\u02d0 \u014b \u014b\u02b7 \u014b\u0325 \u025b \u025b\u0306 \u0264 \u0264\u02d0 \u026f\u0306 \u0272 \u028d \u0294"
+}

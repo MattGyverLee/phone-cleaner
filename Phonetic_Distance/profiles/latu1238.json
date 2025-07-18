@@ -1,0 +1,122 @@
+{
+  "GlottoCode": "latu1238",
+  "LanguageName": "Latunde",
+  "ISO6393": "ltn",
+  "SpecificDialect": "",
+  "phones": {
+    "0068": {
+      "glyph": "h",
+      "allophones": "NA"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "NA"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "NA"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "NA"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "NA"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "NA"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "NA"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "NA"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "NA"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "NA"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "NA"
+    },
+    "03B2": {
+      "glyph": "\u03b2",
+      "allophones": "NA"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "NA"
+    },
+    "0061+0303": {
+      "glyph": "a\u0303",
+      "allophones": "NA"
+    },
+    "0061+0330": {
+      "glyph": "a\u0330",
+      "allophones": "NA"
+    },
+    "0061+0330+0303": {
+      "glyph": "a\u0330\u0303",
+      "allophones": "NA"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "NA"
+    },
+    "0065+0330": {
+      "glyph": "e\u0330",
+      "allophones": "NA"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "NA"
+    },
+    "0069+0303": {
+      "glyph": "i\u0303",
+      "allophones": "NA"
+    },
+    "0069+0330": {
+      "glyph": "i\u0330",
+      "allophones": "NA"
+    },
+    "0069+0330+0303": {
+      "glyph": "i\u0330\u0303",
+      "allophones": "NA"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "NA"
+    },
+    "006F+0330": {
+      "glyph": "o\u0330",
+      "allophones": "NA"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "NA"
+    },
+    "0075+0303": {
+      "glyph": "u\u0303",
+      "allophones": "NA"
+    },
+    "0075+0330": {
+      "glyph": "u\u0330",
+      "allophones": "NA"
+    },
+    "0075+0330+0303": {
+      "glyph": "u\u0330\u0303",
+      "allophones": "NA"
+    }
+  },
+  "ComplexPhoneList": "a a\u0303 a\u0330 a\u0330\u0303 e e\u0330 h i i\u0303 i\u0330 i\u0330\u0303 j k l m n o o\u0330 p s t u u\u0303 u\u0330 u\u0330\u0303 w \u0294 \u03b2",
+  "ComponentList": "a a\u0303 a\u0330 a\u0330\u0303 e e\u0330 h i i\u0303 i\u0330 i\u0330\u0303 j k l m n o o\u0330 p s t u u\u0303 u\u0330 u\u0330\u0303 w \u0294 \u03b2"
+}

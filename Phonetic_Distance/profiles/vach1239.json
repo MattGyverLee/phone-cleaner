@@ -1,0 +1,94 @@
+{
+  "GlottoCode": "vach1239",
+  "LanguageName": "Eastern Khanty",
+  "ISO6393": "mis",
+  "SpecificDialect": "Eastern Khanty (Vakh)",
+  "phones": {
+    "0063": {
+      "glyph": "c",
+      "allophones": "NA"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "NA"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "NA"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "NA"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "NA"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "NA"
+    },
+    "0071": {
+      "glyph": "q",
+      "allophones": "NA"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "NA"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "NA"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "NA"
+    },
+    "0076": {
+      "glyph": "v",
+      "allophones": "NA"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "NA"
+    },
+    "026D": {
+      "glyph": "\u026d",
+      "allophones": "NA"
+    },
+    "0272": {
+      "glyph": "\u0272",
+      "allophones": "NA"
+    },
+    "0273": {
+      "glyph": "\u0273",
+      "allophones": "NA"
+    },
+    "0281": {
+      "glyph": "\u0281",
+      "allophones": "NA"
+    },
+    "0288+0282": {
+      "glyph": "\u0288\u0282",
+      "allophones": "NA"
+    },
+    "028E": {
+      "glyph": "\u028e",
+      "allophones": "NA"
+    },
+    "026A": {
+      "glyph": "\u026a",
+      "allophones": "NA"
+    },
+    "028A": {
+      "glyph": "\u028a",
+      "allophones": "NA"
+    },
+    "028F": {
+      "glyph": "\u028f",
+      "allophones": "NA"
+    }
+  },
+  "ComplexPhoneList": "c j l m n p q r s t v \u014b \u026a \u026d \u0272 \u0273 \u0281 \u0288\u0282 \u028a \u028e \u028f",
+  "ComponentList": "c j l m n p q r s t v \u014b \u026a \u026d \u0272 \u0273 \u0281 \u0282 \u0288 \u028a \u028e \u028f"
+}

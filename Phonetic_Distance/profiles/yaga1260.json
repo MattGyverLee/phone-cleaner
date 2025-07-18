@@ -1,0 +1,102 @@
+{
+  "GlottoCode": "yaga1260",
+  "LanguageName": "YAGARIA",
+  "ISO6393": "ygr",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "NA"
+    },
+    "0064": {
+      "glyph": "d",
+      "allophones": "NA"
+    },
+    "0068": {
+      "glyph": "h",
+      "allophones": "NA"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "NA"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "NA"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "NA"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "NA"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "NA"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "NA"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "NA"
+    },
+    "0076": {
+      "glyph": "v",
+      "allophones": "NA"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "NA"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "NA"
+    },
+    "029F": {
+      "glyph": "\u029f",
+      "allophones": "NA"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "NA"
+    },
+    "0061+0065+031E": {
+      "glyph": "ae\u031e",
+      "allophones": "NA"
+    },
+    "0061+006F+031E": {
+      "glyph": "ao\u031e",
+      "allophones": "NA"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "NA"
+    },
+    "006F+031E": {
+      "glyph": "o\u031e",
+      "allophones": "NA"
+    },
+    "006F+031E+0075": {
+      "glyph": "o\u031eu",
+      "allophones": "NA"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "NA"
+    },
+    "025B": {
+      "glyph": "\u025b",
+      "allophones": "NA"
+    },
+    "025B+0069": {
+      "glyph": "\u025bi",
+      "allophones": "NA"
+    }
+  },
+  "ComplexPhoneList": "a ae\u031e ao\u031e b d h i j k m n o\u031e o\u031eu p s t u v \u025b \u025bi \u0261 \u0294 \u029f",
+  "ComponentList": "a b d e\u031e h i j k m n o\u031e p s t u v \u025b \u0261 \u0294 \u029f"
+}

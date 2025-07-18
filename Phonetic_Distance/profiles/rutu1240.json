@@ -1,0 +1,262 @@
+{
+  "GlottoCode": "rutu1240",
+  "LanguageName": "RUTUL",
+  "ISO6393": "rut",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "NA"
+    },
+    "0064+0320+0292": {
+      "glyph": "d\u0320\u0292",
+      "allophones": "NA"
+    },
+    "0064+0320+0292+02B7": {
+      "glyph": "d\u0320\u0292\u02b7",
+      "allophones": "NA"
+    },
+    "0064+032A+007A+032A+007C+0064+007A": {
+      "glyph": "dz",
+      "allophones": "NA"
+    },
+    "0064+032A+007C+0064": {
+      "glyph": "d",
+      "allophones": "NA"
+    },
+    "0068": {
+      "glyph": "h",
+      "allophones": "NA"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "NA"
+    },
+    "006B+02B0": {
+      "glyph": "k\u02b0",
+      "allophones": "NA"
+    },
+    "006B+02B7+02B0": {
+      "glyph": "k\u02b7\u02b0",
+      "allophones": "NA"
+    },
+    "006B+02B7+02BC": {
+      "glyph": "k\u02b7\u02bc",
+      "allophones": "NA"
+    },
+    "006B+02BC": {
+      "glyph": "k\u02bc",
+      "allophones": "NA"
+    },
+    "006C+032A+007C+006C": {
+      "glyph": "l",
+      "allophones": "NA"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "NA"
+    },
+    "006E+032A+007C+006E": {
+      "glyph": "n",
+      "allophones": "NA"
+    },
+    "0070+02B0": {
+      "glyph": "p\u02b0",
+      "allophones": "NA"
+    },
+    "0070+02BC": {
+      "glyph": "p\u02bc",
+      "allophones": "NA"
+    },
+    "0071+02B0": {
+      "glyph": "q\u02b0",
+      "allophones": "NA"
+    },
+    "0071+02B7+02B0": {
+      "glyph": "q\u02b7\u02b0",
+      "allophones": "NA"
+    },
+    "0071+02B7+02BC": {
+      "glyph": "q\u02b7\u02bc",
+      "allophones": "NA"
+    },
+    "0071+02B7+02E4+02B0": {
+      "glyph": "q\u02b7\u02e4\u02b0",
+      "allophones": "NA"
+    },
+    "0071+02B7+02E4+02BC": {
+      "glyph": "q\u02b7\u02e4\u02bc",
+      "allophones": "NA"
+    },
+    "0071+02BC": {
+      "glyph": "q\u02bc",
+      "allophones": "NA"
+    },
+    "0071+02E4+02B0": {
+      "glyph": "q\u02e4\u02b0",
+      "allophones": "NA"
+    },
+    "0071+02E4+02BC": {
+      "glyph": "q\u02e4\u02bc",
+      "allophones": "NA"
+    },
+    "0072+032A+007C+0072": {
+      "glyph": "r",
+      "allophones": "NA"
+    },
+    "0073+032A+007C+0073": {
+      "glyph": "s",
+      "allophones": "NA"
+    },
+    "0073+032A+02B7+007C+0073+02B7": {
+      "glyph": "s\u02b7",
+      "allophones": "NA"
+    },
+    "0074+0320+0283+02B0": {
+      "glyph": "t\u0320\u0283\u02b0",
+      "allophones": "NA"
+    },
+    "0074+0320+0283+02B7+02BC": {
+      "glyph": "t\u0320\u0283\u02b7\u02bc",
+      "allophones": "NA"
+    },
+    "0074+0320+0283+02BC": {
+      "glyph": "t\u0320\u0283\u02bc",
+      "allophones": "NA"
+    },
+    "0074+032A+0073+032A+02B0+007C+0074+0073+02B0": {
+      "glyph": "ts\u02b0",
+      "allophones": "NA"
+    },
+    "0074+032A+0073+032A+02B7+02B0+007C+0074+0073+02B7+02B0": {
+      "glyph": "ts\u02b7\u02b0",
+      "allophones": "NA"
+    },
+    "0074+032A+0073+032A+02B7+02BC+007C+0074+0073+02B7+02BC": {
+      "glyph": "ts\u02b7\u02bc",
+      "allophones": "NA"
+    },
+    "0074+032A+0073+032A+02BC+007C+0074+0073+02BC": {
+      "glyph": "ts\u02bc",
+      "allophones": "NA"
+    },
+    "0074+032A+02B0+007C+0074+02B0": {
+      "glyph": "t\u02b0",
+      "allophones": "NA"
+    },
+    "0074+032A+02BC+007C+0074+02BC": {
+      "glyph": "t\u02bc",
+      "allophones": "NA"
+    },
+    "0078": {
+      "glyph": "x",
+      "allophones": "NA"
+    },
+    "0078+02B7": {
+      "glyph": "x\u02b7",
+      "allophones": "NA"
+    },
+    "007A+032A+007C+007A": {
+      "glyph": "z",
+      "allophones": "NA"
+    },
+    "0127": {
+      "glyph": "\u0127",
+      "allophones": "NA"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "NA"
+    },
+    "0261+02B7": {
+      "glyph": "\u0261\u02b7",
+      "allophones": "NA"
+    },
+    "0262": {
+      "glyph": "\u0262",
+      "allophones": "NA"
+    },
+    "0262+02B7": {
+      "glyph": "\u0262\u02b7",
+      "allophones": "NA"
+    },
+    "0262+02B7+02E4": {
+      "glyph": "\u0262\u02b7\u02e4",
+      "allophones": "NA"
+    },
+    "0262+02E4": {
+      "glyph": "\u0262\u02e4",
+      "allophones": "NA"
+    },
+    "0263": {
+      "glyph": "\u0263",
+      "allophones": "NA"
+    },
+    "0281": {
+      "glyph": "\u0281",
+      "allophones": "NA"
+    },
+    "0281+02B7": {
+      "glyph": "\u0281\u02b7",
+      "allophones": "NA"
+    },
+    "0281+02B7+02E4": {
+      "glyph": "\u0281\u02b7\u02e4",
+      "allophones": "NA"
+    },
+    "0281+02E4": {
+      "glyph": "\u0281\u02e4",
+      "allophones": "NA"
+    },
+    "0283": {
+      "glyph": "\u0283",
+      "allophones": "NA"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "NA"
+    },
+    "03B2+031E": {
+      "glyph": "\u03b2\u031e",
+      "allophones": "NA"
+    },
+    "03C7": {
+      "glyph": "\u03c7",
+      "allophones": "NA"
+    },
+    "03C7+02B7": {
+      "glyph": "\u03c7\u02b7",
+      "allophones": "NA"
+    },
+    "03C7+02B7+02E4": {
+      "glyph": "\u03c7\u02b7\u02e4",
+      "allophones": "NA"
+    },
+    "03C7+02E4": {
+      "glyph": "\u03c7\u02e4",
+      "allophones": "NA"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "NA"
+    },
+    "0065+031E": {
+      "glyph": "e\u031e",
+      "allophones": "NA"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "NA"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "NA"
+    },
+    "0268": {
+      "glyph": "\u0268",
+      "allophones": "NA"
+    }
+  },
+  "ComplexPhoneList": "a b d dz d\u0320\u0292 d\u0320\u0292\u02b7 e\u031e h i j k\u02b0 k\u02b7\u02b0 k\u02b7\u02bc k\u02bc l m n p\u02b0 p\u02bc q\u02b0 q\u02b7\u02b0 q\u02b7\u02bc q\u02b7\u02e4\u02b0 q\u02b7\u02e4\u02bc q\u02bc q\u02e4\u02b0 q\u02e4\u02bc r s s\u02b7 ts\u02b0 ts\u02b7\u02b0 ts\u02b7\u02bc ts\u02bc t\u02b0 t\u02bc t\u0320\u0283\u02b0 t\u0320\u0283\u02b7\u02bc t\u0320\u0283\u02bc u x x\u02b7 z \u0127 \u0261 \u0261\u02b7 \u0262 \u0262\u02b7 \u0262\u02b7\u02e4 \u0262\u02e4 \u0263 \u0268 \u0281 \u0281\u02b7 \u0281\u02b7\u02e4 \u0281\u02e4 \u0283 \u0294 \u03b2\u031e \u03c7 \u03c7\u02b7 \u03c7\u02b7\u02e4 \u03c7\u02e4",
+  "ComponentList": "a b d d\u0320 e\u031e h i j k\u02b0 k\u02b7\u02b0 k\u02b7\u02bc k\u02bc l m n p\u02b0 p\u02bc q\u02b0 q\u02b7\u02b0 q\u02b7\u02bc q\u02b7\u02e4\u02b0 q\u02b7\u02e4\u02bc q\u02bc q\u02e4\u02b0 q\u02e4\u02bc r s s\u02b0 s\u02b7 s\u02b7\u02b0 s\u02b7\u02bc s\u02bc t t\u02b0 t\u02bc t\u0320 u x x\u02b7 z \u0127 \u0261 \u0261\u02b7 \u0262 \u0262\u02b7 \u0262\u02b7\u02e4 \u0262\u02e4 \u0263 \u0268 \u0281 \u0281\u02b7 \u0281\u02b7\u02e4 \u0281\u02e4 \u0283 \u0283\u02b0 \u0283\u02b7\u02bc \u0283\u02bc \u0292 \u0292\u02b7 \u0294 \u03b2\u031e \u03c7 \u03c7\u02b7 \u03c7\u02b7\u02e4 \u03c7\u02e4"
+}

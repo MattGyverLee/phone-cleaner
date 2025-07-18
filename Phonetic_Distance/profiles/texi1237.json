@@ -1,0 +1,126 @@
+{
+  "GlottoCode": "texi1237",
+  "LanguageName": "Texistepec Popoluca",
+  "ISO6393": "poq",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b"
+    },
+    "0064": {
+      "glyph": "d",
+      "allophones": "d"
+    },
+    "0064+02B2": {
+      "glyph": "d\u02b2",
+      "allophones": "d\u02b2"
+    },
+    "0068": {
+      "glyph": "h",
+      "allophones": "h"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j i"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k \u0261"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "r"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t"
+    },
+    "0074+0073": {
+      "glyph": "ts",
+      "allophones": "ts"
+    },
+    "0074+0320+0283": {
+      "glyph": "t\u0320\u0283",
+      "allophones": "t\u0320\u0283"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "\u014b"
+    },
+    "0272": {
+      "glyph": "\u0272",
+      "allophones": "\u0272"
+    },
+    "0283": {
+      "glyph": "\u0283",
+      "allophones": "\u0283"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "\u0294"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a a\u0303 a\u02d0"
+    },
+    "0061+02D0": {
+      "glyph": "a\u02d0",
+      "allophones": "a\u02d0"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u u\u0303 u\u02d0"
+    },
+    "0075+02D0": {
+      "glyph": "u\u02d0",
+      "allophones": "u\u02d0"
+    },
+    "0254": {
+      "glyph": "\u0254",
+      "allophones": "\u0254 \u0254\u0303 \u0254\u02d0"
+    },
+    "0254+02D0": {
+      "glyph": "\u0254\u02d0",
+      "allophones": "\u0254\u02d0"
+    },
+    "025B": {
+      "glyph": "\u025b",
+      "allophones": "\u025b \u025b\u0303 \u025b\u02d0"
+    },
+    "025B+02D0": {
+      "glyph": "\u025b\u02d0",
+      "allophones": "\u025b\u02d0"
+    },
+    "0268": {
+      "glyph": "\u0268",
+      "allophones": "\u0268 \u0268\u0303 i i\u02d0"
+    },
+    "0268+02D0": {
+      "glyph": "\u0268\u02d0",
+      "allophones": "\u0268\u02d0"
+    }
+  },
+  "ComplexPhoneList": "a a\u02d0 b d d\u02b2 h j k l m n p r s t ts t\u0320\u0283 u u\u02d0 \u014b \u0254 \u0254\u02d0 \u025b \u025b\u02d0 \u0268 \u0268\u02d0 \u0272 \u0283 \u0294",
+  "ComponentList": "a a\u02d0 b d d\u02b2 h j k l m n p r s t t\u0320 u u\u02d0 \u014b \u0254 \u0254\u02d0 \u025b \u025b\u02d0 \u0268 \u0268\u02d0 \u0272 \u0283 \u0294"
+}

@@ -1,0 +1,78 @@
+{
+  "GlottoCode": "auuu1241",
+  "LanguageName": "Au",
+  "ISO6393": "avt",
+  "SpecificDialect": "NA",
+  "phones": {
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "0263": {
+      "glyph": "\u0263",
+      "allophones": "\u0263"
+    },
+    "027E": {
+      "glyph": "\u027e",
+      "allophones": "\u027e"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i \u0250"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o \u0250"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u \u0268 \u0250"
+    },
+    "0250": {
+      "glyph": "\u0250",
+      "allophones": "\u0250 \u0259"
+    },
+    "0250+02D0": {
+      "glyph": "\u0250\u02d0",
+      "allophones": "\u0250\u02d0 \u0250"
+    },
+    "0259": {
+      "glyph": "\u0259",
+      "allophones": "\u0259 \u0250"
+    },
+    "0268": {
+      "glyph": "\u0268",
+      "allophones": "\u0268 \u0250"
+    }
+  },
+  "ComplexPhoneList": "i j k m n o p s t u w \u0250 \u0250\u02d0 \u0259 \u0263 \u0268 \u027e",
+  "ComponentList": "i j k m n o p s t u w \u0250 \u0250\u02d0 \u0259 \u0263 \u0268 \u027e"
+}

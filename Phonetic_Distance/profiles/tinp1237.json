@@ -1,0 +1,114 @@
+{
+  "GlottoCode": "tinp1237",
+  "LanguageName": "Tinputz",
+  "ISO6393": "tpz",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0068": {
+      "glyph": "h",
+      "allophones": "h x"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k k\u02b0 k\u0320 k\u0320\u02b0"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l \u026c"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n \u014b"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p\u02b0 p"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t t\u02b0"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "\u0294 \u0294\u02b0"
+    },
+    "03B2": {
+      "glyph": "\u03b2",
+      "allophones": "\u03b2"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a"
+    },
+    "0061+0069": {
+      "glyph": "ai",
+      "allophones": "ai"
+    },
+    "0061+02D0": {
+      "glyph": "a\u02d0",
+      "allophones": "a\u02d0"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e"
+    },
+    "0065+02D0": {
+      "glyph": "e\u02d0",
+      "allophones": "e\u02d0"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i"
+    },
+    "0069+02D0": {
+      "glyph": "i\u02d0",
+      "allophones": "i\u02d0"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o"
+    },
+    "006F+02D0": {
+      "glyph": "o\u02d0",
+      "allophones": "o\u02d0"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u"
+    },
+    "0075+02D0": {
+      "glyph": "u\u02d0",
+      "allophones": "u\u02d0"
+    },
+    "00E6": {
+      "glyph": "\u00e6",
+      "allophones": "\u00e6 \u00e6\u02d0"
+    },
+    "0254": {
+      "glyph": "\u0254",
+      "allophones": "\u0254"
+    },
+    "0254+02D0": {
+      "glyph": "\u0254\u02d0",
+      "allophones": "\u0254\u02d0"
+    }
+  },
+  "ComplexPhoneList": "a ai a\u02d0 e e\u02d0 h i i\u02d0 j k l m n o o\u02d0 p s t u u\u02d0 w \u00e6 \u0254 \u0254\u02d0 \u0294 \u03b2",
+  "ComponentList": "a a\u02d0 e e\u02d0 h i i\u02d0 j k l m n o o\u02d0 p s t u u\u02d0 w \u00e6 \u0254 \u0254\u02d0 \u0294 \u03b2"
+}

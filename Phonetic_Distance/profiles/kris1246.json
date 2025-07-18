@@ -1,0 +1,82 @@
+{
+  "GlottoCode": "kris1246",
+  "LanguageName": "Isaka",
+  "ISO6393": "ksi",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b b\u0303 \u03b2\u0303"
+    },
+    "0064": {
+      "glyph": "d",
+      "allophones": "d d\u0303 \u0279 l"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j j\u0303"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k \u0263 \u0281 \u0295"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p \u03b2 \u0278 f"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s z"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w w\u0303"
+    },
+    "0278": {
+      "glyph": "\u0278",
+      "allophones": "\u0278"
+    },
+    "02E5+02E9": {
+      "glyph": "\u02e5\u02e9",
+      "allophones": "\u02e5\u02e9"
+    },
+    "02E6": {
+      "glyph": "\u02e6",
+      "allophones": "\u02e6"
+    },
+    "02E8": {
+      "glyph": "\u02e8",
+      "allophones": "\u02e8"
+    },
+    "02E9+02E5": {
+      "glyph": "\u02e9\u02e5",
+      "allophones": "\u02e9\u02e5"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u"
+    },
+    "0254": {
+      "glyph": "\u0254",
+      "allophones": "\u0254 \u0252"
+    },
+    "025B": {
+      "glyph": "\u025b",
+      "allophones": "\u025b \u00e6"
+    }
+  },
+  "ComplexPhoneList": "a b d i j k p s t u w \u0254 \u025b \u0278 \u02e5\u02e9 \u02e6 \u02e8 \u02e9\u02e5",
+  "ComponentList": "a b d i j k p s t u w \u0254 \u025b \u0278 \u02e5 \u02e6 \u02e8 \u02e9"
+}

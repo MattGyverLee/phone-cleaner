@@ -1,0 +1,110 @@
+{
+  "GlottoCode": "huic1243",
+  "LanguageName": "Huichol",
+  "ISO6393": "hch",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0068": {
+      "glyph": "h",
+      "allophones": "h"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k k\u02b2"
+    },
+    "006B+02B7": {
+      "glyph": "k\u02b7",
+      "allophones": "k\u02b7"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p"
+    },
+    "0074+0073": {
+      "glyph": "ts",
+      "allophones": "ts s"
+    },
+    "0074+0320+0283": {
+      "glyph": "t\u0320\u0283",
+      "allophones": "t\u0320\u0283"
+    },
+    "0074+032A": {
+      "glyph": "t\u032a",
+      "allophones": "t\u032a"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w \u03b2"
+    },
+    "027D": {
+      "glyph": "\u027d",
+      "allophones": "\u027d"
+    },
+    "0290": {
+      "glyph": "\u0290",
+      "allophones": "\u0290"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "\u0294"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a"
+    },
+    "0061+02D0": {
+      "glyph": "a\u02d0",
+      "allophones": "a\u02d0"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e"
+    },
+    "0065+02D0": {
+      "glyph": "e\u02d0",
+      "allophones": "e\u02d0"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i"
+    },
+    "0069+02D0": {
+      "glyph": "i\u02d0",
+      "allophones": "i\u02d0"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u"
+    },
+    "0075+02D0": {
+      "glyph": "u\u02d0",
+      "allophones": "u\u02d0"
+    },
+    "0268": {
+      "glyph": "\u0268",
+      "allophones": "\u0268"
+    },
+    "0268+02D0": {
+      "glyph": "\u0268\u02d0",
+      "allophones": "\u0268\u02d0"
+    }
+  },
+  "ComplexPhoneList": "a a\u02d0 e e\u02d0 h i i\u02d0 j k k\u02b7 l m n p ts t\u0320\u0283 t\u032a u u\u02d0 w \u0268 \u0268\u02d0 \u027d \u0290 \u0294",
+  "ComponentList": "a a\u02d0 e e\u02d0 h i i\u02d0 j k k\u02b7 l m n p s t t\u0320 t\u032a u u\u02d0 w \u0268 \u0268\u02d0 \u027d \u0283 \u0290 \u0294"
+}

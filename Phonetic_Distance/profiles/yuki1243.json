@@ -1,0 +1,106 @@
+{
+  "GlottoCode": "yuki1243",
+  "LanguageName": "Yuki",
+  "ISO6393": "yuk",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0063": {
+      "glyph": "c",
+      "allophones": "c"
+    },
+    "0068": {
+      "glyph": "h",
+      "allophones": "h"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006A+0330": {
+      "glyph": "j\u0330",
+      "allophones": "j\u0330"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l"
+    },
+    "006C+0330": {
+      "glyph": "l\u0330",
+      "allophones": "l\u0330"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006D+0330": {
+      "glyph": "m\u0330",
+      "allophones": "m\u0330"
+    },
+    "006E+0330": {
+      "glyph": "n\u0330",
+      "allophones": "n\u0330"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t"
+    },
+    "0074+032A": {
+      "glyph": "t\u032a",
+      "allophones": "t\u032a"
+    },
+    "0074+032A+02BC": {
+      "glyph": "t\u032a\u02bc",
+      "allophones": "t\u032a\u02bc"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "0077+0330": {
+      "glyph": "w\u0330",
+      "allophones": "w\u0330"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "\u0294"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u"
+    },
+    "0259": {
+      "glyph": "\u0259",
+      "allophones": "\u0259"
+    }
+  },
+  "ComplexPhoneList": "a c e h i j j\u0330 k l l\u0330 m m\u0330 n\u0330 o p s t t\u032a t\u032a\u02bc u w w\u0330 \u0259 \u0294",
+  "ComponentList": "a c e h i j j\u0330 k l l\u0330 m m\u0330 n\u0330 o p s t t\u032a t\u032a\u02bc u w w\u0330 \u0259 \u0294"
+}

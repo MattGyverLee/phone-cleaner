@@ -1,0 +1,74 @@
+{
+  "GlottoCode": "maib1239",
+  "LanguageName": "Maybrat",
+  "ISO6393": "ayz",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0066": {
+      "glyph": "f",
+      "allophones": "f \u0278"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k \u0261 k\u031a"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m \u014b"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p b"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "r \u027e"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t t\u02b0 t\u031a"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "0078": {
+      "glyph": "x",
+      "allophones": "x \u0263"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a \u0251 a\u02d0"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e \u025b e\u02d0"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i \u026a j i\u02d0"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o \u0254 \u0252 \u028c o\u02d0"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u y w u\u02d0"
+    }
+  },
+  "ComplexPhoneList": "a e f i j k m n o p r s t u w x",
+  "ComponentList": "a e f i j k m n o p r s t u w x"
+}

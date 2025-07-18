@@ -1,0 +1,102 @@
+{
+  "GlottoCode": "west2560",
+  "LanguageName": "Bajau, West Coast; Land Bajaw; West Coast Bajao",
+  "ISO6393": "bdr",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b b\u031a"
+    },
+    "0064+0320+0292": {
+      "glyph": "d\u0320\u0292",
+      "allophones": "d\u0320\u0292"
+    },
+    "0064+032A": {
+      "glyph": "d\u032a",
+      "allophones": "d\u032a d\u032a\u031a"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k k\u031a"
+    },
+    "006C+032A": {
+      "glyph": "l\u032a",
+      "allophones": "l\u032a \u026d l\u0329"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m m\u0329"
+    },
+    "006E+032A": {
+      "glyph": "n\u032a",
+      "allophones": "n\u032a n\u032a\u0329"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p p\u031a"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "r \u027e\u032a"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s"
+    },
+    "0074+032A": {
+      "glyph": "t\u032a",
+      "allophones": "t\u032a t\u032a\u031a"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "\u014b \u014b\u0329"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "\u0261 \u0261\u031a"
+    },
+    "0272": {
+      "glyph": "\u0272",
+      "allophones": "\u0272"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "\u0294"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e \u025b"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i \u026a"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u \u028a"
+    },
+    "0259": {
+      "glyph": "\u0259",
+      "allophones": "\u0259"
+    }
+  },
+  "ComplexPhoneList": "a b d\u0320\u0292 d\u032a e i j k l\u032a m n\u032a o p r s t\u032a u w \u014b \u0259 \u0261 \u0272 \u0294",
+  "ComponentList": "a b d\u0320 d\u032a e i j k l\u032a m n\u032a o p r s t\u032a u w \u014b \u0259 \u0261 \u0272 \u0292 \u0294"
+}

@@ -1,0 +1,182 @@
+{
+  "GlottoCode": "bana1305",
+  "LanguageName": "bana",
+  "ISO6393": "bcw",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b"
+    },
+    "0064": {
+      "glyph": "d",
+      "allophones": "d"
+    },
+    "0064+007A": {
+      "glyph": "dz",
+      "allophones": "dz d\u0320\u0292"
+    },
+    "0066": {
+      "glyph": "f",
+      "allophones": "f"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k k\u02b2 k\u02b0"
+    },
+    "006B+02B7": {
+      "glyph": "k\u02b7",
+      "allophones": "k\u02b7"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006D+0062": {
+      "glyph": "mb",
+      "allophones": "mb"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "006E+0064": {
+      "glyph": "nd",
+      "allophones": "nd"
+    },
+    "006E+0064+007A": {
+      "glyph": "ndz",
+      "allophones": "ndz n\u0320d\u0320\u0292"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p p\u02b0"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s \u0283"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t t\u02b0"
+    },
+    "0074+0073": {
+      "glyph": "ts",
+      "allophones": "ts t\u0320\u0283"
+    },
+    "0076": {
+      "glyph": "v",
+      "allophones": "v"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "007A": {
+      "glyph": "z",
+      "allophones": "z \u0292"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "\u014b"
+    },
+    "014B+0261": {
+      "glyph": "\u014b\u0261",
+      "allophones": "\u014b\u0261 \u014b\u0261\u02b2"
+    },
+    "014B+0261+02B7": {
+      "glyph": "\u014b\u0261\u02b7",
+      "allophones": "\u014b\u0261\u02b7"
+    },
+    "014B+02B7": {
+      "glyph": "\u014b\u02b7",
+      "allophones": "\u014b\u02b7"
+    },
+    "0253": {
+      "glyph": "\u0253",
+      "allophones": "\u0253"
+    },
+    "0257": {
+      "glyph": "\u0257",
+      "allophones": "\u0257"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "\u0261"
+    },
+    "0261+02B7": {
+      "glyph": "\u0261\u02b7",
+      "allophones": "\u0261\u02b7 \u0261\u02b2"
+    },
+    "026C": {
+      "glyph": "\u026c",
+      "allophones": "\u026c"
+    },
+    "026E": {
+      "glyph": "\u026e",
+      "allophones": "\u026e"
+    },
+    "027E": {
+      "glyph": "\u027e",
+      "allophones": "\u027e r\u0325"
+    },
+    "0281": {
+      "glyph": "\u0281",
+      "allophones": "\u0281 \u0263"
+    },
+    "0281+02B7": {
+      "glyph": "\u0281\u02b7",
+      "allophones": "\u0281\u02b7"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "\u0294 \u0294\u02b2"
+    },
+    "0294+02B7": {
+      "glyph": "\u0294\u02b7",
+      "allophones": "\u0294\u02b7"
+    },
+    "03C7": {
+      "glyph": "\u03c7",
+      "allophones": "\u03c7 \u03c7\u02b2"
+    },
+    "03C7+02B7": {
+      "glyph": "\u03c7\u02b7",
+      "allophones": "\u03c7\u02b7"
+    },
+    "02E6": {
+      "glyph": "\u02e6",
+      "allophones": "\u02e6"
+    },
+    "02E6+02E8": {
+      "glyph": "\u02e6\u02e8",
+      "allophones": "\u02e6\u02e8"
+    },
+    "02E8": {
+      "glyph": "\u02e8",
+      "allophones": "\u02e8"
+    },
+    "02E8+02E6": {
+      "glyph": "\u02e8\u02e6",
+      "allophones": "\u02e8\u02e6"
+    },
+    "0259": {
+      "glyph": "\u0259",
+      "allophones": "\u0259 i"
+    },
+    "025B": {
+      "glyph": "\u025b",
+      "allophones": "\u025b"
+    },
+    "0268": {
+      "glyph": "\u0268",
+      "allophones": "\u0268"
+    }
+  },
+  "ComplexPhoneList": "b d dz f j k k\u02b7 m mb n nd ndz p s t ts v w z \u014b \u014b\u0261 \u014b\u0261\u02b7 \u014b\u02b7 \u0253 \u0257 \u0259 \u025b \u0261 \u0261\u02b7 \u0268 \u026c \u026e \u027e \u0281 \u0281\u02b7 \u0294 \u0294\u02b7 \u02e6 \u02e6\u02e8 \u02e8 \u02e8\u02e6 \u03c7 \u03c7\u02b7",
+  "ComponentList": "b d f j k k\u02b7 m n p s t v w z \u014b \u014b\u02b7 \u0253 \u0257 \u0259 \u025b \u0261 \u0261\u02b7 \u0268 \u026c \u026e \u027e \u0281 \u0281\u02b7 \u0294 \u0294\u02b7 \u02e6 \u02e8 \u03c7 \u03c7\u02b7"
+}

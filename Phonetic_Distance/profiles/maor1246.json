@@ -1,0 +1,90 @@
+{
+  "GlottoCode": "maor1246",
+  "LanguageName": "Maori",
+  "ISO6393": "mri",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0066": {
+      "glyph": "f",
+      "allophones": "f \u0278"
+    },
+    "0068": {
+      "glyph": "h",
+      "allophones": "h \u0266"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k k\u031f\u02b0"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p\u02b0 p"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t\u02b2 t\u02b0 t"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "\u014b\u02b2 \u014b\u031f \u014b"
+    },
+    "027E": {
+      "glyph": "\u027e",
+      "allophones": "\u027e"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "j i"
+    },
+    "0069+02D0": {
+      "glyph": "i\u02d0",
+      "allophones": "i\u02d0"
+    },
+    "006F+02D0": {
+      "glyph": "o\u02d0",
+      "allophones": "o\u02d0"
+    },
+    "006F+031E": {
+      "glyph": "o\u031e",
+      "allophones": "o\u031e"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u"
+    },
+    "0075+02D0": {
+      "glyph": "u\u02d0",
+      "allophones": "u\u02d0"
+    },
+    "0251": {
+      "glyph": "\u0251",
+      "allophones": "\u028c \u0251 \u0252"
+    },
+    "0251+02D0": {
+      "glyph": "\u0251\u02d0",
+      "allophones": "\u0251\u02d0"
+    },
+    "025B": {
+      "glyph": "\u025b",
+      "allophones": "\u025b\u0320 \u025b e"
+    },
+    "025B+02D0": {
+      "glyph": "\u025b\u02d0",
+      "allophones": "\u025b\u02d0"
+    }
+  },
+  "ComplexPhoneList": "f h i i\u02d0 k m n o\u02d0 o\u031e p t u u\u02d0 w \u014b \u0251 \u0251\u02d0 \u025b \u025b\u02d0 \u027e",
+  "ComponentList": "f h i i\u02d0 k m n o\u02d0 o\u031e p t u u\u02d0 w \u014b \u0251 \u0251\u02d0 \u025b \u025b\u02d0 \u027e"
+}

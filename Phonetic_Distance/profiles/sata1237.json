@@ -1,0 +1,170 @@
+{
+  "GlottoCode": "sata1237",
+  "LanguageName": "Satawalese",
+  "ISO6393": "stw",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0066": {
+      "glyph": "f",
+      "allophones": "f"
+    },
+    "0066+02D0": {
+      "glyph": "f\u02d0",
+      "allophones": "f\u02d0"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k"
+    },
+    "006B+02D0": {
+      "glyph": "k\u02d0",
+      "allophones": "k\u02d0"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006D+02B7+02E0": {
+      "glyph": "m\u02b7\u02e0",
+      "allophones": "m\u02b7\u02e0"
+    },
+    "006D+02D0": {
+      "glyph": "m\u02d0",
+      "allophones": "m\u02d0"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n l"
+    },
+    "006E+02D0": {
+      "glyph": "n\u02d0",
+      "allophones": "n\u02d0"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p"
+    },
+    "0070+02B7+02E0": {
+      "glyph": "p\u02b7\u02e0",
+      "allophones": "p\u02b7\u02e0 b\u02b7\u02e0"
+    },
+    "0070+02D0": {
+      "glyph": "p\u02d0",
+      "allophones": "p\u02d0"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "r"
+    },
+    "0072+02D0": {
+      "glyph": "r\u02d0",
+      "allophones": "r\u02d0"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s"
+    },
+    "0073+02D0": {
+      "glyph": "s\u02d0",
+      "allophones": "s\u02d0"
+    },
+    "0074+0320+0283": {
+      "glyph": "t\u0320\u0283",
+      "allophones": "t\u0320\u0283"
+    },
+    "0074+0320+0283+02D0": {
+      "glyph": "t\u0320\u0283\u02d0",
+      "allophones": "t\u0320\u0283\u02d0"
+    },
+    "0074+032A": {
+      "glyph": "t\u032a",
+      "allophones": "t\u032a"
+    },
+    "0074+032A+02D0": {
+      "glyph": "t\u032a\u02d0",
+      "allophones": "t\u032a\u02d0"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "\u014b"
+    },
+    "014B+02D0": {
+      "glyph": "\u014b\u02d0",
+      "allophones": "\u014b\u02d0"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "\u0261 x"
+    },
+    "027B": {
+      "glyph": "\u027b",
+      "allophones": "\u027b"
+    },
+    "027B+02D0": {
+      "glyph": "\u027b\u02d0",
+      "allophones": "\u027b\u02d0"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a"
+    },
+    "0061+02D0": {
+      "glyph": "a\u02d0",
+      "allophones": "a\u02d0"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i"
+    },
+    "0069+02D0": {
+      "glyph": "i\u02d0",
+      "allophones": "i\u02d0"
+    },
+    "006F+02D0": {
+      "glyph": "o\u02d0",
+      "allophones": "o\u02d0"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u"
+    },
+    "0075+02D0": {
+      "glyph": "u\u02d0",
+      "allophones": "u\u02d0"
+    },
+    "00E6": {
+      "glyph": "\u00e6",
+      "allophones": "\u00e6"
+    },
+    "0252": {
+      "glyph": "\u0252",
+      "allophones": "\u0252"
+    },
+    "025B": {
+      "glyph": "\u025b",
+      "allophones": "\u025b"
+    },
+    "025B+02D0": {
+      "glyph": "\u025b\u02d0",
+      "allophones": "\u025b\u02d0"
+    },
+    "025E": {
+      "glyph": "\u025e",
+      "allophones": "\u025e"
+    },
+    "0289": {
+      "glyph": "\u0289",
+      "allophones": "\u0289"
+    }
+  },
+  "ComplexPhoneList": "a a\u02d0 f f\u02d0 i i\u02d0 j k k\u02d0 m m\u02b7\u02e0 m\u02d0 n n\u02d0 o\u02d0 p p\u02b7\u02e0 p\u02d0 r r\u02d0 s s\u02d0 t\u0320\u0283 t\u0320\u0283\u02d0 t\u032a t\u032a\u02d0 u u\u02d0 w \u00e6 \u014b \u014b\u02d0 \u0252 \u025b \u025b\u02d0 \u025e \u0261 \u027b \u027b\u02d0 \u0289",
+  "ComponentList": "a a\u02d0 f f\u02d0 i i\u02d0 j k k\u02d0 m m\u02b7\u02e0 m\u02d0 n n\u02d0 o\u02d0 p p\u02b7\u02e0 p\u02d0 r r\u02d0 s s\u02d0 t\u0320 t\u032a t\u032a\u02d0 u u\u02d0 w \u00e6 \u014b \u014b\u02d0 \u0252 \u025b \u025b\u02d0 \u025e \u0261 \u027b \u027b\u02d0 \u0283 \u0283\u02d0 \u0289"
+}

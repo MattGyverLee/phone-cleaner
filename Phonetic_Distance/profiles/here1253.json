@@ -1,0 +1,114 @@
+{
+  "GlottoCode": "here1253",
+  "LanguageName": "herero",
+  "ISO6393": "her",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0068": {
+      "glyph": "h",
+      "allophones": "h"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k"
+    },
+    "006D+0062": {
+      "glyph": "mb",
+      "allophones": "mb mb"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "006E+0064+0291": {
+      "glyph": "nd\u0291",
+      "allophones": "nd\u0291"
+    },
+    "006E+0064+032A": {
+      "glyph": "nd\u032a",
+      "allophones": "nd\u032a nd\u032a"
+    },
+    "006E+032A": {
+      "glyph": "n\u032a",
+      "allophones": "n\u032a"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t"
+    },
+    "0074+032A": {
+      "glyph": "t\u032a",
+      "allophones": "t\u032a"
+    },
+    "0076": {
+      "glyph": "v",
+      "allophones": "v"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "00F0": {
+      "glyph": "\u00f0",
+      "allophones": "\u00f0"
+    },
+    "014B+0261": {
+      "glyph": "\u014b\u0261",
+      "allophones": "\u014b\u0261"
+    },
+    "0255": {
+      "glyph": "\u0255",
+      "allophones": "\u0255"
+    },
+    "0272": {
+      "glyph": "\u0272",
+      "allophones": "\u0272"
+    },
+    "027E": {
+      "glyph": "\u027e",
+      "allophones": "\u027e"
+    },
+    "03B8": {
+      "glyph": "\u03b8",
+      "allophones": "\u03b8"
+    },
+    "02E6": {
+      "glyph": "\u02e6",
+      "allophones": "\u02e6"
+    },
+    "02E8": {
+      "glyph": "\u02e8",
+      "allophones": "\u02e8"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u"
+    }
+  },
+  "ComplexPhoneList": "a e h i j k mb n nd\u0291 nd\u032a n\u032a o p t t\u032a u v w \u00f0 \u014b\u0261 \u0255 \u0272 \u027e \u02e6 \u02e8 \u03b8",
+  "ComponentList": "a b d d\u032a e h i j k m n n\u032a o p t t\u032a u v w \u00f0 \u014b \u0255 \u0261 \u0272 \u027e \u0291 \u02e6 \u02e8 \u03b8"
+}

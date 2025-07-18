@@ -1,0 +1,98 @@
+{
+  "GlottoCode": "bumb1241",
+  "LanguageName": "Arapesh",
+  "ISO6393": "aon",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b"
+    },
+    "0064+007A": {
+      "glyph": "dz",
+      "allophones": "dz"
+    },
+    "0064+032A": {
+      "glyph": "d\u032a",
+      "allophones": "d\u032a"
+    },
+    "0068": {
+      "glyph": "h",
+      "allophones": "h"
+    },
+    "006B+02B0": {
+      "glyph": "k\u02b0",
+      "allophones": "k\u02b0 \u0263 \u03c7"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l r"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "0070+02B0": {
+      "glyph": "p\u02b0",
+      "allophones": "p\u02b0"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s"
+    },
+    "0074+032A+02B0": {
+      "glyph": "t\u032a\u02b0",
+      "allophones": "t\u032a\u02b0"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "\u0261"
+    },
+    "0272": {
+      "glyph": "\u0272",
+      "allophones": "\u0272"
+    },
+    "0283": {
+      "glyph": "\u0283",
+      "allophones": "\u0283"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "\u0294"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u"
+    },
+    "0079": {
+      "glyph": "y",
+      "allophones": "y"
+    },
+    "00F8": {
+      "glyph": "\u00f8",
+      "allophones": "\u00f8"
+    }
+  },
+  "ComplexPhoneList": "a b dz d\u032a e h i k\u02b0 l m n o p\u02b0 s t\u032a\u02b0 u y \u00f8 \u0261 \u0272 \u0283 \u0294",
+  "ComponentList": "a b d d\u032a e h i k\u02b0 l m n o p\u02b0 s t\u032a\u02b0 u y z \u00f8 \u0261 \u0272 \u0283 \u0294"
+}

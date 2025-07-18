@@ -1,0 +1,110 @@
+{
+  "GlottoCode": "siks1238",
+  "LanguageName": "Blackfoot",
+  "ISO6393": "bla",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0068": {
+      "glyph": "h",
+      "allophones": "h \u0266"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j j\u0325"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k k\u031f"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m m\u0325"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n n\u0325"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s \u0282"
+    },
+    "0074+0320+0283": {
+      "glyph": "t\u0320\u0283",
+      "allophones": "t\u0320\u0283"
+    },
+    "0074+032A": {
+      "glyph": "t\u032a",
+      "allophones": "t\u032a"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w w\u0325"
+    },
+    "0078": {
+      "glyph": "x",
+      "allophones": "x c\u0327"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "\u0294"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a a\u0325 \u0259"
+    },
+    "0061+02D0": {
+      "glyph": "a\u02d0",
+      "allophones": "a\u02d0 a"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i i\u0325 \u0268"
+    },
+    "0069+02D0": {
+      "glyph": "i\u02d0",
+      "allophones": "i\u02d0 \u026a\u02d0 e\u02d0"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o o\u0325"
+    },
+    "006F+02D0": {
+      "glyph": "o\u02d0",
+      "allophones": "o\u02d0 o"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u\u0325 u"
+    },
+    "00E6+02D0": {
+      "glyph": "\u00e6\u02d0",
+      "allophones": "\u00e6\u02d0 \u00e6"
+    },
+    "00F8": {
+      "glyph": "\u00f8",
+      "allophones": "\u00f8 \u00f8\u0325"
+    },
+    "0254": {
+      "glyph": "\u0254",
+      "allophones": "\u0254 \u0254\u0325"
+    },
+    "0254+02D0": {
+      "glyph": "\u0254\u02d0",
+      "allophones": "\u0254\u02d0 \u0254"
+    },
+    "025B": {
+      "glyph": "\u025b",
+      "allophones": "\u025b \u025b\u0325"
+    }
+  },
+  "ComplexPhoneList": "a a\u02d0 h i i\u02d0 j k l m n o o\u02d0 p s t\u0320\u0283 t\u032a u w x \u00e6\u02d0 \u00f8 \u0254 \u0254\u02d0 \u025b \u0294",
+  "ComponentList": "a a\u02d0 h i i\u02d0 j k l m n o o\u02d0 p s t\u0320 t\u032a u w x \u00e6\u02d0 \u00f8 \u0254 \u0254\u02d0 \u025b \u0283 \u0294"
+}

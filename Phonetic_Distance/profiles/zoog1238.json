@@ -1,0 +1,226 @@
+{
+  "GlottoCode": "zoog1238",
+  "LanguageName": "San Bartolome\u0301 Zoogocho Zapotec",
+  "ISO6393": "zpq",
+  "SpecificDialect": "zxon",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b"
+    },
+    "0064": {
+      "glyph": "d",
+      "allophones": "d"
+    },
+    "0064+0320+0292": {
+      "glyph": "d\u0320\u0292",
+      "allophones": "d\u0320\u0292"
+    },
+    "0066": {
+      "glyph": "f",
+      "allophones": "f"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j \u02b0j c\u0327"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l \u027e"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n m \u014b"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "r"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w \u03b2 f"
+    },
+    "0078": {
+      "glyph": "x",
+      "allophones": "x"
+    },
+    "007A": {
+      "glyph": "z",
+      "allophones": "z"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "\u0261"
+    },
+    "0272": {
+      "glyph": "\u0272",
+      "allophones": "\u0272"
+    },
+    "027E": {
+      "glyph": "\u027e",
+      "allophones": "\u027e \u027e"
+    },
+    "0281": {
+      "glyph": "\u0281",
+      "allophones": "\u0281"
+    },
+    "0290": {
+      "glyph": "\u0290",
+      "allophones": "\u0290"
+    },
+    "0292": {
+      "glyph": "\u0292",
+      "allophones": "\u0292"
+    },
+    "02E5+02E9": {
+      "glyph": "\u02e5\u02e9",
+      "allophones": "\u02e5\u02e9"
+    },
+    "02E6": {
+      "glyph": "\u02e6",
+      "allophones": "\u02e6"
+    },
+    "02E7": {
+      "glyph": "\u02e7",
+      "allophones": "\u02e7"
+    },
+    "02E8": {
+      "glyph": "\u02e8",
+      "allophones": "\u02e8"
+    },
+    "02E9+02E5": {
+      "glyph": "\u02e9\u02e5",
+      "allophones": "\u02e9\u02e5"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a"
+    },
+    "0061+0065": {
+      "glyph": "ae",
+      "allophones": "ae"
+    },
+    "0061+0069": {
+      "glyph": "ai",
+      "allophones": "ai"
+    },
+    "0061+006F": {
+      "glyph": "ao",
+      "allophones": "ao"
+    },
+    "0061+02C0": {
+      "glyph": "a\u02c0",
+      "allophones": "a\u02c0"
+    },
+    "0061+0324": {
+      "glyph": "a\u0324",
+      "allophones": "a\u0324"
+    },
+    "0061+0330": {
+      "glyph": "a\u0330",
+      "allophones": "a\u0330"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e"
+    },
+    "0065+0061": {
+      "glyph": "ea",
+      "allophones": "ea"
+    },
+    "0065+0069": {
+      "glyph": "ei",
+      "allophones": "ei"
+    },
+    "0065+006F": {
+      "glyph": "eo",
+      "allophones": "eo"
+    },
+    "0065+02C0": {
+      "glyph": "e\u02c0",
+      "allophones": "e\u02c0"
+    },
+    "0065+0324": {
+      "glyph": "e\u0324",
+      "allophones": "e\u0324"
+    },
+    "0065+0330": {
+      "glyph": "e\u0330",
+      "allophones": "e\u0330"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i"
+    },
+    "0069+0061": {
+      "glyph": "ia",
+      "allophones": "ia"
+    },
+    "0069+0065": {
+      "glyph": "ie",
+      "allophones": "ie"
+    },
+    "0069+006F": {
+      "glyph": "io",
+      "allophones": "io"
+    },
+    "0069+02C0": {
+      "glyph": "i\u02c0",
+      "allophones": "i\u02c0"
+    },
+    "0069+0324": {
+      "glyph": "i\u0324",
+      "allophones": "i\u0324"
+    },
+    "0069+0330": {
+      "glyph": "i\u0330",
+      "allophones": "i\u0330"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o u"
+    },
+    "006F+0061": {
+      "glyph": "oa",
+      "allophones": "oa"
+    },
+    "006F+0065": {
+      "glyph": "oe",
+      "allophones": "oe"
+    },
+    "006F+0069": {
+      "glyph": "oi",
+      "allophones": "oi"
+    },
+    "006F+02C0": {
+      "glyph": "o\u02c0",
+      "allophones": "o\u02c0"
+    },
+    "006F+0324": {
+      "glyph": "o\u0324",
+      "allophones": "o\u0324"
+    },
+    "006F+0330": {
+      "glyph": "o\u0330",
+      "allophones": "o\u0330"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u"
+    },
+    "0075+02C0": {
+      "glyph": "u\u02c0",
+      "allophones": "u\u02c0"
+    },
+    "0075+0324": {
+      "glyph": "u\u0324",
+      "allophones": "u\u0324"
+    },
+    "0075+0330": {
+      "glyph": "u\u0330",
+      "allophones": "u\u0330"
+    }
+  },
+  "ComplexPhoneList": "a ae ai ao a\u02c0 a\u0324 a\u0330 b d d\u0320\u0292 e ea ei eo e\u02c0 e\u0324 e\u0330 f i ia ie io i\u02c0 i\u0324 i\u0330 j l n o oa oe oi o\u02c0 o\u0324 o\u0330 r u u\u02c0 u\u0324 u\u0330 w x z \u0261 \u0272 \u027e \u0281 \u0290 \u0292 \u02e5\u02e9 \u02e6 \u02e7 \u02e8 \u02e9\u02e5",
+  "ComponentList": "a a\u02c0 a\u0324 a\u0330 b d d\u0320 e e\u02c0 e\u0324 e\u0330 f i i\u02c0 i\u0324 i\u0330 j l n o o\u02c0 o\u0324 o\u0330 r u u\u02c0 u\u0324 u\u0330 w x z \u0261 \u0272 \u027e \u0281 \u0290 \u0292 \u02e5 \u02e6 \u02e7 \u02e8 \u02e9"
+}

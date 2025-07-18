@@ -1,0 +1,90 @@
+{
+  "GlottoCode": "gads1258",
+  "LanguageName": "Gadsup",
+  "ISO6393": "gaj",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0064": {
+      "glyph": "d",
+      "allophones": "NA"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "NA"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "NA"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "NA"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "\u014b n"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "NA"
+    },
+    "0074+033B": {
+      "glyph": "t\u033b",
+      "allophones": "t\u033b\u02b0 ts s t\u033b"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "NA"
+    },
+    "03B2": {
+      "glyph": "\u03b2",
+      "allophones": "NA"
+    },
+    "02E5": {
+      "glyph": "\u02e5",
+      "allophones": "\u02e5"
+    },
+    "02E7+02E9": {
+      "glyph": "\u02e7\u02e9",
+      "allophones": "\u02e7\u02e9 \u02e5\u02e6"
+    },
+    "02E9": {
+      "glyph": "\u02e9",
+      "allophones": "\u02e9 \u02e9"
+    },
+    "02E9+02E8": {
+      "glyph": "\u02e9\u02e8",
+      "allophones": "\u02e7\u02e5 \u02e9\u02e8 \u02e9\u02e8 \u02e7"
+    },
+    "0065+02D0": {
+      "glyph": "e\u02d0",
+      "allophones": "NA"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "NA"
+    },
+    "006F+02D0": {
+      "glyph": "o\u02d0",
+      "allophones": "NA"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "NA"
+    },
+    "025C": {
+      "glyph": "\u025c",
+      "allophones": "NA"
+    },
+    "006E+032A+007C+006E": {
+      "glyph": "n",
+      "allophones": "NA"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "NA"
+    }
+  },
+  "ComplexPhoneList": "d e\u02d0 i j k m n o\u02d0 p t t\u033b u \u025c \u0294 \u02e5 \u02e7\u02e9 \u02e9 \u02e9\u02e8 \u03b2",
+  "ComponentList": "d e\u02d0 i j k m n o\u02d0 p t t\u033b u \u025c \u0294 \u02e5 \u02e7 \u02e8 \u02e9 \u03b2"
+}

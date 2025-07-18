@@ -1,0 +1,110 @@
+{
+  "GlottoCode": "awar1248",
+  "LanguageName": "Awara",
+  "ISO6393": "awx",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b mb mp p"
+    },
+    "0064": {
+      "glyph": "d",
+      "allophones": "d nd nt t"
+    },
+    "0068": {
+      "glyph": "h",
+      "allophones": "h"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k k\u02b0 k\u031a"
+    },
+    "006B+02B7": {
+      "glyph": "k\u02b7",
+      "allophones": "k\u02b7"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l \u027e r"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p p\u02b0 p\u031a"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s \u0283"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t t\u02b0 t\u031a"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "\u014b"
+    },
+    "014B+02B7": {
+      "glyph": "\u014b\u02b7",
+      "allophones": "\u014b\u02b7"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "\u0261 \u014b\u0261 \u014bk k"
+    },
+    "0261+02B7": {
+      "glyph": "\u0261\u02b7",
+      "allophones": "\u0261\u02b7"
+    },
+    "0263": {
+      "glyph": "\u0263",
+      "allophones": "\u0263"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "\u0294"
+    },
+    "03B2": {
+      "glyph": "\u03b2",
+      "allophones": "\u03b2 w v"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e \u025b"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i \u026a"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u \u028a"
+    },
+    "0250": {
+      "glyph": "\u0250",
+      "allophones": "\u0250"
+    },
+    "028C": {
+      "glyph": "\u028c",
+      "allophones": "\u028c"
+    }
+  },
+  "ComplexPhoneList": "b d e h i j k k\u02b7 l m n o p s t u \u014b \u014b\u02b7 \u0250 \u0261 \u0261\u02b7 \u0263 \u028c \u0294 \u03b2",
+  "ComponentList": "b d e h i j k k\u02b7 l m n o p s t u \u014b \u014b\u02b7 \u0250 \u0261 \u0261\u02b7 \u0263 \u028c \u0294 \u03b2"
+}

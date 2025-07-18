@@ -1,0 +1,178 @@
+{
+  "GlottoCode": "tata1255",
+  "LanguageName": "Tatar",
+  "ISO6393": "tat",
+  "SpecificDialect": "Tatar (Standard)",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "NA"
+    },
+    "0064+032A": {
+      "glyph": "d\u032a",
+      "allophones": "NA"
+    },
+    "0066": {
+      "glyph": "f",
+      "allophones": "NA"
+    },
+    "0068": {
+      "glyph": "h",
+      "allophones": "NA"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "NA"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "NA"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "NA"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "NA"
+    },
+    "006E+032A": {
+      "glyph": "n\u032a",
+      "allophones": "NA"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "NA"
+    },
+    "0071": {
+      "glyph": "q",
+      "allophones": "NA"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "NA"
+    },
+    "0073+032A": {
+      "glyph": "s\u032a",
+      "allophones": "NA"
+    },
+    "0074+0073": {
+      "glyph": "ts",
+      "allophones": "NA"
+    },
+    "0074+0255": {
+      "glyph": "t\u0255",
+      "allophones": "NA"
+    },
+    "0074+032A": {
+      "glyph": "t\u032a",
+      "allophones": "NA"
+    },
+    "0076": {
+      "glyph": "v",
+      "allophones": "NA"
+    },
+    "007A+032A": {
+      "glyph": "z\u032a",
+      "allophones": "NA"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "NA"
+    },
+    "0255": {
+      "glyph": "\u0255",
+      "allophones": "NA"
+    },
+    "0255+02D0": {
+      "glyph": "\u0255\u02d0",
+      "allophones": "NA"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "NA"
+    },
+    "0281": {
+      "glyph": "\u0281",
+      "allophones": "NA"
+    },
+    "0283": {
+      "glyph": "\u0283",
+      "allophones": "NA"
+    },
+    "0291": {
+      "glyph": "\u0291",
+      "allophones": "NA"
+    },
+    "0292": {
+      "glyph": "\u0292",
+      "allophones": "NA"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "NA"
+    },
+    "03B2": {
+      "glyph": "\u03b2",
+      "allophones": "NA"
+    },
+    "03C7": {
+      "glyph": "\u03c7",
+      "allophones": "NA"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "NA"
+    },
+    "0061+0308": {
+      "glyph": "a\u0308",
+      "allophones": "NA"
+    },
+    "0069+026A+032F": {
+      "glyph": "i\u026a\u032f",
+      "allophones": "NA"
+    },
+    "006F+0306": {
+      "glyph": "o\u0306",
+      "allophones": "NA"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "NA"
+    },
+    "0252": {
+      "glyph": "\u0252",
+      "allophones": "NA"
+    },
+    "0254": {
+      "glyph": "\u0254",
+      "allophones": "NA"
+    },
+    "0258+0306": {
+      "glyph": "\u0258\u0306",
+      "allophones": "NA"
+    },
+    "025B": {
+      "glyph": "\u025b",
+      "allophones": "NA"
+    },
+    "0268": {
+      "glyph": "\u0268",
+      "allophones": "NA"
+    },
+    "026F+026A+032F": {
+      "glyph": "\u026f\u026a\u032f",
+      "allophones": "NA"
+    },
+    "0275+0306": {
+      "glyph": "\u0275\u0306",
+      "allophones": "NA"
+    },
+    "0289": {
+      "glyph": "\u0289",
+      "allophones": "NA"
+    }
+  },
+  "ComplexPhoneList": "a a\u0308 b d\u032a f h i\u026a\u032f j k l m n\u032a o\u0306 p q r s\u032a ts t\u0255 t\u032a u v z\u032a \u014b \u0252 \u0254 \u0255 \u0255\u02d0 \u0258\u0306 \u025b \u0261 \u0268 \u026f\u026a\u032f \u0275\u0306 \u0281 \u0283 \u0289 \u0291 \u0292 \u0294 \u03b2 \u03c7",
+  "ComponentList": "a a\u0308 b d\u032a f h i j k l m n\u032a o\u0306 p q r s s\u032a t t\u032a u v z\u032a \u014b \u0252 \u0254 \u0255 \u0255\u02d0 \u0258\u0306 \u025b \u0261 \u0268 \u026a\u032f \u026f \u0275\u0306 \u0281 \u0283 \u0289 \u0291 \u0292 \u0294 \u03b2 \u03c7"
+}

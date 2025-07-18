@@ -1,0 +1,90 @@
+{
+  "GlottoCode": "awiy1238",
+  "LanguageName": "Auyana",
+  "ISO6393": "auy",
+  "SpecificDialect": "NA",
+  "phones": {
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "\u0263 k"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006D+02D0": {
+      "glyph": "m\u02d0",
+      "allophones": "m\u02d0"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "006E+02D0": {
+      "glyph": "n\u02d0",
+      "allophones": "n\u02d0"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "\u03b2 p"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t s"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "027E": {
+      "glyph": "\u027e",
+      "allophones": "\u027e \u027a"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "\u0294"
+    },
+    "02E5": {
+      "glyph": "\u02e5",
+      "allophones": "\u02e5"
+    },
+    "02E5+02E9": {
+      "glyph": "\u02e5\u02e9",
+      "allophones": "\u02e5\u02e9"
+    },
+    "02E9": {
+      "glyph": "\u02e9",
+      "allophones": "\u02e9"
+    },
+    "0061+02D0": {
+      "glyph": "a\u02d0",
+      "allophones": "a\u02d0"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e e e \u025b"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i \u026a i"
+    },
+    "006F+031E": {
+      "glyph": "o\u031e",
+      "allophones": "o\u031e"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u"
+    },
+    "0259": {
+      "glyph": "\u0259",
+      "allophones": "\u0259 \u0259"
+    }
+  },
+  "ComplexPhoneList": "a\u02d0 e i j k m m\u02d0 n n\u02d0 o\u031e p t u w \u0259 \u027e \u0294 \u02e5 \u02e5\u02e9 \u02e9",
+  "ComponentList": "a\u02d0 e i j k m m\u02d0 n n\u02d0 o\u031e p t u w \u0259 \u027e \u0294 \u02e5 \u02e9"
+}

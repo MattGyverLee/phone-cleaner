@@ -1,0 +1,114 @@
+{
+  "GlottoCode": "sund1252",
+  "LanguageName": "Sundanese",
+  "ISO6393": "sun",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b"
+    },
+    "0064": {
+      "glyph": "d",
+      "allophones": "d"
+    },
+    "0064+0320+0292": {
+      "glyph": "d\u0320\u0292",
+      "allophones": "d\u0320\u0292"
+    },
+    "0068": {
+      "glyph": "h",
+      "allophones": "x \u0266\u0303 h"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k\u02c0 k"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p p\u031a"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s"
+    },
+    "0074+0320+0283": {
+      "glyph": "t\u0320\u0283",
+      "allophones": "t\u0320\u0283"
+    },
+    "0074+032A": {
+      "glyph": "t\u032a",
+      "allophones": "t\u032a\u031a t\u032a"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "\u014b"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "\u0261"
+    },
+    "0272": {
+      "glyph": "\u0272",
+      "allophones": "\u0272"
+    },
+    "027E": {
+      "glyph": "\u027e",
+      "allophones": "\u027e"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "\u0294"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a\u0303 a"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i \u026a i\u0303"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o \u0254 o\u0303"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u u\u0303"
+    },
+    "0259": {
+      "glyph": "\u0259",
+      "allophones": "\u0264 \u0259\u0303 \u0259"
+    },
+    "025B": {
+      "glyph": "\u025b",
+      "allophones": "e \u025b \u025b\u0303"
+    },
+    "0268": {
+      "glyph": "\u0268",
+      "allophones": "\u0268 \u0268\u0303"
+    }
+  },
+  "ComplexPhoneList": "a b d d\u0320\u0292 h i j k l m n o p s t\u0320\u0283 t\u032a u w \u014b \u0259 \u025b \u0261 \u0268 \u0272 \u027e \u0294",
+  "ComponentList": "a b d d\u0320 h i j k l m n o p s t\u0320 t\u032a u w \u014b \u0259 \u025b \u0261 \u0268 \u0272 \u027e \u0283 \u0292 \u0294"
+}

@@ -1,0 +1,102 @@
+{
+  "GlottoCode": "nucl1634",
+  "LanguageName": "Skou",
+  "ISO6393": "skv",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b \u03b2"
+    },
+    "0066": {
+      "glyph": "f",
+      "allophones": "f"
+    },
+    "0068": {
+      "glyph": "h",
+      "allophones": "h"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j \u0291j dzj"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k \u0263 h"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l l\u0303"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p p\u02b7"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "r"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t s tw"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w \u0261\u02b7"
+    },
+    "025F": {
+      "glyph": "\u025f",
+      "allophones": "\u025f \u0261j \u0261\u025f \u0261"
+    },
+    "02E6": {
+      "glyph": "\u02e6",
+      "allophones": "\u02e6"
+    },
+    "02E8": {
+      "glyph": "\u02e8",
+      "allophones": "\u02e8"
+    },
+    "02E9+02E5": {
+      "glyph": "\u02e9\u02e5",
+      "allophones": "\u02e9\u02e5"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i \u026a e"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u \u028a o o\u031e"
+    },
+    "00F8": {
+      "glyph": "\u00f8",
+      "allophones": "\u00f8 \u0153 \u028f \u0153\u031d"
+    },
+    "0254": {
+      "glyph": "\u0254",
+      "allophones": "\u0254 o"
+    },
+    "025B": {
+      "glyph": "\u025b",
+      "allophones": "\u025b \u025b\u031e e"
+    },
+    "0289": {
+      "glyph": "\u0289",
+      "allophones": "\u0289 \u0289\u031e"
+    }
+  },
+  "ComplexPhoneList": "a b f h i j k l m n p r t u w \u00f8 \u0254 \u025b \u025f \u0289 \u02e6 \u02e8 \u02e9\u02e5",
+  "ComponentList": "a b f h i j k l m n p r t u w \u00f8 \u0254 \u025b \u025f \u0289 \u02e5 \u02e6 \u02e8 \u02e9"
+}

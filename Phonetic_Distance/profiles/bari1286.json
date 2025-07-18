@@ -1,0 +1,78 @@
+{
+  "GlottoCode": "bari1286",
+  "LanguageName": "Bariai",
+  "ISO6393": "bch",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b \u03b2 p"
+    },
+    "0064": {
+      "glyph": "d",
+      "allophones": "d \u027e \u027e\u0325"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k k\u031a"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l l\u0325"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n n\u0325"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p p\u031a"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "r r\u0325"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t t\u031a"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "\u014b \u014b\u0325"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "\u0261 \u0263 k"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e i\u032f e\u032f \u025b i e\u02d0"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i \u032fi\u032f \u026a i\u02d0"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o o\u02d0 o\u032f u\u032f"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u u\u02d0 u\u032f"
+    },
+    "0251": {
+      "glyph": "\u0251",
+      "allophones": "\u0251 \u0251\u02d0"
+    }
+  },
+  "ComplexPhoneList": "b d e i k l m n o p r s t u \u014b \u0251 \u0261",
+  "ComponentList": "b d e i k l m n o p r s t u \u014b \u0251 \u0261"
+}

@@ -1,0 +1,142 @@
+{
+  "GlottoCode": "jama1262",
+  "LanguageName": "Jamaican Creole",
+  "ISO6393": "jam",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b b\u02b7 b\u02b2 \u0253"
+    },
+    "0064": {
+      "glyph": "d",
+      "allophones": "d d\u02b7 d\u02b2 \u0257"
+    },
+    "0064+0320+0292": {
+      "glyph": "d\u0320\u0292",
+      "allophones": "d\u0320\u0292 d\u0320\u0292\u02b7 d\u0320\u0292\u02b2"
+    },
+    "0066": {
+      "glyph": "f",
+      "allophones": "f f\u02b7 f\u02b2"
+    },
+    "0068": {
+      "glyph": "h",
+      "allophones": "h"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k k\u02b7 k\u02b2"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p p\u02b7 p\u02b2"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s s\u02b7 s\u02b2"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t t\u02b7 t\u02b2"
+    },
+    "0074+0320+0283": {
+      "glyph": "t\u0320\u0283",
+      "allophones": "t\u0320\u0283 t\u0320\u0283\u02b7 t\u0320\u0283\u02b2"
+    },
+    "0076": {
+      "glyph": "v",
+      "allophones": "v v\u02b7 v\u02b2"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "007A": {
+      "glyph": "z",
+      "allophones": "z z\u02b7 z\u02b2"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "\u014b"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "\u0261 \u0261\u02b7 \u0261\u02b2 \u0260"
+    },
+    "0279": {
+      "glyph": "\u0279",
+      "allophones": "\u0279"
+    },
+    "0283": {
+      "glyph": "\u0283",
+      "allophones": "\u0283 \u0283\u02b7 \u0283\u02b2"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a \u0250"
+    },
+    "0061+0069": {
+      "glyph": "ai",
+      "allophones": "ai"
+    },
+    "0061+0075": {
+      "glyph": "au",
+      "allophones": "au"
+    },
+    "0061+02D0": {
+      "glyph": "a\u02d0",
+      "allophones": "a\u02d0"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i"
+    },
+    "0069+0061": {
+      "glyph": "ia",
+      "allophones": "ia"
+    },
+    "0069+02D0": {
+      "glyph": "i\u02d0",
+      "allophones": "i\u02d0"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u"
+    },
+    "0075+0061": {
+      "glyph": "ua",
+      "allophones": "ua"
+    },
+    "0075+02D0": {
+      "glyph": "u\u02d0",
+      "allophones": "u\u02d0"
+    }
+  },
+  "ComplexPhoneList": "a ai au a\u02d0 b d d\u0320\u0292 e f h i ia i\u02d0 j k l m n o p s t t\u0320\u0283 u ua u\u02d0 v w z \u014b \u0261 \u0279 \u0283",
+  "ComponentList": "a a\u02d0 b d d\u0320 e f h i i\u02d0 j k l m n o p s t t\u0320 u u\u02d0 v w z \u014b \u0261 \u0279 \u0283 \u0292"
+}

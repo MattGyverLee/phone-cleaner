@@ -1,0 +1,98 @@
+{
+  "GlottoCode": "siar1238",
+  "LanguageName": "Siar-Lak",
+  "ISO6393": "sjr",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b mb"
+    },
+    "0064": {
+      "glyph": "d",
+      "allophones": "d md"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k k\u031a"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p p\u031a"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "r"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t t\u031a"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "\u014b"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "\u0261 m\u0261"
+    },
+    "0278": {
+      "glyph": "\u0278",
+      "allophones": "\u0278 h"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e"
+    },
+    "0065+031D": {
+      "glyph": "e\u031d",
+      "allophones": "e\u031d"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o"
+    },
+    "006F+031D": {
+      "glyph": "o\u031d",
+      "allophones": "o\u031d"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u"
+    },
+    "0251": {
+      "glyph": "\u0251",
+      "allophones": "\u0251"
+    }
+  },
+  "ComplexPhoneList": "b d e e\u031d i j k l m n o o\u031d p r s t u w \u014b \u0251 \u0261 \u0278",
+  "ComponentList": "b d e e\u031d i j k l m n o o\u031d p r s t u w \u014b \u0251 \u0261 \u0278"
+}

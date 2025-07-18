@@ -1,0 +1,126 @@
+{
+  "GlottoCode": "serb1264",
+  "LanguageName": "Serbian",
+  "ISO6393": "srp",
+  "SpecificDialect": "Serbian (Standard Ekavian)",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "NA"
+    },
+    "0064+032A+033B": {
+      "glyph": "d\u032a\u033b",
+      "allophones": "NA"
+    },
+    "0064+033B+0292+033B": {
+      "glyph": "d\u033b\u0292\u033b",
+      "allophones": "NA"
+    },
+    "0066": {
+      "glyph": "f",
+      "allophones": "NA"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "NA"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "NA"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "NA"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "NA"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "NA"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "NA"
+    },
+    "0073+032A+033B": {
+      "glyph": "s\u032a\u033b",
+      "allophones": "NA"
+    },
+    "0074+032A+033B": {
+      "glyph": "t\u032a\u033b",
+      "allophones": "NA"
+    },
+    "0074+032A+033B+0073+032A+033B": {
+      "glyph": "t\u032a\u033bs\u032a\u033b",
+      "allophones": "NA"
+    },
+    "0074+033B+0283+033B": {
+      "glyph": "t\u033b\u0283\u033b",
+      "allophones": "NA"
+    },
+    "0078": {
+      "glyph": "x",
+      "allophones": "NA"
+    },
+    "007A+032A+033B": {
+      "glyph": "z\u032a\u033b",
+      "allophones": "NA"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "NA"
+    },
+    "0272": {
+      "glyph": "\u0272",
+      "allophones": "NA"
+    },
+    "0283+033A": {
+      "glyph": "\u0283\u033a",
+      "allophones": "NA"
+    },
+    "028B": {
+      "glyph": "\u028b",
+      "allophones": "NA"
+    },
+    "028E": {
+      "glyph": "\u028e",
+      "allophones": "NA"
+    },
+    "0292+033A": {
+      "glyph": "\u0292\u033a",
+      "allophones": "NA"
+    },
+    "0061+0308": {
+      "glyph": "a\u0308",
+      "allophones": "NA"
+    },
+    "0065+031E": {
+      "glyph": "e\u031e",
+      "allophones": "NA"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "NA"
+    },
+    "0069+02D0": {
+      "glyph": "i\u02d0",
+      "allophones": "NA"
+    },
+    "006F+031E": {
+      "glyph": "o\u031e",
+      "allophones": "NA"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "NA"
+    },
+    "0075+02D0": {
+      "glyph": "u\u02d0",
+      "allophones": "NA"
+    }
+  },
+  "ComplexPhoneList": "a\u0308 b d\u032a\u033b d\u033b\u0292\u033b e\u031e f i i\u02d0 k l m n o\u031e p r s\u032a\u033b t\u032a\u033b t\u032a\u033bs\u032a\u033b t\u033b\u0283\u033b u u\u02d0 x z\u032a\u033b \u0261 \u0272 \u0283\u033a \u028b \u028e \u0292\u033a",
+  "ComponentList": "a\u0308 b d\u032a\u033b d\u033b e\u031e f i i\u02d0 k l m n o\u031e p r s\u032a\u033b t\u032a\u033b t\u033b u u\u02d0 x z\u032a\u033b \u0261 \u0272 \u0283\u033a \u0283\u033b \u028b \u028e \u0292\u033a \u0292\u033b"
+}

@@ -1,0 +1,90 @@
+{
+  "GlottoCode": "woge1237",
+  "LanguageName": "Wogeo",
+  "ISO6393": "woc",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b b\u031a b\u02b7"
+    },
+    "0064+032A": {
+      "glyph": "d\u032a",
+      "allophones": "d\u032a d\u032a\u031a \u027e\u032a r\u032a"
+    },
+    "0066": {
+      "glyph": "f",
+      "allophones": "f f\u02b7"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j \u025f \u025f\u0291"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k k\u031a q q\u031a k\u02b7 \u0281 \u03c7 q\u02b7"
+    },
+    "006C+032A": {
+      "glyph": "l\u032a",
+      "allophones": "l\u032a \u026b\u032a"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m m\u02b7"
+    },
+    "006E+032A": {
+      "glyph": "n\u032a",
+      "allophones": "n\u032a"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "r \u027d \u027b"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s s\u032a"
+    },
+    "0074+032A": {
+      "glyph": "t\u032a",
+      "allophones": "t\u032a t\u032a\u031a"
+    },
+    "0076": {
+      "glyph": "v",
+      "allophones": "v \u028b"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "\u014b \u0274"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "\u0261 \u0261\u031a \u0261\u02b7"
+    },
+    "0272": {
+      "glyph": "\u0272",
+      "allophones": "\u0272"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a a\u02d0 \u0250"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e \u025b \u025b\u02d0"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i \u026a \u026a\u02d0"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o \u0254 \u0254\u02d0"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u \u028a \u028a\u02d0"
+    }
+  },
+  "ComplexPhoneList": "a b d\u032a e f i j k l\u032a m n\u032a o r s t\u032a u v \u014b \u0261 \u0272",
+  "ComponentList": "a b d\u032a e f i j k l\u032a m n\u032a o r s t\u032a u v \u014b \u0261 \u0272"
+}

@@ -1,0 +1,118 @@
+{
+  "GlottoCode": "afar1241",
+  "LanguageName": "Afar",
+  "ISO6393": "aar",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b"
+    },
+    "0064": {
+      "glyph": "d",
+      "allophones": "d"
+    },
+    "0066": {
+      "glyph": "f",
+      "allophones": "f"
+    },
+    "0068": {
+      "glyph": "h",
+      "allophones": "h"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j j\u02d0"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "r r\u02d0"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w w\u02d0"
+    },
+    "0127": {
+      "glyph": "\u0127",
+      "allophones": "\u0127"
+    },
+    "0256": {
+      "glyph": "\u0256",
+      "allophones": "\u0256"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "\u0261"
+    },
+    "0295": {
+      "glyph": "\u0295",
+      "allophones": "\u0295"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a a\u02e4"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e e\u02e4"
+    },
+    "0065+02D0": {
+      "glyph": "e\u02d0",
+      "allophones": "e\u02d0 e\u02e4\u02d0"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i i\u02e4"
+    },
+    "0069+02D0": {
+      "glyph": "i\u02d0",
+      "allophones": "i\u02d0 i\u02e4\u02d0"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o o\u02e4"
+    },
+    "006F+02D0": {
+      "glyph": "o\u02d0",
+      "allophones": "o\u02d0 o\u02e4\u02d0"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u u\u02e4"
+    },
+    "0075+02D0": {
+      "glyph": "u\u02d0",
+      "allophones": "u\u02d0 u\u02e4\u02d0"
+    },
+    "028C": {
+      "glyph": "\u028c",
+      "allophones": "\u028c \u028c\u02e4 \u0259"
+    }
+  },
+  "ComplexPhoneList": "a b d e e\u02d0 f h i i\u02d0 j k l m n o o\u02d0 r s t u u\u02d0 w \u0127 \u0256 \u0261 \u028c \u0295",
+  "ComponentList": "a b d e e\u02d0 f h i i\u02d0 j k l m n o o\u02d0 r s t u u\u02d0 w \u0127 \u0256 \u0261 \u028c \u0295"
+}

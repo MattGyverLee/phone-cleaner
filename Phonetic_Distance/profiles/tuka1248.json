@@ -1,0 +1,126 @@
+{
+  "GlottoCode": "tuka1248",
+  "LanguageName": "Tukang Besi",
+  "ISO6393": "khc",
+  "SpecificDialect": "Wanci, Kaledupa",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b"
+    },
+    "0064+0320+0292": {
+      "glyph": "d\u0320\u0292",
+      "allophones": "d\u0320\u0292 d k"
+    },
+    "0068": {
+      "glyph": "h",
+      "allophones": "h \u0278"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k k\u02d0"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l \u0279"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006D+0062": {
+      "glyph": "mb",
+      "allophones": "mb"
+    },
+    "006D+0070": {
+      "glyph": "mp",
+      "allophones": "mp"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "006E+0064": {
+      "glyph": "nd",
+      "allophones": "nd"
+    },
+    "006E+0073": {
+      "glyph": "ns",
+      "allophones": "ns"
+    },
+    "006E+0074": {
+      "glyph": "nt",
+      "allophones": "nt"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p p\u02d0"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "r \u0279 \u027e \u027b"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t t\u02d0"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "\u014b"
+    },
+    "014B+006B": {
+      "glyph": "\u014bk",
+      "allophones": "\u014bk"
+    },
+    "014B+0261": {
+      "glyph": "\u014b\u0261",
+      "allophones": "\u014b\u0261"
+    },
+    "0253": {
+      "glyph": "\u0253",
+      "allophones": "\u0253"
+    },
+    "0257": {
+      "glyph": "\u0257",
+      "allophones": "\u0257"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "\u0261"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "\u0294 k"
+    },
+    "03B2": {
+      "glyph": "\u03b2",
+      "allophones": "\u03b2 \u028b \u0278"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o"
+    },
+    "025B": {
+      "glyph": "\u025b",
+      "allophones": "\u025b e"
+    },
+    "026F": {
+      "glyph": "\u026f",
+      "allophones": "\u026f u \u028b"
+    }
+  },
+  "ComplexPhoneList": "a b d\u0320\u0292 h i k l m mb mp n nd ns nt o p r s t \u014b \u014bk \u014b\u0261 \u0253 \u0257 \u025b \u0261 \u026f \u0294 \u03b2",
+  "ComponentList": "a b d d\u0320 h i k l m n o p r s t \u014b \u0253 \u0257 \u025b \u0261 \u026f \u0292 \u0294 \u03b2"
+}

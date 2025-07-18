@@ -1,0 +1,110 @@
+{
+  "GlottoCode": "anei1239",
+  "LanguageName": "Aneityum; Anejom\u0303",
+  "ISO6393": "aty",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0066": {
+      "glyph": "f",
+      "allophones": "f"
+    },
+    "0068": {
+      "glyph": "h",
+      "allophones": "h"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k k\u02b0 k"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006D+02B7": {
+      "glyph": "m\u02b7",
+      "allophones": "m\u02b7"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p p\u02b0 b p"
+    },
+    "0070+02B7": {
+      "glyph": "p\u02b7",
+      "allophones": "p\u02b7 p\u02b7\u02b0 b\u02b7 p\u02b7"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t t\u02b0 t"
+    },
+    "0076": {
+      "glyph": "v",
+      "allophones": "v"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "\u014b"
+    },
+    "0263": {
+      "glyph": "\u0263",
+      "allophones": "\u0263"
+    },
+    "0272": {
+      "glyph": "\u0272",
+      "allophones": "\u0272 j\u0303"
+    },
+    "027E": {
+      "glyph": "\u027e",
+      "allophones": "\u027e"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "\u0294"
+    },
+    "03B8": {
+      "glyph": "\u03b8",
+      "allophones": "\u03b8"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a \u00e6 \u025b \u0252 \u0254 aj"
+    },
+    "0254": {
+      "glyph": "\u0254",
+      "allophones": "\u0254 o oj o\u031d"
+    },
+    "025B": {
+      "glyph": "\u025b",
+      "allophones": "\u025b e ej e\u031d \u0259"
+    },
+    "026A": {
+      "glyph": "\u026a",
+      "allophones": "\u026a i i\u0303 i\u032f \u0268\u031f"
+    },
+    "028A": {
+      "glyph": "\u028a",
+      "allophones": "\u028a u uj u\u0303j u\u032f"
+    }
+  },
+  "ComplexPhoneList": "a f h j k l m m\u02b7 n p p\u02b7 s t v w \u014b \u0254 \u025b \u0263 \u026a \u0272 \u027e \u028a \u0294 \u03b8",
+  "ComponentList": "a f h j k l m m\u02b7 n p p\u02b7 s t v w \u014b \u0254 \u025b \u0263 \u026a \u0272 \u027e \u028a \u0294 \u03b8"
+}

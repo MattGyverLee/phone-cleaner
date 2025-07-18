@@ -1,0 +1,186 @@
+{
+  "GlottoCode": "barb1263",
+  "LanguageName": "Barbare\u00f1o",
+  "ISO6393": "boi",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0068": {
+      "glyph": "h",
+      "allophones": "h"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006A+02C0": {
+      "glyph": "j\u02c0",
+      "allophones": "j\u02c0"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k"
+    },
+    "006B+02B0": {
+      "glyph": "k\u02b0",
+      "allophones": "k\u02b0"
+    },
+    "006B+02BC": {
+      "glyph": "k\u02bc",
+      "allophones": "k\u02bc"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l"
+    },
+    "006C+02C0": {
+      "glyph": "l\u02c0",
+      "allophones": "l\u02c0"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006D+02C0": {
+      "glyph": "m\u02c0",
+      "allophones": "m\u02c0"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "006E+02C0": {
+      "glyph": "n\u02c0",
+      "allophones": "n\u02c0"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p"
+    },
+    "0070+02B0": {
+      "glyph": "p\u02b0",
+      "allophones": "p\u02b0"
+    },
+    "0070+02BC": {
+      "glyph": "p\u02bc",
+      "allophones": "p\u02bc"
+    },
+    "0071": {
+      "glyph": "q",
+      "allophones": "q"
+    },
+    "0071+02B0": {
+      "glyph": "q\u02b0",
+      "allophones": "q\u02b0"
+    },
+    "0071+02BC": {
+      "glyph": "q\u02bc",
+      "allophones": "q\u02bc"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s"
+    },
+    "0073+02B0": {
+      "glyph": "s\u02b0",
+      "allophones": "s\u02b0"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t"
+    },
+    "0074+0073": {
+      "glyph": "ts",
+      "allophones": "ts"
+    },
+    "0074+0073+02B0": {
+      "glyph": "ts\u02b0",
+      "allophones": "ts\u02b0"
+    },
+    "0074+0073+02BC": {
+      "glyph": "ts\u02bc",
+      "allophones": "ts\u02bc"
+    },
+    "0074+02B0": {
+      "glyph": "t\u02b0",
+      "allophones": "t\u02b0"
+    },
+    "0074+02BC": {
+      "glyph": "t\u02bc",
+      "allophones": "t\u02bc"
+    },
+    "0074+0320+0283": {
+      "glyph": "t\u0320\u0283",
+      "allophones": "t\u0320\u0283"
+    },
+    "0074+0320+0283+02B0": {
+      "glyph": "t\u0320\u0283\u02b0",
+      "allophones": "t\u0320\u0283\u02b0"
+    },
+    "0074+0320+0283+02BC": {
+      "glyph": "t\u0320\u0283\u02bc",
+      "allophones": "t\u0320\u0283\u02bc"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "0077+02C0": {
+      "glyph": "w\u02c0",
+      "allophones": "w\u02c0"
+    },
+    "0283": {
+      "glyph": "\u0283",
+      "allophones": "\u0283"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "\u0294"
+    },
+    "03C7": {
+      "glyph": "\u03c7",
+      "allophones": "\u03c7"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u"
+    },
+    "0268": {
+      "glyph": "\u0268",
+      "allophones": "\u0268"
+    },
+    "0073+02BC": {
+      "glyph": "s\u02bc",
+      "allophones": "s\u02bc"
+    },
+    "0283+02B0": {
+      "glyph": "\u0283\u02b0",
+      "allophones": "\u0283\u02b0"
+    },
+    "0283+02BC": {
+      "glyph": "\u0283\u02bc",
+      "allophones": "\u0283\u02bc"
+    },
+    "03C7+02BC": {
+      "glyph": "\u03c7\u02bc",
+      "allophones": "\u03c7\u02bc"
+    }
+  },
+  "ComplexPhoneList": "a e h i j j\u02c0 k k\u02b0 k\u02bc l l\u02c0 m m\u02c0 n n\u02c0 o p p\u02b0 p\u02bc q q\u02b0 q\u02bc s s\u02b0 s\u02bc t ts ts\u02b0 ts\u02bc t\u02b0 t\u02bc t\u0320\u0283 t\u0320\u0283\u02b0 t\u0320\u0283\u02bc u w w\u02c0 \u0268 \u0283 \u0283\u02b0 \u0283\u02bc \u0294 \u03c7 \u03c7\u02bc",
+  "ComponentList": "a e h i j j\u02c0 k k\u02b0 k\u02bc l l\u02c0 m m\u02c0 n n\u02c0 o p p\u02b0 p\u02bc q q\u02b0 q\u02bc s s\u02b0 s\u02bc t t\u02b0 t\u02bc t\u0320 u w w\u02c0 \u0268 \u0283 \u0283\u02b0 \u0283\u02bc \u0294 \u03c7 \u03c7\u02bc"
+}

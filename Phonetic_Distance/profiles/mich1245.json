@@ -1,0 +1,110 @@
+{
+  "GlottoCode": "mich1245",
+  "LanguageName": "Michoacan Nahual",
+  "ISO6393": "ncl",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b"
+    },
+    "0064": {
+      "glyph": "d",
+      "allophones": "d"
+    },
+    "0068": {
+      "glyph": "h",
+      "allophones": "h"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k h"
+    },
+    "006B+02B7": {
+      "glyph": "k\u02b7",
+      "allophones": "k\u02b7"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "d t l"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p k"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "r"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t"
+    },
+    "0074+0073": {
+      "glyph": "ts",
+      "allophones": "ts s h"
+    },
+    "0074+0320+0283": {
+      "glyph": "t\u0320\u0283",
+      "allophones": "t\u0320\u0283 h"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w h"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "\u0261"
+    },
+    "0272": {
+      "glyph": "\u0272",
+      "allophones": "\u0272"
+    },
+    "0283": {
+      "glyph": "\u0283",
+      "allophones": "\u0283"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "k \u0294"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "i e"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i e"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o u"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "o u"
+    }
+  },
+  "ComplexPhoneList": "a b d e h i j k k\u02b7 l m n o p r s t ts t\u0320\u0283 u w \u0261 \u0272 \u0283 \u0294",
+  "ComponentList": "a b d e h i j k k\u02b7 l m n o p r s t t\u0320 u w \u0261 \u0272 \u0283 \u0294"
+}

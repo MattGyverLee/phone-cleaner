@@ -1,0 +1,82 @@
+{
+  "GlottoCode": "awtu1239",
+  "LanguageName": "Awtuw",
+  "ISO6393": "kmn",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0064": {
+      "glyph": "d",
+      "allophones": "d"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B+02B0": {
+      "glyph": "k\u02b0",
+      "allophones": "k\u02b0 k \u0261"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n m \u014b"
+    },
+    "0070+02B0": {
+      "glyph": "p\u02b0",
+      "allophones": "p\u02b0 p b"
+    },
+    "0074+02B0": {
+      "glyph": "t\u02b0",
+      "allophones": "t\u02b0 t d"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "\u014b"
+    },
+    "027E": {
+      "glyph": "\u027e",
+      "allophones": "\u027e r"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u"
+    },
+    "00E6": {
+      "glyph": "\u00e6",
+      "allophones": "\u00e6"
+    },
+    "0259": {
+      "glyph": "\u0259",
+      "allophones": "\u0259"
+    }
+  },
+  "ComplexPhoneList": "a d e i j k\u02b0 l m n o p\u02b0 t\u02b0 u w \u00e6 \u014b \u0259 \u027e",
+  "ComponentList": "a d e i j k\u02b0 l m n o p\u02b0 t\u02b0 u w \u00e6 \u014b \u0259 \u027e"
+}

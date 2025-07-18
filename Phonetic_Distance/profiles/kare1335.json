@@ -1,0 +1,130 @@
+{
+  "GlottoCode": "kare1335",
+  "LanguageName": "Karelian",
+  "ISO6393": "krl",
+  "SpecificDialect": "Karelian (North)",
+  "phones": {
+    "0068": {
+      "glyph": "h",
+      "allophones": "NA"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "NA"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "NA"
+    },
+    "006C+02B2": {
+      "glyph": "l\u02b2",
+      "allophones": "NA"
+    },
+    "006C+032A": {
+      "glyph": "l\u032a",
+      "allophones": "NA"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "NA"
+    },
+    "006E+02B2": {
+      "glyph": "n\u02b2",
+      "allophones": "NA"
+    },
+    "006E+032A": {
+      "glyph": "n\u032a",
+      "allophones": "NA"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "NA"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "NA"
+    },
+    "0073+02B2": {
+      "glyph": "s\u02b2",
+      "allophones": "NA"
+    },
+    "0073+032A": {
+      "glyph": "s\u032a",
+      "allophones": "NA"
+    },
+    "0074+02B2": {
+      "glyph": "t\u02b2",
+      "allophones": "NA"
+    },
+    "0074+0320+0283": {
+      "glyph": "t\u0320\u0283",
+      "allophones": "NA"
+    },
+    "0074+032A": {
+      "glyph": "t\u032a",
+      "allophones": "NA"
+    },
+    "0076": {
+      "glyph": "v",
+      "allophones": "NA"
+    },
+    "0065+031E": {
+      "glyph": "e\u031e",
+      "allophones": "NA"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "NA"
+    },
+    "0069+0065+031E": {
+      "glyph": "ie\u031e",
+      "allophones": "NA"
+    },
+    "0069+00E6": {
+      "glyph": "i\u00e6",
+      "allophones": "NA"
+    },
+    "006F+031E": {
+      "glyph": "o\u031e",
+      "allophones": "NA"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "NA"
+    },
+    "0075+006F+031E": {
+      "glyph": "uo\u031e",
+      "allophones": "NA"
+    },
+    "0075+0251": {
+      "glyph": "u\u0251",
+      "allophones": "NA"
+    },
+    "0079": {
+      "glyph": "y",
+      "allophones": "NA"
+    },
+    "0079+00E6": {
+      "glyph": "y\u00e6",
+      "allophones": "NA"
+    },
+    "0079+00F8+031E": {
+      "glyph": "y\u00f8\u031e",
+      "allophones": "NA"
+    },
+    "00E6": {
+      "glyph": "\u00e6",
+      "allophones": "NA"
+    },
+    "00F8+031E": {
+      "glyph": "\u00f8\u031e",
+      "allophones": "NA"
+    },
+    "0251": {
+      "glyph": "\u0251",
+      "allophones": "NA"
+    }
+  },
+  "ComplexPhoneList": "e\u031e h i ie\u031e i\u00e6 j k l\u02b2 l\u032a m n\u02b2 n\u032a o\u031e p r s\u02b2 s\u032a t\u02b2 t\u0320\u0283 t\u032a u uo\u031e u\u0251 v y y\u00e6 y\u00f8\u031e \u00e6 \u00f8\u031e \u0251",
+  "ComponentList": "e\u031e h i j k l\u02b2 l\u032a m n\u02b2 n\u032a o\u031e p r s\u02b2 s\u032a t\u02b2 t\u0320 t\u032a u v y \u00e6 \u00f8\u031e \u0251 \u0283"
+}

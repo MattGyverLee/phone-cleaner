@@ -1,0 +1,178 @@
+{
+  "GlottoCode": "kala1381",
+  "LanguageName": "Kalabari; Kirike; Kalabari-Ijo",
+  "ISO6393": "ijn",
+  "SpecificDialect": "Kalabari-Ijo",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b b\u02b7 b\u02b2"
+    },
+    "0064": {
+      "glyph": "d",
+      "allophones": "d d\u02b7 d\u02b2"
+    },
+    "0064+0320+0292": {
+      "glyph": "d\u0320\u0292",
+      "allophones": "d\u0320\u0292"
+    },
+    "0066": {
+      "glyph": "f",
+      "allophones": "f f\u02b7 f\u02b2"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j j\u0303"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k k\u02b7 k\u02b2"
+    },
+    "006B+0070": {
+      "glyph": "kp",
+      "allophones": "kp"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p p\u02b7 p\u02b2"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "r r\u02b7 r\u02b2"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s s\u02b7 s\u02b2"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t t\u02b7 t\u02b2"
+    },
+    "0076": {
+      "glyph": "v",
+      "allophones": "v v\u02b7 v\u02b2"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w w\u0303"
+    },
+    "007A": {
+      "glyph": "z",
+      "allophones": "z"
+    },
+    "0253": {
+      "glyph": "\u0253",
+      "allophones": "\u0253"
+    },
+    "0257": {
+      "glyph": "\u0257",
+      "allophones": "\u0257"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "\u0261 \u0261\u02b7 \u0261\u02b2"
+    },
+    "0261+0062": {
+      "glyph": "\u0261b",
+      "allophones": "\u0261b"
+    },
+    "0266": {
+      "glyph": "\u0266",
+      "allophones": "\u0266"
+    },
+    "02E6": {
+      "glyph": "\u02e6",
+      "allophones": "\u02e6"
+    },
+    "02E8": {
+      "glyph": "\u02e8",
+      "allophones": "\u02e8"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a"
+    },
+    "0061+0303": {
+      "glyph": "a\u0303",
+      "allophones": "a\u0303"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e"
+    },
+    "0065+0303": {
+      "glyph": "e\u0303",
+      "allophones": "e\u0303"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i"
+    },
+    "0069+0303": {
+      "glyph": "i\u0303",
+      "allophones": "i\u0303"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o"
+    },
+    "006F+0303": {
+      "glyph": "o\u0303",
+      "allophones": "o\u0303"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u"
+    },
+    "0075+0303": {
+      "glyph": "u\u0303",
+      "allophones": "u\u0303"
+    },
+    "0254": {
+      "glyph": "\u0254",
+      "allophones": "\u0254"
+    },
+    "0254+0303": {
+      "glyph": "\u0254\u0303",
+      "allophones": "\u0254\u0303"
+    },
+    "025B": {
+      "glyph": "\u025b",
+      "allophones": "\u025b"
+    },
+    "025B+0303": {
+      "glyph": "\u025b\u0303",
+      "allophones": "\u025b\u0303"
+    },
+    "026A": {
+      "glyph": "\u026a",
+      "allophones": "\u026a"
+    },
+    "026A+0303": {
+      "glyph": "\u026a\u0303",
+      "allophones": "\u026a\u0303"
+    },
+    "028A": {
+      "glyph": "\u028a",
+      "allophones": "\u028a"
+    },
+    "028A+0303": {
+      "glyph": "\u028a\u0303",
+      "allophones": "\u028a\u0303"
+    }
+  },
+  "ComplexPhoneList": "a a\u0303 b d d\u0320\u0292 e e\u0303 f i i\u0303 j k kp l m n o o\u0303 p r s t u u\u0303 v w z \u0253 \u0254 \u0254\u0303 \u0257 \u025b \u025b\u0303 \u0261 \u0261b \u0266 \u026a \u026a\u0303 \u028a \u028a\u0303 \u02e6 \u02e8",
+  "ComponentList": "a a\u0303 b d d\u0320 e e\u0303 f i i\u0303 j k l m n o o\u0303 p r s t u u\u0303 v w z \u0253 \u0254 \u0254\u0303 \u0257 \u025b \u025b\u0303 \u0261 \u0266 \u026a \u026a\u0303 \u028a \u028a\u0303 \u0292 \u02e6 \u02e8"
+}

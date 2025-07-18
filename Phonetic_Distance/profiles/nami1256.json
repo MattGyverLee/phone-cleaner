@@ -1,0 +1,70 @@
+{
+  "GlottoCode": "nami1256",
+  "LanguageName": "Namia",
+  "ISO6393": "nnm",
+  "SpecificDialect": "NA",
+  "phones": {
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "r t"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "r t"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "\u00f8 jw w"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u"
+    },
+    "0259": {
+      "glyph": "\u0259",
+      "allophones": "\u0259 \u00f8 e o"
+    }
+  },
+  "ComplexPhoneList": "a e i j k l m n o p r t u w \u0259",
+  "ComponentList": "a e i j k l m n o p r t u w \u0259"
+}

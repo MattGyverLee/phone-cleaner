@@ -1,0 +1,86 @@
+{
+  "GlottoCode": "miya1259",
+  "LanguageName": "Miyako",
+  "ISO6393": "mvi",
+  "SpecificDialect": "Miyako (Ogami)",
+  "phones": {
+    "0066": {
+      "glyph": "f",
+      "allophones": "NA"
+    },
+    "0066+0329": {
+      "glyph": "f\u0329",
+      "allophones": "NA"
+    },
+    "006B+02B0": {
+      "glyph": "k\u02b0",
+      "allophones": "NA"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "NA"
+    },
+    "006D+0329": {
+      "glyph": "m\u0329",
+      "allophones": "NA"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "NA"
+    },
+    "006E+0329": {
+      "glyph": "n\u0329",
+      "allophones": "NA"
+    },
+    "0070+02B0": {
+      "glyph": "p\u02b0",
+      "allophones": "NA"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "NA"
+    },
+    "0073+0329": {
+      "glyph": "s\u0329",
+      "allophones": "NA"
+    },
+    "0074+02B0": {
+      "glyph": "t\u02b0",
+      "allophones": "NA"
+    },
+    "027E": {
+      "glyph": "\u027e",
+      "allophones": "NA"
+    },
+    "028B": {
+      "glyph": "\u028b",
+      "allophones": "NA"
+    },
+    "028B+0329": {
+      "glyph": "\u028b\u0329",
+      "allophones": "NA"
+    },
+    "0061+0308": {
+      "glyph": "a\u0308",
+      "allophones": "NA"
+    },
+    "0065+031E": {
+      "glyph": "e\u031e",
+      "allophones": "NA"
+    },
+    "0069+031E": {
+      "glyph": "i\u031e",
+      "allophones": "NA"
+    },
+    "026F+031E": {
+      "glyph": "\u026f\u031e",
+      "allophones": "NA"
+    },
+    "028A": {
+      "glyph": "\u028a",
+      "allophones": "NA"
+    }
+  },
+  "ComplexPhoneList": "a\u0308 e\u031e f f\u0329 i\u031e k\u02b0 m m\u0329 n n\u0329 p\u02b0 s s\u0329 t\u02b0 \u026f\u031e \u027e \u028a \u028b \u028b\u0329",
+  "ComponentList": "a\u0308 e\u031e f f\u0329 i\u031e k\u02b0 m m\u0329 n n\u0329 p\u02b0 s s\u0329 t\u02b0 \u026f\u031e \u027e \u028a \u028b \u028b\u0329"
+}

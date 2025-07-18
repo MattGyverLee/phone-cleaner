@@ -1,0 +1,66 @@
+{
+  "GlottoCode": "abau1245",
+  "LanguageName": "Abau",
+  "ISO6393": "aau",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0068": {
+      "glyph": "h",
+      "allophones": "h \u0278 m\u0325 n\u0325"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k k\u02b0"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p p\u02b0 b"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "027E": {
+      "glyph": "\u027e",
+      "allophones": "d t \u0279 \u027e"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u"
+    },
+    "0251": {
+      "glyph": "\u0251",
+      "allophones": "\u0251"
+    }
+  },
+  "ComplexPhoneList": "e h i j k m n o p s u w \u0251 \u027e",
+  "ComponentList": "e h i j k m n o p s u w \u0251 \u027e"
+}

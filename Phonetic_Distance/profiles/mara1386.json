@@ -1,0 +1,106 @@
+{
+  "GlottoCode": "mara1386",
+  "LanguageName": "Maranungku",
+  "ISO6393": "zmr",
+  "SpecificDialect": "NA",
+  "phones": {
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k \u0261"
+    },
+    "006B+02D0": {
+      "glyph": "k\u02d0",
+      "allophones": "k\u02d0"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006D+02D0": {
+      "glyph": "m\u02d0",
+      "allophones": "m\u02d0"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "006E+02D0": {
+      "glyph": "n\u02d0",
+      "allophones": "n\u02d0"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p b"
+    },
+    "0070+02D0": {
+      "glyph": "p\u02d0",
+      "allophones": "p\u02d0"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "r"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "\u00f0 \u03b8 d t"
+    },
+    "0074+02D0": {
+      "glyph": "t\u02d0",
+      "allophones": "t\u02d0"
+    },
+    "0074+0320+0283": {
+      "glyph": "t\u0320\u0283",
+      "allophones": "d\u0320\u0292 t\u0320\u0283"
+    },
+    "0074+0320+0283+02D0": {
+      "glyph": "t\u0320\u0283\u02d0",
+      "allophones": "t\u0320\u0283\u02d0"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "\u014b"
+    },
+    "0272": {
+      "glyph": "\u0272",
+      "allophones": "\u0272"
+    },
+    "0279": {
+      "glyph": "\u0279",
+      "allophones": "\u0279"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a \u0251"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "\u025b e i \u026a\u0308 i"
+    },
+    "00E6": {
+      "glyph": "\u00e6",
+      "allophones": "\u00e6 \u00e6"
+    },
+    "0259": {
+      "glyph": "\u0259",
+      "allophones": "\u0259"
+    },
+    "028A": {
+      "glyph": "\u028a",
+      "allophones": "u \u028a \u0254\u02d0 o"
+    }
+  },
+  "ComplexPhoneList": "a i j k k\u02d0 l m m\u02d0 n n\u02d0 p p\u02d0 r t t\u02d0 t\u0320\u0283 t\u0320\u0283\u02d0 w \u00e6 \u014b \u0259 \u0272 \u0279 \u028a",
+  "ComponentList": "a i j k k\u02d0 l m m\u02d0 n n\u02d0 p p\u02d0 r t t\u02d0 t\u0320 w \u00e6 \u014b \u0259 \u0272 \u0279 \u0283 \u0283\u02d0 \u028a"
+}

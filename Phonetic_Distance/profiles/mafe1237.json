@@ -1,0 +1,94 @@
+{
+  "GlottoCode": "mafe1237",
+  "LanguageName": "Mavea",
+  "ISO6393": "mkv",
+  "SpecificDialect": "Mavea",
+  "phones": {
+    "006B": {
+      "glyph": "k",
+      "allophones": "k"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l"
+    },
+    "006C+02D0": {
+      "glyph": "l\u02d0",
+      "allophones": "l\u02d0"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006D+02D0": {
+      "glyph": "m\u02d0",
+      "allophones": "m\u02d0"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "006E+02D0": {
+      "glyph": "n\u02d0",
+      "allophones": "n\u02d0"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p \u03b2 v f"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "r \u027e"
+    },
+    "0072+02D0": {
+      "glyph": "r\u02d0",
+      "allophones": "r\u02d0"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t"
+    },
+    "0076": {
+      "glyph": "v",
+      "allophones": "v \u0278 \u03b2 f \u028b"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "\u014b"
+    },
+    "0256": {
+      "glyph": "\u0256",
+      "allophones": "\u0256"
+    },
+    "0270": {
+      "glyph": "\u0270",
+      "allophones": "\u0270"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e e\u0303"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i i\u0303 \u2205"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o o\u0303 \u2205 \u0251\u02d0 e\u02d0 e"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u u\u0303 \u2205"
+    },
+    "0251": {
+      "glyph": "\u0251",
+      "allophones": "\u0251 \u0251\u0303 \u2205 e"
+    }
+  },
+  "ComplexPhoneList": "e i k l l\u02d0 m m\u02d0 n n\u02d0 o p r r\u02d0 s t u v \u014b \u0251 \u0256 \u0270",
+  "ComponentList": "e i k l l\u02d0 m m\u02d0 n n\u02d0 o p r r\u02d0 s t u v \u014b \u0251 \u0256 \u0270"
+}

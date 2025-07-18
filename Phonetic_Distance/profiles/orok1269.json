@@ -1,0 +1,78 @@
+{
+  "GlottoCode": "orok1269",
+  "LanguageName": "Orokaiva",
+  "ISO6393": "okv",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b mb \u03b2 \u03b2\u02b7"
+    },
+    "0064": {
+      "glyph": "d",
+      "allophones": "d nd \u027e \u027d l"
+    },
+    "0064+007A": {
+      "glyph": "dz",
+      "allophones": "dz d\u0320\u0292 \u0292"
+    },
+    "0068": {
+      "glyph": "h",
+      "allophones": "h"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n \u014b"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "\u014b"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "\u0261 \u014b\u0261"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a\u0303 a\u02d0 a\u031d a"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e e\u0303 e\u02d0 e\u031e"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i\u0303 i\u02d0 \u026a i"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o o\u0303 o\u02d0"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u u\u0303 u\u02d0"
+    }
+  },
+  "ComplexPhoneList": "a b d dz e h i k m n o p s t u \u014b \u0261",
+  "ComponentList": "a b d e h i k m n o p s t u z \u014b \u0261"
+}

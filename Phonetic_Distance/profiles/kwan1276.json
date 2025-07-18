@@ -1,0 +1,182 @@
+{
+  "GlottoCode": "kwan1276",
+  "LanguageName": "Kwanja",
+  "ISO6393": "knp",
+  "SpecificDialect": "Sundani",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b p\u031a mb mb\u02b7"
+    },
+    "0064": {
+      "glyph": "d",
+      "allophones": "d nd nd\u02b7 d\u02b7"
+    },
+    "0064+0320+0292": {
+      "glyph": "d\u0320\u0292",
+      "allophones": "d\u0320\u0292 n\u0320d\u0320\u0292 n\u0320d\u0320\u0292\u02b7 d\u0320\u0292\u02b7"
+    },
+    "0066": {
+      "glyph": "f",
+      "allophones": "f f\u02b7"
+    },
+    "0068": {
+      "glyph": "h",
+      "allophones": "h h\u02b7"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j j\u02b7"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k k\u02b0 k\u031a k\u02b7"
+    },
+    "006B+0070": {
+      "glyph": "kp",
+      "allophones": "kp kp\u02b7"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l \u027e \u0279\u031a l\u02b7"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m m\u02b7"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n n\u02b7"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p p\u02b0 p\u02b7"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s\u02b7 s \u0283"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t t\u02b0 t\u031a t\u02b7"
+    },
+    "0074+0320+0283": {
+      "glyph": "t\u0320\u0283",
+      "allophones": "t\u0320\u0283 t\u0320\u0283\u02b7"
+    },
+    "0076": {
+      "glyph": "v",
+      "allophones": "v \u0271v\u02b7"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w w\u02d0"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "\u014b"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "\u0261 \u014b\u0261 \u0261\u02b7 \u014b\u0261\u02b7"
+    },
+    "0261+0062": {
+      "glyph": "\u0261b",
+      "allophones": "\u0261b\u02b7 \u0261b \u014bm\u0261b \u014bm\u0261b\u02b7"
+    },
+    "0272": {
+      "glyph": "\u0272",
+      "allophones": "\u0272"
+    },
+    "02E5": {
+      "glyph": "\u02e5",
+      "allophones": "\u02e5"
+    },
+    "02E6": {
+      "glyph": "\u02e6",
+      "allophones": "\u02e6"
+    },
+    "02E8": {
+      "glyph": "\u02e8",
+      "allophones": "\u02e8"
+    },
+    "02E9": {
+      "glyph": "\u02e9",
+      "allophones": "\u02e9"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a"
+    },
+    "0061+02D0": {
+      "glyph": "a\u02d0",
+      "allophones": "a\u02d0"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e"
+    },
+    "0065+02D0": {
+      "glyph": "e\u02d0",
+      "allophones": "e\u02d0"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i"
+    },
+    "0069+02D0": {
+      "glyph": "i\u02d0",
+      "allophones": "i\u02d0"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o"
+    },
+    "006F+02D0": {
+      "glyph": "o\u02d0",
+      "allophones": "o\u02d0"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u"
+    },
+    "0075+02D0": {
+      "glyph": "u\u02d0",
+      "allophones": "u\u02d0"
+    },
+    "0079": {
+      "glyph": "y",
+      "allophones": "y"
+    },
+    "0254": {
+      "glyph": "\u0254",
+      "allophones": "\u0254"
+    },
+    "0254+02D0": {
+      "glyph": "\u0254\u02d0",
+      "allophones": "\u0254\u02d0"
+    },
+    "0259": {
+      "glyph": "\u0259",
+      "allophones": "\u0259"
+    },
+    "0259+02D0": {
+      "glyph": "\u0259\u02d0",
+      "allophones": "\u0259\u02d0"
+    },
+    "025B": {
+      "glyph": "\u025b",
+      "allophones": "\u025b"
+    },
+    "0268": {
+      "glyph": "\u0268",
+      "allophones": "\u0268"
+    },
+    "0268+02D0": {
+      "glyph": "\u0268\u02d0",
+      "allophones": "\u0268\u02d0"
+    }
+  },
+  "ComplexPhoneList": "a a\u02d0 b d d\u0320\u0292 e e\u02d0 f h i i\u02d0 j k kp l m n o o\u02d0 p s t t\u0320\u0283 u u\u02d0 v w y \u014b \u0254 \u0254\u02d0 \u0259 \u0259\u02d0 \u025b \u0261 \u0261b \u0268 \u0268\u02d0 \u0272 \u02e5 \u02e6 \u02e8 \u02e9",
+  "ComponentList": "a a\u02d0 b d d\u0320 e e\u02d0 f h i i\u02d0 j k l m n o o\u02d0 p s t t\u0320 u u\u02d0 v w y \u014b \u0254 \u0254\u02d0 \u0259 \u0259\u02d0 \u025b \u0261 \u0268 \u0268\u02d0 \u0272 \u0283 \u0292 \u02e5 \u02e6 \u02e8 \u02e9"
+}

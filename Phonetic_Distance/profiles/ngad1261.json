@@ -1,0 +1,114 @@
+{
+  "GlottoCode": "ngad1261",
+  "LanguageName": "Ngad''a; Ngadha'",
+  "ISO6393": "nxg",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b"
+    },
+    "0064+0320+0292": {
+      "glyph": "d\u0320\u0292",
+      "allophones": "d\u0320\u0292"
+    },
+    "0064+032A": {
+      "glyph": "d\u032a",
+      "allophones": "d\u032a"
+    },
+    "0066": {
+      "glyph": "f",
+      "allophones": "f"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k k\u02b0 \u02b0k\u02b0"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p p\u02b0 \u02b0p\u02b0"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t t\u02b0 \u02b0t\u02b0"
+    },
+    "0076": {
+      "glyph": "v",
+      "allophones": "v"
+    },
+    "0078": {
+      "glyph": "x",
+      "allophones": "x"
+    },
+    "007A": {
+      "glyph": "z",
+      "allophones": "z"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "\u014b"
+    },
+    "0253": {
+      "glyph": "\u0253",
+      "allophones": "\u0253"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "\u0261"
+    },
+    "0263": {
+      "glyph": "\u0263",
+      "allophones": "\u0263"
+    },
+    "027E": {
+      "glyph": "\u027e",
+      "allophones": "\u027e r"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "\u0294"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a a\u0325 \u0259"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e e\u0325"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i i\u0325"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o o\u0325"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u u\u0325"
+    },
+    "0259": {
+      "glyph": "\u0259",
+      "allophones": "\u0259 \u0259\u0325"
+    }
+  },
+  "ComplexPhoneList": "a b d\u0320\u0292 d\u032a e f i k l m n o p s t u v x z \u014b \u0253 \u0259 \u0261 \u0263 \u027e \u0294",
+  "ComponentList": "a b d\u0320 d\u032a e f i k l m n o p s t u v x z \u014b \u0253 \u0259 \u0261 \u0263 \u027e \u0292 \u0294"
+}

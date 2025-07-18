@@ -1,0 +1,102 @@
+{
+  "GlottoCode": "yill1241",
+  "LanguageName": "Yil",
+  "ISO6393": "yll",
+  "SpecificDialect": "NA",
+  "phones": {
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "r"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w \u03b2"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "\u014b"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "\u0261 x"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a"
+    },
+    "0061+0069": {
+      "glyph": "ai",
+      "allophones": "ai"
+    },
+    "0061+0075": {
+      "glyph": "au",
+      "allophones": "au"
+    },
+    "0061+0079": {
+      "glyph": "ay",
+      "allophones": "ay"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "\u025b e \u00e6"
+    },
+    "0065+0069": {
+      "glyph": "ei",
+      "allophones": "ei"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u"
+    },
+    "0079": {
+      "glyph": "y",
+      "allophones": "y"
+    },
+    "0259": {
+      "glyph": "\u0259",
+      "allophones": "\u0259 \u0275"
+    }
+  },
+  "ComplexPhoneList": "a ai au ay e ei i j k l m n o p r s t u w y \u014b \u0259 \u0261",
+  "ComponentList": "a e i j k l m n o p r s t u w y \u014b \u0259 \u0261"
+}

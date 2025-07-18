@@ -1,0 +1,130 @@
+{
+  "GlottoCode": "stan1318",
+  "LanguageName": "Arabic",
+  "ISO6393": "arb",
+  "SpecificDialect": "Safad, Beirut, Damascus, Kuwait",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b"
+    },
+    "0064+032A": {
+      "glyph": "d\u032a",
+      "allophones": "d\u032a"
+    },
+    "0064+032A+0292": {
+      "glyph": "d\u032a\u0292",
+      "allophones": "d\u032a\u0292"
+    },
+    "0066": {
+      "glyph": "f",
+      "allophones": "f"
+    },
+    "0068": {
+      "glyph": "h",
+      "allophones": "h"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B+02B0": {
+      "glyph": "k\u02b0",
+      "allophones": "k\u02b0"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l"
+    },
+    "006C+02E4": {
+      "glyph": "l\u02e4",
+      "allophones": "l\u02e4"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E+032A": {
+      "glyph": "n\u032a",
+      "allophones": "n\u032a"
+    },
+    "0071": {
+      "glyph": "q",
+      "allophones": "q"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "r"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s"
+    },
+    "0074+032A+02B0": {
+      "glyph": "t\u032a\u02b0",
+      "allophones": "t\u032a\u02b0"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "0078+0280+0325": {
+      "glyph": "x\u0280\u0325",
+      "allophones": "x\u0280\u0325"
+    },
+    "007A": {
+      "glyph": "z",
+      "allophones": "z"
+    },
+    "0127": {
+      "glyph": "\u0127",
+      "allophones": "\u0127"
+    },
+    "0263": {
+      "glyph": "\u0263",
+      "allophones": "\u0263"
+    },
+    "0283": {
+      "glyph": "\u0283",
+      "allophones": "\u0283"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "\u0294"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "\u0251 a \u0250"
+    },
+    "0061+0069": {
+      "glyph": "ai",
+      "allophones": "ai"
+    },
+    "0061+0075": {
+      "glyph": "au",
+      "allophones": "au"
+    },
+    "0061+02D0": {
+      "glyph": "a\u02d0",
+      "allophones": "a\u02d0"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "\u0268 i"
+    },
+    "0069+0069+032F": {
+      "glyph": "ii\u032f",
+      "allophones": "\u0268 ii\u032f"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "\u028a u"
+    },
+    "0075+0075+032F": {
+      "glyph": "uu\u032f",
+      "allophones": "\u0263 uu\u032f"
+    }
+  },
+  "ComplexPhoneList": "a ai au a\u02d0 b d\u032a d\u032a\u0292 f h i ii\u032f j k\u02b0 l l\u02e4 m n\u032a q r s t\u032a\u02b0 u uu\u032f w x\u0280\u0325 z \u0127 \u0263 \u0283 \u0294",
+  "ComponentList": "a a\u02d0 b d\u032a f h i i\u032f j k\u02b0 l l\u02e4 m n\u032a q r s t\u032a\u02b0 u u\u032f w x z \u0127 \u0263 \u0280\u0325 \u0283 \u0292 \u0294"
+}

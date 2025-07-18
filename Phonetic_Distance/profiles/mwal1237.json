@@ -1,0 +1,106 @@
+{
+  "GlottoCode": "mwal1237",
+  "LanguageName": "Mwali",
+  "ISO6393": "wlc",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b"
+    },
+    "0064": {
+      "glyph": "d",
+      "allophones": "d"
+    },
+    "0064+007A": {
+      "glyph": "dz",
+      "allophones": "dz z"
+    },
+    "0064+0320+0292": {
+      "glyph": "d\u0320\u0292",
+      "allophones": "d\u0320\u0292"
+    },
+    "0066": {
+      "glyph": "f",
+      "allophones": "f"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k h"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p \u03b2"
+    },
+    "0074+0072": {
+      "glyph": "tr",
+      "allophones": "tr r"
+    },
+    "0074+0073": {
+      "glyph": "ts",
+      "allophones": "ts s"
+    },
+    "0076": {
+      "glyph": "v",
+      "allophones": "v"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "0253": {
+      "glyph": "\u0253",
+      "allophones": "\u0253 w"
+    },
+    "0257": {
+      "glyph": "\u0257",
+      "allophones": "\u0257 l"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "\u0261"
+    },
+    "0272": {
+      "glyph": "\u0272",
+      "allophones": "\u0272"
+    },
+    "0283": {
+      "glyph": "\u0283",
+      "allophones": "\u0283"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u"
+    }
+  },
+  "ComplexPhoneList": "a b d dz d\u0320\u0292 e f i j k m n o p tr ts u v w \u0253 \u0257 \u0261 \u0272 \u0283",
+  "ComponentList": "a b d d\u0320 e f i j k m n o p r s t u v w z \u0253 \u0257 \u0261 \u0272 \u0283 \u0292"
+}

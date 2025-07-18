@@ -1,0 +1,186 @@
+{
+  "GlottoCode": "diml1238",
+  "LanguageName": "Dimili",
+  "ISO6393": "diq",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b v"
+    },
+    "0064+0320+0292": {
+      "glyph": "d\u0320\u0292",
+      "allophones": "d\u0320\u0292 \u0292"
+    },
+    "0064+032A": {
+      "glyph": "d\u032a",
+      "allophones": "d\u032a"
+    },
+    "0066": {
+      "glyph": "f",
+      "allophones": "f"
+    },
+    "0068": {
+      "glyph": "h",
+      "allophones": "h"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n \u014b"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p"
+    },
+    "0071": {
+      "glyph": "q",
+      "allophones": "q"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "r"
+    },
+    "0073+032A": {
+      "glyph": "s\u032a",
+      "allophones": "s\u032a"
+    },
+    "0073+032A+02E4": {
+      "glyph": "s\u032a\u02e4",
+      "allophones": "s\u032a\u02e4"
+    },
+    "0074+0320+0283": {
+      "glyph": "t\u0320\u0283",
+      "allophones": "t\u0320\u0283"
+    },
+    "0074+032A": {
+      "glyph": "t\u032a",
+      "allophones": "t\u032a"
+    },
+    "0074+032A+02E4": {
+      "glyph": "t\u032a\u02e4",
+      "allophones": "t\u032a\u02e4"
+    },
+    "0076": {
+      "glyph": "v",
+      "allophones": "v"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "0078": {
+      "glyph": "x",
+      "allophones": "x"
+    },
+    "007A+032A": {
+      "glyph": "z\u032a",
+      "allophones": "z\u032a"
+    },
+    "0127": {
+      "glyph": "\u0127",
+      "allophones": "\u0127"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "\u0261"
+    },
+    "0263": {
+      "glyph": "\u0263",
+      "allophones": "\u0263"
+    },
+    "026B": {
+      "glyph": "\u026b",
+      "allophones": "\u026b"
+    },
+    "027E": {
+      "glyph": "\u027e",
+      "allophones": "\u027e"
+    },
+    "0283": {
+      "glyph": "\u0283",
+      "allophones": "\u0283"
+    },
+    "0292": {
+      "glyph": "\u0292",
+      "allophones": "\u0292"
+    },
+    "0295": {
+      "glyph": "\u0295",
+      "allophones": "\u0295"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a"
+    },
+    "0061+0069": {
+      "glyph": "ai",
+      "allophones": "ai"
+    },
+    "0061+0075": {
+      "glyph": "au",
+      "allophones": "au"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e \u025b"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i \u026a j"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o w"
+    },
+    "006F+0069": {
+      "glyph": "oi",
+      "allophones": "oi"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u"
+    },
+    "0259": {
+      "glyph": "\u0259",
+      "allophones": "\u0259"
+    },
+    "0259+0069": {
+      "glyph": "\u0259i",
+      "allophones": "\u0259i"
+    },
+    "0259+0075": {
+      "glyph": "\u0259u",
+      "allophones": "\u0259u"
+    },
+    "0268": {
+      "glyph": "\u0268",
+      "allophones": "\u0268 \u0268\u0303 i u \u026a"
+    },
+    "0289": {
+      "glyph": "\u0289",
+      "allophones": "\u0289"
+    },
+    "0289+0069": {
+      "glyph": "\u0289i",
+      "allophones": "\u0289i"
+    }
+  },
+  "ComplexPhoneList": "a ai au b d\u0320\u0292 d\u032a e f h i j k l m n o oi p q r s\u032a s\u032a\u02e4 t\u0320\u0283 t\u032a t\u032a\u02e4 u v w x z\u032a \u0127 \u0259 \u0259i \u0259u \u0261 \u0263 \u0268 \u026b \u027e \u0283 \u0289 \u0289i \u0292 \u0295",
+  "ComponentList": "a b d\u0320 d\u032a e f h i j k l m n o p q r s\u032a s\u032a\u02e4 t\u0320 t\u032a t\u032a\u02e4 u v w x z\u032a \u0127 \u0259 \u0261 \u0263 \u0268 \u026b \u027e \u0283 \u0289 \u0292 \u0295"
+}

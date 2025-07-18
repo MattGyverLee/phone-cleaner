@@ -1,0 +1,182 @@
+{
+  "GlottoCode": "mamm1241",
+  "LanguageName": "Western Mam; Tacanec",
+  "ISO6393": "mam",
+  "SpecificDialect": "Tacana\u0301",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b"
+    },
+    "0063": {
+      "glyph": "c",
+      "allophones": "c"
+    },
+    "0063+02BC": {
+      "glyph": "c\u02bc",
+      "allophones": "c\u02bc"
+    },
+    "0064": {
+      "glyph": "d",
+      "allophones": "d"
+    },
+    "0066": {
+      "glyph": "f",
+      "allophones": "f"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k"
+    },
+    "006B+02BC": {
+      "glyph": "k\u02bc",
+      "allophones": "k\u02bc"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n \u014b"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p"
+    },
+    "0071": {
+      "glyph": "q",
+      "allophones": "q"
+    },
+    "0071+02BC": {
+      "glyph": "q\u02bc",
+      "allophones": "q\u02bc"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "r"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t"
+    },
+    "0074+0073": {
+      "glyph": "ts",
+      "allophones": "ts"
+    },
+    "0074+0073+02BC": {
+      "glyph": "ts\u02bc",
+      "allophones": "ts\u02bc"
+    },
+    "0074+02BC": {
+      "glyph": "t\u02bc",
+      "allophones": "t\u02bc \u0257"
+    },
+    "0074+0320+0283": {
+      "glyph": "t\u0320\u0283",
+      "allophones": "t\u0320\u0283"
+    },
+    "0074+0320+0283+02BC": {
+      "glyph": "t\u0320\u0283\u02bc",
+      "allophones": "t\u0320\u0283\u02bc"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "0078": {
+      "glyph": "x",
+      "allophones": "x"
+    },
+    "0253": {
+      "glyph": "\u0253",
+      "allophones": "\u0253 p\u0330"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "\u0261"
+    },
+    "0272": {
+      "glyph": "\u0272",
+      "allophones": "\u0272"
+    },
+    "0282": {
+      "glyph": "\u0282",
+      "allophones": "\u0282"
+    },
+    "0283": {
+      "glyph": "\u0283",
+      "allophones": "\u0283"
+    },
+    "0288+0282": {
+      "glyph": "\u0288\u0282",
+      "allophones": "\u0288\u0282"
+    },
+    "0288+0282+02BC": {
+      "glyph": "\u0288\u0282\u02bc",
+      "allophones": "\u0288\u0282\u02bc"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "\u0294"
+    },
+    "03C7": {
+      "glyph": "\u03c7",
+      "allophones": "\u03c7"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a a\u0330"
+    },
+    "0061+02D0": {
+      "glyph": "a\u02d0",
+      "allophones": "a\u02d0 a\u0330\u02d0"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e e\u0330"
+    },
+    "0065+02D0": {
+      "glyph": "e\u02d0",
+      "allophones": "e\u02d0 e\u0330\u02d0"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i i\u0330"
+    },
+    "0069+02D0": {
+      "glyph": "i\u02d0",
+      "allophones": "i\u02d0 i\u0330\u02d0"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o o\u0330"
+    },
+    "006F+02D0": {
+      "glyph": "o\u02d0",
+      "allophones": "o\u02d0 o\u0330\u02d0"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u u\u0330"
+    },
+    "0075+02D0": {
+      "glyph": "u\u02d0",
+      "allophones": "u\u02d0 u\u0330\u02d0"
+    }
+  },
+  "ComplexPhoneList": "a a\u02d0 b c c\u02bc d e e\u02d0 f i i\u02d0 j k k\u02bc l m n o o\u02d0 p q q\u02bc r s t ts ts\u02bc t\u02bc t\u0320\u0283 t\u0320\u0283\u02bc u u\u02d0 w x \u0253 \u0261 \u0272 \u0282 \u0283 \u0288\u0282 \u0288\u0282\u02bc \u0294 \u03c7",
+  "ComponentList": "a a\u02d0 b c c\u02bc d e e\u02d0 f i i\u02d0 j k k\u02bc l m n o o\u02d0 p q q\u02bc r s s\u02bc t t\u02bc t\u0320 u u\u02d0 w x \u0253 \u0261 \u0272 \u0282 \u0282\u02bc \u0283 \u0283\u02bc \u0288 \u0294 \u03c7"
+}

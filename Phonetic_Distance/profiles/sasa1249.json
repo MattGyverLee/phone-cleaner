@@ -1,0 +1,126 @@
+{
+  "GlottoCode": "sasa1249",
+  "LanguageName": "Sasak",
+  "ISO6393": "sas",
+  "SpecificDialect": "Puyang",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b"
+    },
+    "0064": {
+      "glyph": "d",
+      "allophones": "d"
+    },
+    "0064+0320+0292": {
+      "glyph": "d\u0320\u0292",
+      "allophones": "d\u0320\u0292"
+    },
+    "0068": {
+      "glyph": "h",
+      "allophones": "h"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "l"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "r \u027e"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t"
+    },
+    "0074+0320+0283": {
+      "glyph": "t\u0320\u0283",
+      "allophones": "t\u0320\u0283"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "\u014b"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "\u0261"
+    },
+    "0272": {
+      "glyph": "\u0272",
+      "allophones": "\u0272"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "\u0294"
+    },
+    "0061+0065": {
+      "glyph": "ae",
+      "allophones": "ae a\u025b"
+    },
+    "0061+0069": {
+      "glyph": "ai",
+      "allophones": "a\u026a ai"
+    },
+    "0061+0075": {
+      "glyph": "au",
+      "allophones": "au a\u028a ao"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "e \u025b"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i \u026a"
+    },
+    "0069+0061": {
+      "glyph": "ia",
+      "allophones": "ia"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o \u0254"
+    },
+    "006F+0065": {
+      "glyph": "oe",
+      "allophones": "o\u0259 oe"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u \u028a"
+    },
+    "0075+0259": {
+      "glyph": "u\u0259",
+      "allophones": "u\u0259"
+    },
+    "0259": {
+      "glyph": "\u0259",
+      "allophones": "\u0259 \u025c"
+    }
+  },
+  "ComplexPhoneList": "ae ai au b d d\u0320\u0292 e h i ia j k l m n o oe p r t t\u0320\u0283 u u\u0259 w \u014b \u0259 \u0261 \u0272 \u0294",
+  "ComponentList": "a b d d\u0320 e h i j k l m n o p r t t\u0320 u w \u014b \u0259 \u0261 \u0272 \u0283 \u0292 \u0294"
+}

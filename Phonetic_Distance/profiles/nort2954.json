@@ -1,0 +1,106 @@
+{
+  "GlottoCode": "nort2954",
+  "LanguageName": "Northern Paiute",
+  "ISO6393": "pao",
+  "SpecificDialect": "NA",
+  "phones": {
+    "0068": {
+      "glyph": "h",
+      "allophones": "h"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "j"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k q d\u0320\u0292 t\u0320\u0283"
+    },
+    "006B+02B7": {
+      "glyph": "k\u02b7",
+      "allophones": "\u0261\u02b7 \u0263\u02b7 k\u02b7"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m w\u0303"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "n"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "\u027e t d"
+    },
+    "0074+0073": {
+      "glyph": "ts",
+      "allophones": "ts dz z"
+    },
+    "0074+0320+0283": {
+      "glyph": "t\u0320\u0283",
+      "allophones": "t\u0320\u0283"
+    },
+    "0077": {
+      "glyph": "w",
+      "allophones": "w"
+    },
+    "014B": {
+      "glyph": "\u014b",
+      "allophones": "\u014b"
+    },
+    "0294": {
+      "glyph": "\u0294",
+      "allophones": "\u0294"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a"
+    },
+    "0061+02D0": {
+      "glyph": "a\u02d0",
+      "allophones": "a\u02d0"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i"
+    },
+    "0069+02D0": {
+      "glyph": "i\u02d0",
+      "allophones": "i\u02d0"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "o u"
+    },
+    "0075+02D0": {
+      "glyph": "u\u02d0",
+      "allophones": "u\u02d0"
+    },
+    "0254": {
+      "glyph": "\u0254",
+      "allophones": "o \u0254"
+    },
+    "0254+02D0": {
+      "glyph": "\u0254\u02d0",
+      "allophones": "\u0254\u02d0"
+    },
+    "0268": {
+      "glyph": "\u0268",
+      "allophones": "\u0268"
+    },
+    "0268+02D0": {
+      "glyph": "\u0268\u02d0",
+      "allophones": "\u0268\u02d0"
+    }
+  },
+  "ComplexPhoneList": "a a\u02d0 h i i\u02d0 j k k\u02b7 m n p s t ts t\u0320\u0283 u u\u02d0 w \u014b \u0254 \u0254\u02d0 \u0268 \u0268\u02d0 \u0294",
+  "ComponentList": "a a\u02d0 h i i\u02d0 j k k\u02b7 m n p s t t\u0320 u u\u02d0 w \u014b \u0254 \u0254\u02d0 \u0268 \u0268\u02d0 \u0283 \u0294"
+}

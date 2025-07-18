@@ -1,0 +1,182 @@
+{
+  "GlottoCode": "esto1258",
+  "LanguageName": "Estonian",
+  "ISO6393": "ekk",
+  "SpecificDialect": "Standard Estonian (Central Estonia)",
+  "phones": {
+    "0066": {
+      "glyph": "f",
+      "allophones": "NA"
+    },
+    "0066+02D0": {
+      "glyph": "f\u02d0",
+      "allophones": "f\u02d0"
+    },
+    "0068": {
+      "glyph": "h",
+      "allophones": "NA"
+    },
+    "006A": {
+      "glyph": "j",
+      "allophones": "NA"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "NA"
+    },
+    "006B+02D0": {
+      "glyph": "k\u02d0",
+      "allophones": "k\u02d0"
+    },
+    "006C": {
+      "glyph": "l",
+      "allophones": "NA"
+    },
+    "006C+02B2": {
+      "glyph": "l\u02b2",
+      "allophones": "NA"
+    },
+    "006C+02B2+02D0": {
+      "glyph": "l\u02b2\u02d0",
+      "allophones": "l\u02b2\u02d0"
+    },
+    "006C+02D0": {
+      "glyph": "l\u02d0",
+      "allophones": "l\u02d0"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "NA"
+    },
+    "006D+02D0": {
+      "glyph": "m\u02d0",
+      "allophones": "m\u02d0"
+    },
+    "006E": {
+      "glyph": "n",
+      "allophones": "NA"
+    },
+    "006E+02B2": {
+      "glyph": "n\u02b2",
+      "allophones": "NA"
+    },
+    "006E+02B2+02D0": {
+      "glyph": "n\u02b2\u02d0",
+      "allophones": "n\u02b2\u02d0"
+    },
+    "006E+02D0": {
+      "glyph": "n\u02d0",
+      "allophones": "n\u02d0"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "NA"
+    },
+    "0070+02D0": {
+      "glyph": "p\u02d0",
+      "allophones": "p\u02d0"
+    },
+    "0072": {
+      "glyph": "r",
+      "allophones": "NA"
+    },
+    "0072+02D0": {
+      "glyph": "r\u02d0",
+      "allophones": "r\u02d0"
+    },
+    "0073": {
+      "glyph": "s",
+      "allophones": "s s"
+    },
+    "0073+02B2": {
+      "glyph": "s\u02b2",
+      "allophones": "NA"
+    },
+    "0073+02B2+02D0": {
+      "glyph": "s\u02b2\u02d0",
+      "allophones": "s\u02b2\u02d0"
+    },
+    "0073+02D0": {
+      "glyph": "s\u02d0",
+      "allophones": "s\u02d0"
+    },
+    "0074": {
+      "glyph": "t",
+      "allophones": "t t\u032c"
+    },
+    "0074+02B2": {
+      "glyph": "t\u02b2",
+      "allophones": "NA"
+    },
+    "0074+02B2+02D0": {
+      "glyph": "t\u02b2\u02d0",
+      "allophones": "t\u02b2\u02d0"
+    },
+    "0074+02D0": {
+      "glyph": "t\u02d0",
+      "allophones": "t\u02d0"
+    },
+    "0076": {
+      "glyph": "v",
+      "allophones": "v v\u0325"
+    },
+    "0283": {
+      "glyph": "\u0283",
+      "allophones": "NA"
+    },
+    "0283+02D0": {
+      "glyph": "\u0283\u02d0",
+      "allophones": "\u0283\u02d0 s\u02d0"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "NA"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "NA"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "NA"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "NA"
+    },
+    "0079": {
+      "glyph": "y",
+      "allophones": "NA"
+    },
+    "00E6": {
+      "glyph": "\u00e6",
+      "allophones": "NA"
+    },
+    "00F8": {
+      "glyph": "\u00f8",
+      "allophones": "NA"
+    },
+    "0251": {
+      "glyph": "\u0251",
+      "allophones": "NA"
+    },
+    "0264": {
+      "glyph": "\u0264",
+      "allophones": "NA"
+    },
+    "0073+032A": {
+      "glyph": "s\u032a",
+      "allophones": "NA"
+    },
+    "0074+032A": {
+      "glyph": "t\u032a",
+      "allophones": "NA"
+    },
+    "028B": {
+      "glyph": "\u028b",
+      "allophones": "NA"
+    }
+  },
+  "ComplexPhoneList": "e f f\u02d0 h i j k k\u02d0 l l\u02b2 l\u02b2\u02d0 l\u02d0 m m\u02d0 n n\u02b2 n\u02b2\u02d0 n\u02d0 o p p\u02d0 r r\u02d0 s s\u02b2 s\u02b2\u02d0 s\u02d0 s\u032a t t\u02b2 t\u02b2\u02d0 t\u02d0 t\u032a u v y \u00e6 \u00f8 \u0251 \u0264 \u0283 \u0283\u02d0 \u028b",
+  "ComponentList": "e f f\u02d0 h i j k k\u02d0 l l\u02b2 l\u02b2\u02d0 l\u02d0 m m\u02d0 n n\u02b2 n\u02b2\u02d0 n\u02d0 o p p\u02d0 r r\u02d0 s s\u02b2 s\u02b2\u02d0 s\u02d0 s\u032a t t\u02b2 t\u02b2\u02d0 t\u02d0 t\u032a u v y \u00e6 \u00f8 \u0251 \u0264 \u0283 \u0283\u02d0 \u028b"
+}

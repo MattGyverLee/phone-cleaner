@@ -1,0 +1,122 @@
+{
+  "GlottoCode": "buam1238",
+  "LanguageName": "Bwamut",
+  "ISO6393": "box",
+  "SpecificDialect": "Bondoukuy",
+  "phones": {
+    "0062": {
+      "glyph": "b",
+      "allophones": "b"
+    },
+    "0063": {
+      "glyph": "c",
+      "allophones": "c"
+    },
+    "0064+032A": {
+      "glyph": "d\u032a",
+      "allophones": "d\u032a"
+    },
+    "0066": {
+      "glyph": "f",
+      "allophones": "f"
+    },
+    "0068": {
+      "glyph": "h",
+      "allophones": "h"
+    },
+    "006B": {
+      "glyph": "k",
+      "allophones": "k"
+    },
+    "006C+032A": {
+      "glyph": "l\u032a",
+      "allophones": "\u0279 \u0279\u0303 l\u032a"
+    },
+    "006D": {
+      "glyph": "m",
+      "allophones": "m"
+    },
+    "006E+032A": {
+      "glyph": "n\u032a",
+      "allophones": "n\u032a"
+    },
+    "0070": {
+      "glyph": "p",
+      "allophones": "p"
+    },
+    "0073+032A": {
+      "glyph": "s\u032a",
+      "allophones": "s\u032a"
+    },
+    "0074+032A": {
+      "glyph": "t\u032a",
+      "allophones": "t\u032a"
+    },
+    "0076": {
+      "glyph": "v",
+      "allophones": "v"
+    },
+    "007A+032A": {
+      "glyph": "z\u032a",
+      "allophones": "z\u032a"
+    },
+    "0253": {
+      "glyph": "\u0253",
+      "allophones": "\u0253 \u0253\u02b7"
+    },
+    "0261": {
+      "glyph": "\u0261",
+      "allophones": "\u0261 q"
+    },
+    "0272": {
+      "glyph": "\u0272",
+      "allophones": "\u0272"
+    },
+    "02E6": {
+      "glyph": "\u02e6",
+      "allophones": "\u02e6"
+    },
+    "02E7": {
+      "glyph": "\u02e7",
+      "allophones": "\u02e7"
+    },
+    "02E8": {
+      "glyph": "\u02e8",
+      "allophones": "\u02e8"
+    },
+    "0061": {
+      "glyph": "a",
+      "allophones": "a \u00e6 \u025b"
+    },
+    "0061+0303": {
+      "glyph": "a\u0303",
+      "allophones": "\u00e6\u0303 a\u0303"
+    },
+    "0065": {
+      "glyph": "e",
+      "allophones": "\u025b e"
+    },
+    "0069": {
+      "glyph": "i",
+      "allophones": "i y"
+    },
+    "0069+0303": {
+      "glyph": "i\u0303",
+      "allophones": "i\u0303 y\u0303"
+    },
+    "006F": {
+      "glyph": "o",
+      "allophones": "o o\u031d \u0254 \u0259 w"
+    },
+    "0075": {
+      "glyph": "u",
+      "allophones": "u wiy w\u0308iy w \u014b\u02b7"
+    },
+    "0075+0303": {
+      "glyph": "u\u0303",
+      "allophones": "\u0254\u0303 u\u0303 w\u0303"
+    }
+  },
+  "ComplexPhoneList": "a a\u0303 b c d\u032a e f h i i\u0303 k l\u032a m n\u032a o p s\u032a t\u032a u u\u0303 v z\u032a \u0253 \u0261 \u0272 \u02e6 \u02e7 \u02e8",
+  "ComponentList": "a a\u0303 b c d\u032a e f h i i\u0303 k l\u032a m n\u032a o p s\u032a t\u032a u u\u0303 v z\u032a \u0253 \u0261 \u0272 \u02e6 \u02e7 \u02e8"
+}
