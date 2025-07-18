@@ -193,12 +193,26 @@ class MusicSubtractor:
             duration = len(data['audio']) / self.sr
             print(f"\nProcessing: {data['name']}")
             if duration < 34.0:
-                print(f"  Warning: File is only {duration:.2f}s long, less than 34s. Skipping.")
-                continue
-            # Find exact alignment
-            music_start_offset, match_time, score = self.find_exact_alignment(
-                data['audio'], ref_segment
-            )
+                print(f"  Warning: File is only {duration:.2f}s long, less than 34s. Using 10.5s-11.5s reference segment.")
+                # Use a different reference segment for short files
+                ref_start_short = 10.5
+                ref_end_short = 11.5
+                start_sample = int(ref_start_short * self.sr)
+                end_sample = int(ref_end_short * self.sr)
+                if end_sample > len(music_audio):
+                    print(f"  Warning: Short reference segment extends beyond music length ({len(music_audio)/self.sr:.1f}s)")
+                    end_sample = len(music_audio)
+                ref_segment_short = music_audio[start_sample:end_sample]
+                print(f"  Reference segment: {ref_start_short:.1f}s-{ref_end_short:.1f}s ({len(ref_segment_short)/self.sr:.1f}s)")
+                # Find exact alignment
+                music_start_offset, match_time, score = self.find_exact_alignment(
+                    data['audio'], ref_segment_short
+                )
+            else:
+                # Find exact alignment with default reference segment
+                music_start_offset, match_time, score = self.find_exact_alignment(
+                    data['audio'], ref_segment
+                )
             print(f"  Found match at {match_time:.2f}s in source")
             print(f"  Music starts at {music_start_offset:.2f}s in source")
             print(f"  Correlation score: {score:.3f}")
