@@ -9,7 +9,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 class MusicSubtractor:
-    def __init__(self, source_dir="./source", music_file="./music/quietest_mix_windows.wav", output_dir="./output"):
+    def __init__(self, source_dir="./source", music_file="./music/quietest_mix_cleaned.wav", output_dir="./output"):
         self.source_dir = Path(source_dir)
         self.music_file = Path(music_file)
         self.output_dir = Path(output_dir)
@@ -190,29 +190,27 @@ class MusicSubtractor:
         
         # Process each source file
         for i, data in enumerate(source_data):
+            duration = len(data['audio']) / self.sr
             print(f"\nProcessing: {data['name']}")
-            
+            if duration < 34.0:
+                print(f"  Warning: File is only {duration:.2f}s long, less than 34s. Skipping.")
+                continue
             # Find exact alignment
             music_start_offset, match_time, score = self.find_exact_alignment(
                 data['audio'], ref_segment
             )
-            
             print(f"  Found match at {match_time:.2f}s in source")
             print(f"  Music starts at {music_start_offset:.2f}s in source")
             print(f"  Correlation score: {score:.3f}")
-            
             # Align music to source
             aligned_music = self.align_music_to_source(
                 music_audio, data['audio'], music_start_offset
             )
-            
             # Subtract music
             clean_audio, alpha = self.subtract_music_spectral(
                 data['audio'], aligned_music
             )
-            
             print(f"  Estimated music gain: {alpha:.3f}")
-            
             # Save result
             output_path = self.output_dir / f"{data['name']}_clean.wav"
             sf.write(output_path, clean_audio, self.sr)
