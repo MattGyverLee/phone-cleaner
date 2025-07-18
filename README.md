@@ -43,3 +43,8 @@ Later, I will apply the same results/logic on a reparse of the Phoible data to :
 The old code in ParsePhoible.ipynb (quickly written overnight in 2018) still works, but I've rewritten the cleaners in a new file and will gradually move the language profile export under the TargetPhones Notebook.
 
 Notes.ipynb is where I'm learning to use the libraries without messing up the main notebook.
+
+Speech.ipynb is where I'm working on speech sythesis using eSpeak NG.
+
+Links:
+https://eprints.whiterose.ac.uk/132940/1/article_IPAtranscriptor_revised.pdf
