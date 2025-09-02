@@ -114,7 +114,7 @@ def analyze_with_kmeans(audio_path, n_clusters=3):
 
 def classify_clusters(cluster_info):
     """
-    Classify clusters as consonant or vowel based on acoustic features
+    Classify clusters as silence, consonant, or vowel based on acoustic features
     """
     classifications = {}
     
@@ -138,8 +138,8 @@ def classify_clusters(cluster_info):
                 'group': 'silence'
             }
         
-        # Consonant: early timing or high energy early-to-mid region
-        elif (avg_time < 0.35 and rms > 0.04):
+        # Consonant: early timing - reduced range to not extend too far
+        elif (avg_time < 0.25 and rms > 0.04):
             confidence += 25
             if avg_time < 0.15:
                 confidence += 15  # Higher confidence for very early timing
@@ -148,19 +148,19 @@ def classify_clusters(cluster_info):
             classifications[cluster_id] = {
                 'label': 'Consonant (including transitions)',
                 'confidence': min(confidence, 90),
-                'reasoning': f'Early-to-mid timing ({avg_time:.3f}s), consonant influence region',
+                'reasoning': f'Early timing ({avg_time:.3f}s), consonant region',
                 'group': 'consonant'
             }
         
-        # Vowel: later timing with vowel-like characteristics
-        elif (avg_time >= 0.35 or (rms > 0.08 and zcr < 0.08 and avg_time > 0.2)):
+        # Vowel: mid to later timing with vowel-like characteristics
+        elif (avg_time >= 0.25 or (rms > 0.08 and zcr < 0.08)):
             confidence += 35
             if 600 < centroid < 1500 and zcr < 0.08:
                 confidence += 15
             classifications[cluster_id] = {
                 'label': 'Vowel',
                 'confidence': min(confidence, 95),
-                'reasoning': f'Later timing or vowel-like features (centroid: {centroid:.0f} Hz)',
+                'reasoning': f'Mid-to-later timing or vowel-like features (centroid: {centroid:.0f} Hz)',
                 'group': 'vowel'
             }
         
@@ -173,12 +173,12 @@ def classify_clusters(cluster_info):
                 'group': 'silence'
             }
         else:
-            # Default based on timing
-            if avg_time < 0.3:
+            # Default based on timing - more conservative consonant boundary
+            if avg_time < 0.2:
                 classifications[cluster_id] = {
                     'label': 'Consonant',
                     'confidence': 50,
-                    'reasoning': 'Earlier timing suggests consonant',
+                    'reasoning': 'Early timing suggests consonant',
                     'group': 'consonant'
                 }
             else:
@@ -193,41 +193,62 @@ def classify_clusters(cluster_info):
 
 def find_segments_by_type(cluster_labels, times, classifications, hop_length, sr):
     """
-    Find boundary between consonant and vowel - consonant first, then vowel
+    Find segments for silence, consonant, and vowel with conservative consonant boundary
     """
-    segments = {'consonant': [], 'vowel': []}
+    segments = {'silence': [], 'consonant': [], 'vowel': []}
     
-    # Find the boundary point where consonant ends and vowel begins
+    # Find cluster groups
+    silence_clusters = []
     consonant_clusters = []
     vowel_clusters = []
     
     for cluster_id, classification in classifications.items():
         group = classification.get('group', 'unknown')
-        if group == 'consonant':
+        if group == 'silence':
+            silence_clusters.append(cluster_id)
+        elif group == 'consonant':
             consonant_clusters.append(cluster_id)
         elif group == 'vowel':
             vowel_clusters.append(cluster_id)
     
-    # Find the latest time point of consonant clusters
+    # Find conservative consonant end time (earlier boundary)
     consonant_end_time = 0
     for i, cluster_id in enumerate(cluster_labels):
         if cluster_id in consonant_clusters:
             consonant_end_time = max(consonant_end_time, times[i])
     
-    # Find the earliest time point of vowel clusters  
+    # Find vowel start time
     vowel_start_time = times[-1]
     for i, cluster_id in enumerate(cluster_labels):
         if cluster_id in vowel_clusters:
             vowel_start_time = min(vowel_start_time, times[i])
     
-    # Set boundary as the midpoint between consonant end and vowel start
+    # Set more conservative boundary - favor shorter consonant region
     if consonant_end_time > 0 and vowel_start_time < times[-1]:
-        boundary_time = (consonant_end_time + vowel_start_time) / 2
+        # Use 1/3 weighting toward consonant end, 2/3 toward vowel start
+        boundary_time = consonant_end_time * 0.3 + vowel_start_time * 0.7
     else:
-        # Default boundary if no clear separation
-        boundary_time = times[len(times)//3]  # At 1/3 of the audio
+        # Default conservative boundary at 1/4 of the audio
+        boundary_time = times[len(times)//4]
     
-    # Create simple two-segment division
+    # Handle silence segments
+    silence_start = None
+    silence_end = None
+    for i, cluster_id in enumerate(cluster_labels):
+        if cluster_id in silence_clusters:
+            if silence_start is None:
+                silence_start = times[i]
+            silence_end = times[i]
+        else:
+            if silence_start is not None:
+                segments['silence'].append((silence_start, silence_end))
+                silence_start = None
+    
+    # Add final silence segment if exists
+    if silence_start is not None:
+        segments['silence'].append((silence_start, silence_end))
+    
+    # Create consonant and vowel segments with conservative boundary
     segments['consonant'].append((times[0], boundary_time))
     segments['vowel'].append((boundary_time, times[-1]))
     
@@ -247,7 +268,7 @@ def plot_kmeans_results(y, times, rms, zcr, spectral_centroid, cluster_labels,
     plt.ylabel('Amplitude')
     
     # Add colored regions for segments
-    colors = {'consonant': 'red', 'vowel': 'green'}
+    colors = {'silence': 'lightblue', 'consonant': 'red', 'vowel': 'green'}
     for sound_group, segs in segments.items():
         for start, end in segs:
             plt.axvspan(start, end, alpha=0.3, color=colors.get(sound_group, 'gray'), 
@@ -307,7 +328,7 @@ if __name__ == "__main__":
         print(f"K-MEANS CLUSTERING RESULTS")
         print(f"="*60)
         
-        for sound_group in ['consonant', 'vowel']:
+        for sound_group in ['silence', 'consonant', 'vowel']:
             if sound_group in segments and segments[sound_group]:
                 print(f"\n{sound_group.upper()} segments:")
                 for i, (start, end) in enumerate(segments[sound_group]):
