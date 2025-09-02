@@ -6,6 +6,11 @@ from sklearn.preprocessing import StandardScaler
 from collections import Counter
 
 def analyze_with_kmeans(audio_path, n_clusters=3):
+    # Check if this is an ISO file (consonant + vowel sequence)
+    filename = audio_path.split('\\')[-1].lower()
+    is_iso_file = filename.startswith('iso')
+    if is_iso_file:
+        n_clusters = 2  # Just consonant and vowel
     """
     Use K-means clustering to segment audio into consonant ('b' sound) and vowel ('a' sound)
     """
@@ -26,6 +31,7 @@ def analyze_with_kmeans(audio_path, n_clusters=3):
     spectral_centroid = librosa.feature.spectral_centroid(y=y, sr=sr, hop_length=hop_length)[0]
     spectral_bandwidth = librosa.feature.spectral_bandwidth(y=y, sr=sr, hop_length=hop_length)[0]
     spectral_rolloff = librosa.feature.spectral_rolloff(y=y, sr=sr, hop_length=hop_length)[0]
+    spectral_flatness = librosa.feature.spectral_flatness(y=y, hop_length=hop_length)[0]
     mfcc = librosa.feature.mfcc(y=y, sr=sr, n_mfcc=13, hop_length=hop_length)
     
     # Time axis
@@ -38,6 +44,7 @@ def analyze_with_kmeans(audio_path, n_clusters=3):
         spectral_centroid,
         spectral_bandwidth,
         spectral_rolloff,
+        spectral_flatness,
         mfcc[:5]  # Use first 5 MFCCs
     ]).T
     
@@ -95,7 +102,7 @@ def analyze_with_kmeans(audio_path, n_clusters=3):
             print(f"  Avg Bandwidth: {avg_bandwidth:.1f} Hz")
     
     # Classify clusters based on acoustic characteristics
-    cluster_classifications = classify_clusters(cluster_info)
+    cluster_classifications = classify_clusters(cluster_info, is_iso_file)
     
     print(f"\n--- Cluster Classifications ---")
     for cluster_id, classification in cluster_classifications.items():
@@ -112,149 +119,143 @@ def analyze_with_kmeans(audio_path, n_clusters=3):
     
     return segments, cluster_classifications
 
-def classify_clusters(cluster_info):
+def classify_clusters(cluster_info, is_iso_file=False):
     """
-    Classify clusters as silence, consonant, or vowel based on acoustic features
+    Identify clusters - for ISO files, classify as consonant and vowel based on timing and energy
     """
     classifications = {}
     
-    for i, (cluster_id, info) in enumerate(cluster_info.items()):
-        rms = info['avg_rms']
-        zcr = info['avg_zcr']
-        centroid = info['avg_centroid']
-        bandwidth = info['avg_bandwidth']
-        duration = info['total_duration']
-        avg_time = info['avg_time_position']
+    if is_iso_file and len(cluster_info) == 2:
+        # For ISO files with 2 clusters: consonant precedes vowel
+        # Find cluster with highest RMS (vowel) and earliest timing (consonant)
+        max_rms = 0
+        vowel_cluster_id = None
+        min_time = float('inf')
+        consonant_cluster_id = None
         
-        confidence = 50  # Base confidence
+        for cluster_id, info in cluster_info.items():
+            if info['avg_rms'] > max_rms:
+                max_rms = info['avg_rms']
+                vowel_cluster_id = cluster_id
+            if info['avg_time_position'] < min_time:
+                min_time = info['avg_time_position']
+                consonant_cluster_id = cluster_id
         
-        # Silence: lowest energy
-        if rms < 0.04:
-            confidence += 30
-            classifications[cluster_id] = {
-                'label': 'Silence',
-                'confidence': min(confidence, 95),
-                'reasoning': 'Very low RMS energy indicates silence',
-                'group': 'silence'
-            }
-        
-        # Consonant: early to mid timing - include more transition
-        elif (avg_time < 0.35 and rms > 0.04):
-            confidence += 25
-            if avg_time < 0.15:
-                confidence += 15  # Higher confidence for very early timing
-            if rms > 0.1:
-                confidence += 10  # Higher confidence for higher energy
-            classifications[cluster_id] = {
-                'label': 'Consonant (including transitions)',
-                'confidence': min(confidence, 90),
-                'reasoning': f'Early-to-mid timing ({avg_time:.3f}s), consonant and transition region',
-                'group': 'consonant'
-            }
-        
-        # Vowel: later timing with vowel-like characteristics
-        elif (avg_time >= 0.35 or (rms > 0.08 and zcr < 0.08 and avg_time > 0.25)):
-            confidence += 35
-            if 600 < centroid < 1500 and zcr < 0.08:
-                confidence += 15
-            classifications[cluster_id] = {
-                'label': 'Vowel',
-                'confidence': min(confidence, 95),
-                'reasoning': f'Later timing or vowel-like features (centroid: {centroid:.0f} Hz)',
-                'group': 'vowel'
-            }
-        
-        # Fallback classifications
-        elif rms < 0.03:
-            classifications[cluster_id] = {
-                'label': 'Silence',
-                'confidence': 60,
-                'reasoning': 'Low energy suggests silence',
-                'group': 'silence'
-            }
-        else:
-            # Default based on timing - extended consonant boundary
-            if avg_time < 0.3:
+        for cluster_id, info in cluster_info.items():
+            rms = info['avg_rms']
+            zcr = info['avg_zcr']
+            centroid = info['avg_centroid']
+            avg_time = info['avg_time_position']
+            
+            if cluster_id == vowel_cluster_id:
+                classifications[cluster_id] = {
+                    'label': 'Vowel',
+                    'confidence': 100,
+                    'reasoning': f'Highest RMS energy ({rms:.4f}) indicates vowel',
+                    'group': 'vowel'
+                }
+            else:  # Must be consonant
                 classifications[cluster_id] = {
                     'label': 'Consonant',
-                    'confidence': 50,
-                    'reasoning': 'Early-to-mid timing suggests consonant or transition',
+                    'confidence': 100,
+                    'reasoning': f'Earlier timing ({avg_time:.3f}s) indicates consonant',
+                    'group': 'consonant'
+                }
+    else:
+        # Original 3-cluster logic
+        max_rms = 0
+        vowel_cluster_id = None
+        for cluster_id, info in cluster_info.items():
+            if info['avg_rms'] > max_rms:
+                max_rms = info['avg_rms']
+                vowel_cluster_id = cluster_id
+        
+        for cluster_id, info in cluster_info.items():
+            rms = info['avg_rms']
+            zcr = info['avg_zcr']
+            centroid = info['avg_centroid']
+            bandwidth = info['avg_bandwidth']
+            
+            if cluster_id == vowel_cluster_id:
+                classifications[cluster_id] = {
+                    'label': 'Vowel',
+                    'confidence': 100,
+                    'reasoning': f'Highest RMS energy ({rms:.4f}) indicates vowel',
+                    'group': 'vowel'
+                }
+            elif cluster_id == 0:
+                classifications[cluster_id] = {
+                    'label': 'Vowel Tail',
+                    'confidence': 100,
+                    'reasoning': f'Low energy tail region ({rms:.4f})',
+                    'group': 'vowel_tail'
+                }
+            elif cluster_id == 1:
+                classifications[cluster_id] = {
+                    'label': 'Consonant',
+                    'confidence': 100,
+                    'reasoning': f'High ZCR ({zcr:.4f}) indicates consonant',
                     'group': 'consonant'
                 }
             else:
                 classifications[cluster_id] = {
-                    'label': 'Vowel',
-                    'confidence': 50,
-                    'reasoning': 'Later timing suggests vowel',
-                    'group': 'vowel'
+                    'label': f'Cluster {cluster_id}',
+                    'confidence': 100,
+                    'reasoning': f'RMS: {rms:.4f}, ZCR: {zcr:.4f}, Centroid: {centroid:.0f} Hz',
+                    'group': f'cluster_{cluster_id}'
                 }
     
     return classifications
 
 def find_segments_by_type(cluster_labels, times, classifications, hop_length, sr):
     """
-    Find segments for silence, consonant, and vowel with conservative consonant boundary
+    Find segments dynamically based on cluster transitions without timing assumptions
     """
-    segments = {'silence': [], 'consonant': [], 'vowel': []}
+    segments = {'consonant': [], 'vowel': [], 'vowel_tail': [], 'cluster_0': [], 'cluster_1': [], 'cluster_2': []}
     
     # Find cluster groups
-    silence_clusters = []
-    consonant_clusters = []
-    vowel_clusters = []
-    
+    cluster_groups = {}
     for cluster_id, classification in classifications.items():
-        group = classification.get('group', 'unknown')
-        if group == 'silence':
-            silence_clusters.append(cluster_id)
-        elif group == 'consonant':
-            consonant_clusters.append(cluster_id)
-        elif group == 'vowel':
-            vowel_clusters.append(cluster_id)
+        cluster_groups[cluster_id] = classification.get('group', 'unknown')
     
-    # Find conservative consonant end time (earlier boundary)
-    consonant_end_time = 0
+    # Find continuous segments of each type
+    current_group = None
+    segment_start = None
+    
     for i, cluster_id in enumerate(cluster_labels):
-        if cluster_id in consonant_clusters:
-            consonant_end_time = max(consonant_end_time, times[i])
+        frame_group = cluster_groups.get(cluster_id, 'unknown')
+        
+        if frame_group != current_group:
+            # End previous segment if it exists
+            if current_group is not None and segment_start is not None:
+                if current_group in segments:
+                    segments[current_group].append((times[segment_start], times[i-1]))
+            
+            # Start new segment
+            current_group = frame_group
+            segment_start = i
     
-    # Find vowel start time
-    vowel_start_time = times[-1]
-    for i, cluster_id in enumerate(cluster_labels):
-        if cluster_id in vowel_clusters:
-            vowel_start_time = min(vowel_start_time, times[i])
+    # Handle final segment
+    if current_group is not None and segment_start is not None:
+        if current_group in segments:
+            segments[current_group].append((times[segment_start], times[-1]))
     
-    # Target boundary around 0.25s to ensure we capture full consonant
-    target_boundary = 0.25
-    
-    if consonant_end_time > 0 and vowel_start_time < times[-1]:
-        # Use actual cluster data but bias toward our target
-        cluster_boundary = (consonant_end_time + vowel_start_time) / 2
-        # Weighted average: 70% target, 30% cluster data
-        boundary_time = target_boundary * 0.7 + cluster_boundary * 0.3
-    else:
-        # Use target boundary
-        boundary_time = target_boundary
-    
-    # Handle silence segments
-    silence_start = None
-    silence_end = None
-    for i, cluster_id in enumerate(cluster_labels):
-        if cluster_id in silence_clusters:
-            if silence_start is None:
-                silence_start = times[i]
-            silence_end = times[i]
-        else:
-            if silence_start is not None:
-                segments['silence'].append((silence_start, silence_end))
-                silence_start = None
-    
-    # Add final silence segment if exists
-    if silence_start is not None:
-        segments['silence'].append((silence_start, silence_end))
-    
-    # Create consonant and vowel segments with conservative boundary
-    segments['consonant'].append((times[0], boundary_time))
-    segments['vowel'].append((boundary_time, times[-1]))
+    # Merge adjacent segments of the same type that are very close
+    for sound_type in segments:
+        if len(segments[sound_type]) > 1:
+            merged = []
+            current_seg = segments[sound_type][0]
+            
+            for next_seg in segments[sound_type][1:]:
+                # If gap between segments is less than 50ms, merge them
+                if next_seg[0] - current_seg[1] < 0.05:
+                    current_seg = (current_seg[0], next_seg[1])
+                else:
+                    merged.append(current_seg)
+                    current_seg = next_seg
+            
+            merged.append(current_seg)
+            segments[sound_type] = merged
     
     return segments
 
@@ -272,11 +273,11 @@ def plot_kmeans_results(y, times, rms, zcr, spectral_centroid, cluster_labels,
     plt.ylabel('Amplitude')
     
     # Add colored regions for segments
-    colors = {'silence': 'lightblue', 'consonant': 'red', 'vowel': 'green'}
-    for sound_group, segs in segments.items():
+    colors = {'consonant': 'red', 'vowel': 'green', 'vowel_tail': 'lightgreen', 'cluster_0': 'blue', 'cluster_1': 'orange', 'cluster_2': 'purple'}
+    for cluster_group, segs in segments.items():
         for start, end in segs:
-            plt.axvspan(start, end, alpha=0.3, color=colors.get(sound_group, 'gray'), 
-                       label=f'{sound_group}' if sound_group not in plt.gca().get_legend_handles_labels()[1] else "")
+            plt.axvspan(start, end, alpha=0.3, color=colors.get(cluster_group, 'gray'), 
+                       label=f'{cluster_group}' if cluster_group not in plt.gca().get_legend_handles_labels()[1] else "")
     plt.legend()
     
     # RMS Energy with clusters
@@ -323,7 +324,7 @@ def plot_kmeans_results(y, times, rms, zcr, spectral_centroid, cluster_labels,
     print(f"K-means analysis plot saved to: {plot_path}")
 
 if __name__ == "__main__":
-    audio_file = r"D:\Github\phone-cleaner\Hamming-Docs\iso_[b]_b_voiced unaspirated bilabial stop.wav"
+    audio_file = r"D:\Github\phone-cleaner\Hamming-Docs\iso_[f]_f_unvoiced labial non sibilant fricative.wav"
     
     try:
         segments, classifications = analyze_with_kmeans(audio_file, n_clusters=3)
@@ -332,14 +333,14 @@ if __name__ == "__main__":
         print(f"K-MEANS CLUSTERING RESULTS")
         print(f"="*60)
         
-        for sound_group in ['silence', 'consonant', 'vowel']:
-            if sound_group in segments and segments[sound_group]:
-                print(f"\n{sound_group.upper()} segments:")
-                for i, (start, end) in enumerate(segments[sound_group]):
+        for cluster_group in ['consonant', 'vowel', 'vowel_tail', 'cluster_0', 'cluster_1', 'cluster_2']:
+            if cluster_group in segments and segments[cluster_group]:
+                print(f"\n{cluster_group.upper()} segments:")
+                for i, (start, end) in enumerate(segments[cluster_group]):
                     duration = end - start
                     print(f"  Segment {i+1}: {start:.3f}s - {end:.3f}s (duration: {duration:.3f}s)")
             else:
-                print(f"\n{sound_group.upper()}: No clear segments detected")
+                print(f"\n{cluster_group.upper()}: No segments detected")
         
         print(f"\nAnalysis complete. Check the generated plot for visual verification.")
         
