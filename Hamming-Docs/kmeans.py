@@ -138,8 +138,8 @@ def classify_clusters(cluster_info):
                 'group': 'silence'
             }
         
-        # Consonant: early timing - reduced range to not extend too far
-        elif (avg_time < 0.25 and rms > 0.04):
+        # Consonant: early to mid timing - include more transition
+        elif (avg_time < 0.35 and rms > 0.04):
             confidence += 25
             if avg_time < 0.15:
                 confidence += 15  # Higher confidence for very early timing
@@ -148,19 +148,19 @@ def classify_clusters(cluster_info):
             classifications[cluster_id] = {
                 'label': 'Consonant (including transitions)',
                 'confidence': min(confidence, 90),
-                'reasoning': f'Early timing ({avg_time:.3f}s), consonant region',
+                'reasoning': f'Early-to-mid timing ({avg_time:.3f}s), consonant and transition region',
                 'group': 'consonant'
             }
         
-        # Vowel: mid to later timing with vowel-like characteristics
-        elif (avg_time >= 0.25 or (rms > 0.08 and zcr < 0.08)):
+        # Vowel: later timing with vowel-like characteristics
+        elif (avg_time >= 0.35 or (rms > 0.08 and zcr < 0.08 and avg_time > 0.25)):
             confidence += 35
             if 600 < centroid < 1500 and zcr < 0.08:
                 confidence += 15
             classifications[cluster_id] = {
                 'label': 'Vowel',
                 'confidence': min(confidence, 95),
-                'reasoning': f'Mid-to-later timing or vowel-like features (centroid: {centroid:.0f} Hz)',
+                'reasoning': f'Later timing or vowel-like features (centroid: {centroid:.0f} Hz)',
                 'group': 'vowel'
             }
         
@@ -173,12 +173,12 @@ def classify_clusters(cluster_info):
                 'group': 'silence'
             }
         else:
-            # Default based on timing - more conservative consonant boundary
-            if avg_time < 0.2:
+            # Default based on timing - extended consonant boundary
+            if avg_time < 0.3:
                 classifications[cluster_id] = {
                     'label': 'Consonant',
                     'confidence': 50,
-                    'reasoning': 'Early timing suggests consonant',
+                    'reasoning': 'Early-to-mid timing suggests consonant or transition',
                     'group': 'consonant'
                 }
             else:
@@ -223,13 +223,17 @@ def find_segments_by_type(cluster_labels, times, classifications, hop_length, sr
         if cluster_id in vowel_clusters:
             vowel_start_time = min(vowel_start_time, times[i])
     
-    # Set more conservative boundary - favor shorter consonant region
+    # Target boundary around 0.25s to ensure we capture full consonant
+    target_boundary = 0.25
+    
     if consonant_end_time > 0 and vowel_start_time < times[-1]:
-        # Use 1/3 weighting toward consonant end, 2/3 toward vowel start
-        boundary_time = consonant_end_time * 0.3 + vowel_start_time * 0.7
+        # Use actual cluster data but bias toward our target
+        cluster_boundary = (consonant_end_time + vowel_start_time) / 2
+        # Weighted average: 70% target, 30% cluster data
+        boundary_time = target_boundary * 0.7 + cluster_boundary * 0.3
     else:
-        # Default conservative boundary at 1/4 of the audio
-        boundary_time = times[len(times)//4]
+        # Use target boundary
+        boundary_time = target_boundary
     
     # Handle silence segments
     silence_start = None
