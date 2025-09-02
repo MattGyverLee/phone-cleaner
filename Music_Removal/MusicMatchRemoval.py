@@ -9,7 +9,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 class MusicSubtractor:
-    def __init__(self, source_dir="./source", music_file="./music/quietest_mix_cleaned.wav", output_dir="./output"):
+    def __init__(self, source_dir="./phoneme-Samples/Glossika/wav-audio",  music_file="./Music_Removal/music/quietest_mix_cleaned.wav", output_dir="./phoneme-Samples/Glossika/wav-no-music"):
         self.source_dir = Path(source_dir)
         self.music_file = Path(music_file)
         self.output_dir = Path(output_dir)
@@ -77,11 +77,18 @@ class MusicSubtractor:
         print(f"Reference segment: {self.ref_start:.1f}s-{self.ref_end:.1f}s ({len(ref_segment)/self.sr:.1f}s)")
         return ref_segment
     
-    def find_exact_alignment(self, source_audio, ref_segment, max_search_sec=60):
+    def find_exact_alignment(self, source_audio, ref_segment, ref_start_time, max_search_sec=60):
         """Find exact alignment using cross-correlation of raw waveforms"""
-        # Search within 3 seconds of the expected music timestamp (32.9s)
-        search_start_time = max(0, self.ref_start - 3.0)  # 29.9s
-        search_end_time = min(len(source_audio) / self.sr, self.ref_start + 3.0)  # 35.9s
+        source_duration = len(source_audio) / self.sr
+        
+        # For very short files, search the entire file
+        if source_duration < ref_start_time + 6.0:  # If file is too short for normal search
+            search_start_time = 0
+            search_end_time = source_duration
+        else:
+            # Search within 3 seconds of the expected music timestamp
+            search_start_time = max(0, ref_start_time - 3.0)
+            search_end_time = min(source_duration, ref_start_time + 3.0)
         
         search_start_samples = int(search_start_time * self.sr)
         search_end_samples = int(search_end_time * self.sr)
@@ -89,12 +96,27 @@ class MusicSubtractor:
         # Extract search region
         search_audio = source_audio[search_start_samples:search_end_samples]
         
+        # Check if search region is valid
+        if len(search_audio) < len(ref_segment):
+            print(f"  Warning: Search region ({len(search_audio)/self.sr:.2f}s) shorter than reference ({len(ref_segment)/self.sr:.2f}s)")
+            # Use the entire source audio as search region
+            search_audio = source_audio
+            search_start_samples = 0
+        
         # Normalize both signals for better correlation
         ref_norm = ref_segment / (np.std(ref_segment) + 1e-10)
         search_norm = search_audio / (np.std(search_audio) + 1e-10)
         
-        # Cross-correlation
+        # Cross-correlation - check if we have valid arrays
+        if len(search_norm) == 0 or len(ref_norm) == 0:
+            print(f"  Error: Empty arrays for correlation")
+            return 0, 0, 0
+        
         correlation = scipy.signal.correlate(search_norm, ref_norm, mode='valid')
+        
+        if len(correlation) == 0:
+            print(f"  Warning: No valid correlation, using beginning of file")
+            return 0, 0, 0
         
         # Find peak
         peak_idx = np.argmax(correlation)
@@ -105,7 +127,7 @@ class MusicSubtractor:
         offset_seconds = offset_samples / self.sr
         
         # The music should start at this offset in the source file
-        music_start_in_source = offset_seconds - self.ref_start
+        music_start_in_source = offset_seconds - ref_start_time
         
         print(f"  Searched region: {search_start_time:.1f}s-{search_end_time:.1f}s")
         
@@ -206,12 +228,12 @@ class MusicSubtractor:
                 print(f"  Reference segment: {ref_start_short:.1f}s-{ref_end_short:.1f}s ({len(ref_segment_short)/self.sr:.1f}s)")
                 # Find exact alignment
                 music_start_offset, match_time, score = self.find_exact_alignment(
-                    data['audio'], ref_segment_short
+                    data['audio'], ref_segment_short, ref_start_short
                 )
             else:
                 # Find exact alignment with default reference segment
                 music_start_offset, match_time, score = self.find_exact_alignment(
-                    data['audio'], ref_segment
+                    data['audio'], ref_segment, self.ref_start
                 )
             print(f"  Found match at {match_time:.2f}s in source")
             print(f"  Music starts at {music_start_offset:.2f}s in source")

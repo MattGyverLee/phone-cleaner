@@ -2,6 +2,33 @@
  
 I've started this new repository: https://github.com/MattGyverLee/phone-cleaner/ . 
 
+## Environment Setup
+
+This project requires specific packages that can be challenging to install on Windows due to compilation requirements. We recommend using conda for the best experience:
+
+### Using Conda (Recommended)
+
+1. Install [Anaconda](https://www.anaconda.com/products/distribution) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
+
+2. Create and activate a new environment:
+```bash
+conda create -n phone-cleaner python=3.11 -y
+conda activate phone-cleaner
+```
+
+3. Install the required packages:
+```bash
+# Install editdistance from conda-forge (pre-compiled)
+conda install -c conda-forge editdistance -y
+
+# Install panphon and other dependencies
+pip install panphon scipy matplotlib ipapy
+```
+
+
+
+## Usage
+
 I'm using python and Jupyter notebooks for testing. You just set the options you want at the top (I suggest defaults) and run the whole notebook so you can examine the results. The images and data dumps are output to folders, but you may need to create four new empty folders off the repo root after cloning the repo so it won't error.
 
     profiles/*
