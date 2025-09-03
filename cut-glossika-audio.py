@@ -19,8 +19,8 @@ if not os.path.exists(output_folder):
     os.makedirs(output_folder)
 
 volume_threshold = -45  # dB
-lead_time = 100  # milliseconds
-follow_time = 100  # milliseconds
+lead_time = 200  # milliseconds
+follow_time = 200  # milliseconds
 
 def find_name(input_string):
     # Use a regular expression to find the content within the first pair of square brackets
@@ -301,17 +301,25 @@ def analyze_segment_with_kmeans(audio_data, sr, audio_filename="", segment_idx=0
     scaler = StandardScaler()
     features_scaled = scaler.fit_transform(features)
     
-    # Use 2 or 3 clusters based on segment length
-    n_clusters = 2 #min(3, len(features))
-    if n_clusters < 2:
+    # Check segment length - skip if too short
+    duration_ms = len(audio_data) / sr * 1000
+    if duration_ms < 100:
+        print(f"Segment too short ({duration_ms:.1f}ms), skipping analysis")
         return "iso"
+        
+    # Use 2 clusters to separate consonants and vowels (ignore silence)
+    n_clusters = 2
+    if len(features) < 2:
+        return "iso"  # Too short to analyze
         
     # Apply K-means clustering
     kmeans = KMeans(n_clusters=n_clusters, random_state=42, n_init=10)
     cluster_labels = kmeans.fit_predict(features_scaled)
     
-    # Analyze clusters
+    # Analyze clusters and classify them as SILENCE, CONSONANT, or VOWEL
     cluster_info = {}
+    print(f"\n=== CLUSTER ANALYSIS FOR SEGMENT {segment_idx} ===")
+    
     for i in range(n_clusters):
         cluster_mask = cluster_labels == i
         cluster_indices = np.where(cluster_mask)[0]
@@ -329,6 +337,41 @@ def analyze_segment_with_kmeans(audio_data, sr, audio_filename="", segment_idx=0
                 'avg_time_position': avg_time_position,
                 'frame_count': len(cluster_indices)
             }
+            
+            print(f"Cluster {i}:")
+            print(f"  RMS Energy: {avg_rms:.4f}")
+            print(f"  Zero Crossing Rate: {avg_zcr:.4f}")
+            print(f"  Spectral Centroid: {avg_centroid:.1f} Hz")
+            print(f"  Average Time: {avg_time_position:.3f}s")
+            print(f"  Frame Count: {len(cluster_indices)} ({len(cluster_indices)/len(times)*100:.1f}% of segment)")
+    
+    # Classify clusters based on acoustic properties (2 clusters: consonant and vowel)
+    # Sort clusters by RMS to identify vowels (highest) and consonants (lowest)
+    clusters_by_rms = sorted(cluster_info.items(), key=lambda x: x[1]['avg_rms'])
+    
+    consonant_cluster = None  
+    vowel_cluster = None
+    
+    # Lowest RMS = consonant
+    consonant_cluster = clusters_by_rms[0][0]
+    consonant_info = clusters_by_rms[0][1]
+    
+    # Highest RMS = vowel
+    vowel_cluster = clusters_by_rms[-1][0]
+    vowel_info = clusters_by_rms[-1][1]
+    
+    # Assign cluster types
+    cluster_types = {}
+    cluster_types[consonant_cluster] = 'CONSONANT'
+    cluster_types[vowel_cluster] = 'VOWEL'
+    
+    print(f"\n=== CLUSTER CLASSIFICATION ===")
+    for cluster_id, cluster_type in cluster_types.items():
+        info = cluster_info[cluster_id]
+        print(f"Cluster {cluster_id}: {cluster_type}")
+        print(f"  RMS: {info['avg_rms']:.4f}, ZCR: {info['avg_zcr']:.4f}")
+        print(f"  Time: {info['avg_time_position']:.3f}s, Frames: {info['frame_count']}")
+        print()
     
     # Create cluster classifications for plotting
     cluster_classifications = {}
@@ -342,64 +385,84 @@ def analyze_segment_with_kmeans(audio_data, sr, audio_filename="", segment_idx=0
             'group': f'cluster_{cluster_id}'
         }
     
-    # Classify segment type based on clusters
+    # Classify segment based on temporal order of silence, consonant, and vowel clusters
     segment_type = "unk"  # Default
+    print(f"=== CLASSIFICATION LOGIC ===")
     
-    if n_clusters == 2:
-        # Find highest RMS (vowel) and earliest timing (consonant)
-        max_rms = 0
-        vowel_cluster = None
-        min_time = float('inf')
-        consonant_cluster = None
+    # Get temporal positions of each cluster type
+    cluster_positions = []
+    for cluster_id, cluster_type in cluster_types.items():
+        time_pos = cluster_info[cluster_id]['avg_time_position']
+        cluster_positions.append((time_pos, cluster_type, cluster_id))
+    
+    # Sort by time
+    cluster_positions.sort(key=lambda x: x[0])
+    
+    print("Temporal sequence:")
+    temporal_sequence = []
+    for time_pos, cluster_type, cluster_id in cluster_positions:
+        print(f"  {time_pos:.3f}s: {cluster_type} (Cluster {cluster_id})")
+        temporal_sequence.append(cluster_type)
+    
+    # Analyze temporal distribution to detect VCV patterns
+    # Get segments for each cluster type to see if they appear in multiple regions
+    consonant_segments = find_segments_by_cluster(cluster_labels, times)
+    
+    consonant_regions = consonant_segments.get(consonant_cluster, [])
+    vowel_regions = consonant_segments.get(vowel_cluster, [])
+    
+    print(f"Consonant regions: {len(consonant_regions)} segments")
+    for i, (start, end) in enumerate(consonant_regions):
+        print(f"  C{i}: {start:.3f}s - {end:.3f}s ({(end-start)*1000:.0f}ms)")
+    
+    print(f"Vowel regions: {len(vowel_regions)} segments") 
+    for i, (start, end) in enumerate(vowel_regions):
+        print(f"  V{i}: {start:.3f}s - {end:.3f}s ({(end-start)*1000:.0f}ms)")
+    
+    # Determine pattern based on temporal arrangement
+    consonant_time = cluster_info[consonant_cluster]['avg_time_position']
+    vowel_time = cluster_info[vowel_cluster]['avg_time_position']
+    
+    print(f"Overall consonant cluster time: {consonant_time:.3f}s")
+    print(f"Overall vowel cluster time: {vowel_time:.3f}s")
+    
+    # Sort all regions by start time to get the first segment
+    all_regions = []
+    for start, end in consonant_regions:
+        all_regions.append((start, end, 'C'))
+    for start, end in vowel_regions:
+        all_regions.append((start, end, 'V'))
+    all_regions.sort(key=lambda x: x[0])
+    
+    if len(all_regions) > 0:
+        first_segment_type = all_regions[0][2]
+        print(f"First segment type: {first_segment_type}")
         
-        for cluster_id, info in cluster_info.items():
-            if info['avg_rms'] > max_rms:
-                max_rms = info['avg_rms']
-                vowel_cluster = cluster_id
-            if info['avg_time_position'] < min_time:
-                min_time = info['avg_time_position']
-                consonant_cluster = cluster_id
-        
-        # Determine if it's CV or VC based on cluster sequence
-        if vowel_cluster != consonant_cluster:
-            # Check temporal order
-            vowel_time = cluster_info[vowel_cluster]['avg_time_position']
-            consonant_time = cluster_info[consonant_cluster]['avg_time_position']
-            
-            if consonant_time < vowel_time:
-                segment_type = "pre"  # CV pattern
-            else:
-                segment_type = "post"  # VC pattern
+        # If first segment is consonant, assume CV pattern
+        if first_segment_type == 'C':
+            segment_type = "pre"  # CV pattern
+            print("Classification: PRE (CV) - starts with consonant")
         else:
-            segment_type = "unk"  # Single dominant cluster type
-            
-    elif n_clusters == 3:
-        # Three clusters - identify consonant and vowel clusters
-        # Find the cluster with highest RMS as vowel
-        max_rms = 0
-        vowel_cluster = None
-        for cluster_id, info in cluster_info.items():
-            if info['avg_rms'] > max_rms:
-                max_rms = info['avg_rms']
-                vowel_cluster = cluster_id
-        
-        # Get temporal positions of all clusters
-        cluster_times = [(cluster_id, info['avg_time_position']) for cluster_id, info in cluster_info.items()]
-        cluster_times.sort(key=lambda x: x[1])  # Sort by time
-        
-        # Check if vowel is in the middle position (VCV pattern)
-        middle_cluster = cluster_times[1][0]  # Cluster in middle position temporally
-        
-        if middle_cluster == vowel_cluster:
-            # Vowel is in middle - this is VCV (vowel-consonant-vowel) pattern
-            segment_type = "med"  # VCV pattern
-        else:
-            # Vowel is not in middle, check if it's at start or end
-            first_cluster = cluster_times[0][0]
-            if first_cluster == vowel_cluster:
-                segment_type = "post"  # VCC or VC pattern - vowel at start
+            # First segment is vowel, check for VCV or VC
+            if len(vowel_regions) >= 2 and len(consonant_regions) >= 1:
+                # Extract sequence pattern
+                pattern = [region[2] for region in all_regions]
+                pattern_str = ''.join(pattern)
+                print(f"Temporal pattern: {pattern_str}")
+                
+                # Check for VCV pattern
+                if 'VCV' in pattern_str or pattern_str.startswith('V') and pattern_str.endswith('V') and 'C' in pattern_str:
+                    segment_type = "med"  # VCV pattern
+                    print("Classification: MED (VCV) - vowel-consonant-vowel pattern detected")
+                else:
+                    segment_type = "post"  # VC pattern  
+                    print("Classification: POST (VC) - vowel before consonant")
             else:
-                segment_type = "pre"  # CCV or CV pattern - vowel at end
+                segment_type = "post"  # VC pattern  
+                print("Classification: POST (VC) - starts with vowel")
+    else:
+        segment_type = "unk"
+        print("Classification: UNK - no regions found")
     
     # Generate plot if requested
     if save_plot and len(audio_filename) > 0:
@@ -493,6 +556,16 @@ for filename in os.listdir(input_folder):
             start = max(0, start - lead_time)
             end = min(len(audio), end + follow_time)
             clip = audio[start:end]
+            
+            # Trim silence from beginning and end of the clip
+            trimmed_clip = clip.strip_silence(silence_len=50, silence_thresh=-45, padding=25)
+            
+            # Use trimmed clip if it's not too short, otherwise keep original
+            if len(trimmed_clip) > 100:  # Keep at least 100ms
+                clip = trimmed_clip
+                print(f"Trimmed silence: {len(audio[start:end])}ms -> {len(clip)}ms")
+            else:
+                print(f"Clip too short after trimming, keeping original: {len(clip)}ms")
             
             # Convert AudioSegment to numpy array for analysis
             audio_samples = np.array(clip.get_array_of_samples())
