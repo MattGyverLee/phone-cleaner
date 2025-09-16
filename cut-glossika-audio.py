@@ -252,224 +252,150 @@ def plot_kmeans_results(y, times, rms, zcr, spectral_centroid, cluster_labels,
     plt.close()
     print(f"K-means plot saved: {plot_path}")
 
-def analyze_segment_with_kmeans(audio_data, sr, audio_filename="", segment_idx=0, save_plot=True):
+def classify_cv_vc_vcv(audio_data, sr, min_vowel_ms=40, min_consonant_ms=30, plot_debug=False):
     """
-    Analyze audio segment using kmeans to determine if it's isolated C, CV, VCV, or VC
+    Classifies an audio segment as CV, VC, or VCV using F1 and F2 formants.
+    Returns: "cv", "vc", "vcv", or "unk"
     """
-    # Play the audio segment for debugging
-    import sounddevice as sd
-    import time
-    print(f"\n--- Playing segment {segment_idx} from {audio_filename} ---")
-    sd.play(audio_data, sr)
-    # Wait for playback to complete
-    time.sleep(len(audio_data) / sr)
-    sd.stop()
+    frame_length = int(sr * 0.025)
+    hop_length = int(sr * 0.010)
     
-    # Calculate frame parameters
-    frame_length = int(sr * 0.025)  # 25ms frames
-    hop_length = int(sr * 0.010)    # 10ms hop
-    
-    # Extract features
+    # Get RMS first to establish the correct number of frames
     rms = librosa.feature.rms(y=audio_data, frame_length=frame_length, hop_length=hop_length)[0]
-    zcr = librosa.feature.zero_crossing_rate(y=audio_data, frame_length=frame_length, hop_length=hop_length)[0]
-    spectral_centroid = librosa.feature.spectral_centroid(y=audio_data, sr=sr, hop_length=hop_length)[0]
-    spectral_bandwidth = librosa.feature.spectral_bandwidth(y=audio_data, sr=sr, hop_length=hop_length)[0]
-    spectral_rolloff = librosa.feature.spectral_rolloff(y=audio_data, sr=sr, hop_length=hop_length)[0]
-    spectral_flatness = librosa.feature.spectral_flatness(y=audio_data, hop_length=hop_length)[0]
-    mfcc = librosa.feature.mfcc(y=audio_data, sr=sr, n_mfcc=13, hop_length=hop_length)
+    n_frames = len(rms)
+    times = librosa.frames_to_time(np.arange(n_frames), sr=sr, hop_length=hop_length)
     
-    # Time axis
-    times = librosa.frames_to_time(np.arange(len(rms)), sr=sr, hop_length=hop_length)
-    duration = len(audio_data) / sr
-    
-    # Combine features into feature matrix
-    features = np.vstack([
-        rms,
-        zcr,
-        spectral_centroid,
-        spectral_bandwidth,
-        spectral_rolloff,
-        spectral_flatness,
-        mfcc[:5]  # Use first 5 MFCCs
-    ]).T
-    
-    # Handle any NaN values
-    features = np.nan_to_num(features, nan=0.0)
-
-    
-    # Standardize features
-    scaler = StandardScaler()
-    features_scaled = scaler.fit_transform(features)
-    
-    # Check segment length - skip if too short
-    duration_ms = len(audio_data) / sr * 1000
-    if duration_ms < 100:
-        print(f"Segment too short ({duration_ms:.1f}ms), skipping analysis")
-        return "iso"
+    # Extract F1 and F2 formants using LPC analysis
+    def extract_formants(audio, sr, frame_length, hop_length, n_frames):
+        """Extract F1 and F2 formants using Linear Predictive Coding"""
+        import scipy.signal
         
-    # Use 2 clusters to separate consonants and vowels (ignore silence)
-    n_clusters = 2
-    if len(features) < 2:
-        return "iso"  # Too short to analyze
+        # Pre-emphasize audio
+        audio_preemph = scipy.signal.lfilter([1, -0.97], 1, audio)
         
-    # Apply K-means clustering
-    kmeans = KMeans(n_clusters=n_clusters, random_state=42, n_init=10)
-    cluster_labels = kmeans.fit_predict(features_scaled)
-    
-    # Analyze clusters and classify them as SILENCE, CONSONANT, or VOWEL
-    cluster_info = {}
-    print(f"\n=== CLUSTER ANALYSIS FOR SEGMENT {segment_idx} ===")
-    
-    for i in range(n_clusters):
-        cluster_mask = cluster_labels == i
-        cluster_indices = np.where(cluster_mask)[0]
+        f1_values = []
+        f2_values = []
         
-        if len(cluster_indices) > 0:
-            avg_rms = np.mean(rms[cluster_indices])
-            avg_zcr = np.mean(zcr[cluster_indices])
-            avg_centroid = np.mean(spectral_centroid[cluster_indices])
-            avg_time_position = np.mean(times[cluster_indices])
+        for i in range(n_frames):
+            start = i * hop_length
+            end = min(start + frame_length, len(audio_preemph))
+            frame = audio_preemph[start:end]
             
-            cluster_info[i] = {
-                'avg_rms': avg_rms,
-                'avg_zcr': avg_zcr,
-                'avg_centroid': avg_centroid,
-                'avg_time_position': avg_time_position,
-                'frame_count': len(cluster_indices)
-            }
+            if len(frame) < frame_length // 2:
+                # Pad short frames
+                frame = np.pad(frame, (0, frame_length - len(frame)))
             
-            print(f"Cluster {i}:")
-            print(f"  RMS Energy: {avg_rms:.4f}")
-            print(f"  Zero Crossing Rate: {avg_zcr:.4f}")
-            print(f"  Spectral Centroid: {avg_centroid:.1f} Hz")
-            print(f"  Average Time: {avg_time_position:.3f}s")
-            print(f"  Frame Count: {len(cluster_indices)} ({len(cluster_indices)/len(times)*100:.1f}% of segment)")
-    
-    # Classify clusters based on acoustic properties (2 clusters: consonant and vowel)
-    # Sort clusters by RMS to identify vowels (highest) and consonants (lowest)
-    clusters_by_rms = sorted(cluster_info.items(), key=lambda x: x[1]['avg_rms'])
-    
-    consonant_cluster = None  
-    vowel_cluster = None
-    
-    # Lowest RMS = consonant
-    consonant_cluster = clusters_by_rms[0][0]
-    consonant_info = clusters_by_rms[0][1]
-    
-    # Highest RMS = vowel
-    vowel_cluster = clusters_by_rms[-1][0]
-    vowel_info = clusters_by_rms[-1][1]
-    
-    # Assign cluster types
-    cluster_types = {}
-    cluster_types[consonant_cluster] = 'CONSONANT'
-    cluster_types[vowel_cluster] = 'VOWEL'
-    
-    print(f"\n=== CLUSTER CLASSIFICATION ===")
-    for cluster_id, cluster_type in cluster_types.items():
-        info = cluster_info[cluster_id]
-        print(f"Cluster {cluster_id}: {cluster_type}")
-        print(f"  RMS: {info['avg_rms']:.4f}, ZCR: {info['avg_zcr']:.4f}")
-        print(f"  Time: {info['avg_time_position']:.3f}s, Frames: {info['frame_count']}")
-        print()
-    
-    # Create cluster classifications for plotting
-    cluster_classifications = {}
-    for cluster_id, info in cluster_info.items():
-        rms_val = info['avg_rms']
-        zcr_val = info['avg_zcr']
-        centroid_val = info['avg_centroid']
-        
-        cluster_classifications[cluster_id] = {
-            'label': f'RMS:{rms_val:.3f} ZCR:{zcr_val:.3f}',
-            'group': f'cluster_{cluster_id}'
-        }
-    
-    # Classify segment based on temporal order of silence, consonant, and vowel clusters
-    segment_type = "unk"  # Default
-    print(f"=== CLASSIFICATION LOGIC ===")
-    
-    # Get temporal positions of each cluster type
-    cluster_positions = []
-    for cluster_id, cluster_type in cluster_types.items():
-        time_pos = cluster_info[cluster_id]['avg_time_position']
-        cluster_positions.append((time_pos, cluster_type, cluster_id))
-    
-    # Sort by time
-    cluster_positions.sort(key=lambda x: x[0])
-    
-    print("Temporal sequence:")
-    temporal_sequence = []
-    for time_pos, cluster_type, cluster_id in cluster_positions:
-        print(f"  {time_pos:.3f}s: {cluster_type} (Cluster {cluster_id})")
-        temporal_sequence.append(cluster_type)
-    
-    # Analyze temporal distribution to detect VCV patterns
-    # Get segments for each cluster type to see if they appear in multiple regions
-    consonant_segments = find_segments_by_cluster(cluster_labels, times)
-    
-    consonant_regions = consonant_segments.get(consonant_cluster, [])
-    vowel_regions = consonant_segments.get(vowel_cluster, [])
-    
-    print(f"Consonant regions: {len(consonant_regions)} segments")
-    for i, (start, end) in enumerate(consonant_regions):
-        print(f"  C{i}: {start:.3f}s - {end:.3f}s ({(end-start)*1000:.0f}ms)")
-    
-    print(f"Vowel regions: {len(vowel_regions)} segments") 
-    for i, (start, end) in enumerate(vowel_regions):
-        print(f"  V{i}: {start:.3f}s - {end:.3f}s ({(end-start)*1000:.0f}ms)")
-    
-    # Determine pattern based on temporal arrangement
-    consonant_time = cluster_info[consonant_cluster]['avg_time_position']
-    vowel_time = cluster_info[vowel_cluster]['avg_time_position']
-    
-    print(f"Overall consonant cluster time: {consonant_time:.3f}s")
-    print(f"Overall vowel cluster time: {vowel_time:.3f}s")
-    
-    # Sort all regions by start time to get the first segment
-    all_regions = []
-    for start, end in consonant_regions:
-        all_regions.append((start, end, 'C'))
-    for start, end in vowel_regions:
-        all_regions.append((start, end, 'V'))
-    all_regions.sort(key=lambda x: x[0])
-    
-    if len(all_regions) > 0:
-        first_segment_type = all_regions[0][2]
-        print(f"First segment type: {first_segment_type}")
-        
-        # If first segment is consonant, assume CV pattern
-        if first_segment_type == 'C':
-            segment_type = "pre"  # CV pattern
-            print("Classification: PRE (CV) - starts with consonant")
-        else:
-            # First segment is vowel, check for VCV or VC
-            if len(vowel_regions) >= 2 and len(consonant_regions) >= 1:
-                # Extract sequence pattern
-                pattern = [region[2] for region in all_regions]
-                pattern_str = ''.join(pattern)
-                print(f"Temporal pattern: {pattern_str}")
+            # Apply window
+            windowed = frame * np.hanning(len(frame))
+            
+            try:
+                # LPC analysis (order 12 works well for formants)
+                lpc_order = min(12, len(windowed) // 4)
+                a = librosa.lpc(windowed, order=lpc_order)
                 
-                # Check for VCV pattern
-                if 'VCV' in pattern_str or pattern_str.startswith('V') and pattern_str.endswith('V') and 'C' in pattern_str:
-                    segment_type = "med"  # VCV pattern
-                    print("Classification: MED (VCV) - vowel-consonant-vowel pattern detected")
-                else:
-                    segment_type = "post"  # VC pattern  
-                    print("Classification: POST (VC) - vowel before consonant")
+                # Find roots and convert to frequencies
+                roots = np.roots(a)
+                roots = roots[np.imag(roots) >= 0]  # Keep positive imaginary parts
+                
+                # Convert to frequencies
+                freqs = np.angle(roots) * sr / (2 * np.pi)
+                freqs = freqs[freqs > 0]  # Only positive frequencies
+                freqs = np.sort(freqs)
+                
+                # Typically F1 is 200-800Hz, F2 is 800-2500Hz
+                f1_candidates = freqs[(freqs >= 200) & (freqs <= 800)]
+                f2_candidates = freqs[(freqs >= 800) & (freqs <= 2500)]
+                
+                f1 = f1_candidates[0] if len(f1_candidates) > 0 else 0
+                f2 = f2_candidates[0] if len(f2_candidates) > 0 else 0
+                
+            except:
+                f1, f2 = 0, 0
+            
+            f1_values.append(f1)
+            f2_values.append(f2)
+        
+        return np.array(f1_values), np.array(f2_values)
+    
+    # Extract formants
+    f1, f2 = extract_formants(audio_data, sr, frame_length, hop_length, n_frames)
+    
+    print(f"F1 range: {np.min(f1[f1>0]):.0f}-{np.max(f1):.0f} Hz")
+    print(f"F2 range: {np.min(f2[f2>0]):.0f}-{np.max(f2):.0f} Hz")
+    
+    # Vowel detection based on formants
+    # Vowels have clear F1 and F2 formants and reasonable RMS
+    has_formants = (f1 > 200) & (f1 < 800) & (f2 > 800) & (f2 < 2500)
+    has_energy = rms > np.percentile(rms, 30)  # Some minimum energy
+    
+    is_vowel = has_formants & has_energy
+    
+    print(f"Frames with clear formants: {np.sum(has_formants)}/{len(has_formants)} ({np.sum(has_formants)/len(has_formants)*100:.1f}%)")
+    print(f"Frames with energy: {np.sum(has_energy)}/{len(has_energy)} ({np.sum(has_energy)/len(has_energy)*100:.1f}%)")
+    print(f"Vowel frames: {np.sum(is_vowel)}/{len(is_vowel)} ({np.sum(is_vowel)/len(is_vowel)*100:.1f}%)")
+
+    # Find contiguous vowel regions
+    vowel_regions = []
+    in_vowel = False
+    start_idx = 0
+    for i, v in enumerate(is_vowel):
+        if v and not in_vowel:
+            in_vowel = True
+            start_idx = i
+        elif not v and in_vowel:
+            in_vowel = False
+            end_idx = i - 1
+            duration = (times[end_idx] - times[start_idx]) * 1000
+            if duration >= min_vowel_ms:
+                vowel_regions.append((start_idx, end_idx))
+    # Handle trailing vowel
+    if in_vowel:
+        end_idx = len(is_vowel) - 1
+        duration = (times[end_idx] - times[start_idx]) * 1000
+        if duration >= min_vowel_ms:
+            vowel_regions.append((start_idx, end_idx))
+
+    # Merge close vowel regions (<30ms apart)
+    merged_vowel_regions = []
+    for region in vowel_regions:
+        if not merged_vowel_regions:
+            merged_vowel_regions.append(region)
+        else:
+            prev = merged_vowel_regions[-1]
+            gap = (times[region[0]] - times[prev[1]]) * 1000
+            if gap < 30:
+                merged_vowel_regions[-1] = (prev[0], region[1])
             else:
-                segment_type = "post"  # VC pattern  
-                print("Classification: POST (VC) - starts with vowel")
+                merged_vowel_regions.append(region)
+    vowel_regions = merged_vowel_regions
+
+    # Guarantee at least one vowel region
+    if len(vowel_regions) == 0:
+        # Pick the frame with highest RMS as a "vowel"
+        max_rms_idx = np.argmax(rms)
+        vowel_regions = [(max(0, max_rms_idx-1), min(len(rms)-1, max_rms_idx+1))]
+
+    # Now classify
+    if len(vowel_regions) == 1:
+        v_start, v_end = vowel_regions[0]
+        consonant_before = v_start > 0 and (times[v_start] - times[0]) * 1000 >= min_consonant_ms
+        consonant_after = v_end < len(times)-1 and (times[-1] - times[v_end]) * 1000 >= min_consonant_ms
+        if consonant_before and not consonant_after:
+            return "cv"
+        elif consonant_after and not consonant_before:
+            return "vc"
+        elif consonant_before and consonant_after:
+            return "cv"  # ambiguous, could be CVC
+        else:
+            return "unk"
+    elif len(vowel_regions) == 2:
+        gap = (times[vowel_regions[1][0]] - times[vowel_regions[0][1]]) * 1000
+        if gap >= min_consonant_ms:
+            return "vcv"
+        else:
+            return "unk"
     else:
-        segment_type = "unk"
-        print("Classification: UNK - no regions found")
-    
-    # Generate plot if requested
-    if save_plot and len(audio_filename) > 0:
-        plot_kmeans_results(audio_data, times, rms, zcr, spectral_centroid, cluster_labels,
-                           cluster_classifications, segment_type, audio_filename, duration, segment_idx)
-    
-    return segment_type
+        return "unk"
 
 
 #Clipping Glossika with K-means Analysis
@@ -578,15 +504,9 @@ for filename in os.listdir(input_folder):
             if audio_samples.max() > 1.0:
                 audio_samples = audio_samples / (2**15)  # Normalize 16-bit audio
             
-            # Analyze with k-means to determine segment type (with plotting)
+            # Analyze with determine segment type (with plotting)
             try:
-                segment_type = analyze_segment_with_kmeans(
-                    audio_samples, 
-                    clip.frame_rate, 
-                    audio_filename=filename, 
-                    segment_idx=i, 
-                    save_plot=True
-                )
+                segment_type = classify_cv_vc_vcv(audio_samples, clip.frame_rate)
                 print(f"Segment {i}: Detected as {segment_type}")
             except Exception as e:
                 print(f"Error analyzing segment {i}: {e}")
@@ -595,9 +515,7 @@ for filename in os.listdir(input_folder):
             # Generate filename based on acoustic analysis
             output_filename = f"{os.path.splitext(filename)[0]}_clip_{i}.wav"
             
-            if segment_type == "iso":
-                output_filename = f"iso_[{phoneme}]_{phoneme}_{name}-{i}.wav"
-            elif segment_type == "pre":
+            if segment_type == "pre":
                 output_filename = f"pre_[{phoneme}]_{phoneme}ə_{name}-{i}.wav"
             elif segment_type == "med":
                 output_filename = f"med_[{phoneme}]_ə{phoneme}ə_{name}-{i}.wav"

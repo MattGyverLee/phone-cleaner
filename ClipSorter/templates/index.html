@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Clip Classifier</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .group-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .progress {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .controls {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        .btn-secondary {
+            background-color: #6c757d;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background-color: #545b62;
+        }
+
+        .btn:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        .file-container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        .filename {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .waveform-container {
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .waveform {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .waveform:hover {
+            transform: scale(1.02);
+        }
+
+        .audio-controls {
+            margin-bottom: 15px;
+        }
+
+        audio {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .classification-buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .classify-btn {
+            padding: 8px 16px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            background: white;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .classify-btn:hover {
+            border-color: #007bff;
+            background-color: #f8f9fa;
+        }
+
+        .classify-btn.selected {
+            background-color: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+
+        .classify-btn.initial {
+            border-color: #28a745;
+        }
+
+        .classify-btn.initial.selected {
+            background-color: #28a745;
+        }
+
+        .classify-btn.medial {
+            border-color: #ffc107;
+        }
+
+        .classify-btn.medial.selected {
+            background-color: #ffc107;
+            color: #000;
+        }
+
+        .classify-btn.final {
+            border-color: #dc3545;
+        }
+
+        .classify-btn.final.selected {
+            background-color: #dc3545;
+        }
+
+        .classify-btn.other {
+            border-color: #6c757d;
+        }
+
+        .classify-btn.other.selected {
+            background-color: #6c757d;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+        }
+
+        .message {
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .message.success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .message.error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Audio Clip Classifier</h1>
+        <div class="group-info">
+            <div>
+                <h2 id="groupName">Loading...</h2>
+                <div class="progress" id="progressInfo">Loading...</div>
+            </div>
+            <div class="controls">
+                <button id="prevBtn" class="btn btn-secondary" onclick="previousGroup()">← Previous Group</button>
+                <button id="nextBtn" class="btn btn-primary" onclick="nextGroup()">Next Group →</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="message" class="message hidden"></div>
+    <div id="loading" class="loading">Loading audio clips...</div>
+    <div id="filesContainer"></div>
+
+    <script>
+        let currentData = null;
+
+        async function loadCurrentGroup() {
+            try {
+                showLoading(true);
+                const response = await fetch('/api/current-group');
+                const data = await response.json();
+
+                if (data.error) {
+                    showMessage(data.error, 'error');
+                    return;
+                }
+
+                currentData = data;
+                updateUI(data);
+                showLoading(false);
+            } catch (error) {
+                showMessage('Error loading group: ' + error.message, 'error');
+                showLoading(false);
+            }
+        }
+
+        function updateUI(data) {
+            // Update header
+            document.getElementById('groupName').textContent = data.group_name;
+            document.getElementById('progressInfo').textContent =
+                `Group ${data.group_index + 1} of ${data.total_groups} (${data.files.length} files)`;
+
+            // Update navigation buttons
+            document.getElementById('prevBtn').disabled = data.group_index === 0;
+            document.getElementById('nextBtn').disabled = data.group_index === data.total_groups - 1;
+
+            // Create file containers
+            const container = document.getElementById('filesContainer');
+            container.innerHTML = '';
+
+            data.files.forEach(filename => {
+                const fileDiv = createFileElement(filename, data.waveforms[filename], data.classifications[filename]);
+                container.appendChild(fileDiv);
+            });
+        }
+
+        function createFileElement(filename, waveform, classification) {
+            const div = document.createElement('div');
+            div.className = 'file-container';
+            div.innerHTML = `
+                <div class="filename">${filename}</div>
+                <div class="waveform-container">
+                    <img src="${waveform}" class="waveform" onclick="playAudio('${filename}')" alt="Waveform for ${filename}">
+                </div>
+                <div class="audio-controls">
+                    <audio id="audio-${filename}" controls preload="none">
+                        <source src="/audio/${filename}" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="classification-buttons">
+                    <button class="classify-btn initial ${classification === 'initial' ? 'selected' : ''}"
+                            onclick="classify('${filename}', 'initial')">Initial</button>
+                    <button class="classify-btn medial ${classification === 'medial' ? 'selected' : ''}"
+                            onclick="classify('${filename}', 'medial')">Medial</button>
+                    <button class="classify-btn final ${classification === 'final' ? 'selected' : ''}"
+                            onclick="classify('${filename}', 'final')">Final</button>
+                    <button class="classify-btn other ${classification === 'other' ? 'selected' : ''}"
+                            onclick="classify('${filename}', 'other')">Other</button>
+                </div>
+            `;
+            return div;
+        }
+
+        function playAudio(filename) {
+            const audio = document.getElementById(`audio-${filename}`);
+            if (audio) {
+                audio.currentTime = 0;
+                audio.play();
+            }
+        }
+
+        async function classify(filename, classification) {
+            try {
+                const response = await fetch('/api/classify', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        filename: filename,
+                        classification: classification
+                    })
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    // Update UI to show selection
+                    const buttons = document.querySelectorAll(`[onclick*="${filename}"]`);
+                    buttons.forEach(btn => btn.classList.remove('selected'));
+
+                    const selectedBtn = document.querySelector(`[onclick="classify('${filename}', '${classification}')"]`);
+                    if (selectedBtn) {
+                        selectedBtn.classList.add('selected');
+                    }
+
+                    // Update current data
+                    if (currentData) {
+                        currentData.classifications[filename] = classification;
+                    }
+                } else {
+                    showMessage('Error classifying file: ' + result.error, 'error');
+                }
+            } catch (error) {
+                showMessage('Error classifying file: ' + error.message, 'error');
+            }
+        }
+
+        async function nextGroup() {
+            try {
+                showLoading(true);
+                const response = await fetch('/api/next-group', {
+                    method: 'POST'
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    if (result.saved_files > 0) {
+                        showMessage(`Saved ${result.saved_files} classified files. Loading next group...`, 'success');
+                    }
+                    await loadCurrentGroup();
+                } else {
+                    showMessage(result.message || 'No more groups', 'error');
+                    showLoading(false);
+                }
+            } catch (error) {
+                showMessage('Error moving to next group: ' + error.message, 'error');
+                showLoading(false);
+            }
+        }
+
+        async function previousGroup() {
+            try {
+                showLoading(true);
+                const response = await fetch('/api/previous-group', {
+                    method: 'POST'
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    await loadCurrentGroup();
+                } else {
+                    showMessage(result.message || 'Already at first group', 'error');
+                    showLoading(false);
+                }
+            } catch (error) {
+                showMessage('Error moving to previous group: ' + error.message, 'error');
+                showLoading(false);
+            }
+        }
+
+        function showMessage(text, type) {
+            const messageDiv = document.getElementById('message');
+            messageDiv.textContent = text;
+            messageDiv.className = `message ${type}`;
+            messageDiv.classList.remove('hidden');
+
+            if (type === 'success') {
+                setTimeout(() => {
+                    messageDiv.classList.add('hidden');
+                }, 3000);
+            }
+        }
+
+        function showLoading(show) {
+            const loadingDiv = document.getElementById('loading');
+            const container = document.getElementById('filesContainer');
+
+            if (show) {
+                loadingDiv.classList.remove('hidden');
+                container.style.display = 'none';
+            } else {
+                loadingDiv.classList.add('hidden');
+                container.style.display = 'block';
+            }
+        }
+
+        // Load initial group on page load
+        loadCurrentGroup();
+    </script>
+</body>
+</html>
