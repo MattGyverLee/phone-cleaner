@@ -196,6 +196,14 @@
             background-color: #6c757d;
         }
 
+        .classify-btn.ignore {
+            border-color: #dc3545;
+        }
+
+        .classify-btn.ignore.selected {
+            background-color: #dc3545;
+        }
+
         .loading {
             text-align: center;
             padding: 40px;
@@ -355,6 +363,8 @@
                             onclick="classify('${filename}', 'final')">Final</button>
                     <button class="classify-btn other ${classification === 'other' ? 'selected' : ''}"
                             onclick="classify('${filename}', 'other')">Other</button>
+                    <button class="classify-btn ignore ${classification === 'ignore' ? 'selected' : ''}"
+                            onclick="classify('${filename}', 'ignore')">Ignore</button>
                 </div>
             `;
             return div;

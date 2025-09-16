@@ -169,6 +169,10 @@ class ClipClassifier:
         current_group_name, _ = self.get_current_group()
 
         for filename, classification in self.classifications.items():
+            # Skip files classified as "ignore"
+            if classification == 'ignore':
+                continue
+
             source_path = os.path.join(SOURCE_DIR, filename)
             new_filename = f"{classification}_{filename}"
             dest_path = os.path.join(OUTPUT_DIR, new_filename)
@@ -179,8 +183,8 @@ class ClipClassifier:
             except Exception as e:
                 print(f"Error copying {filename}: {e}")
 
-        # Mark current group as completed
-        if current_group_name and copied_count > 0:
+        # Mark current group as completed if any files were processed (including ignored ones)
+        if current_group_name and len(self.classifications) > 0:
             self.completed_groups.add(current_group_name)
             self._save_progress()
             print(f"Marked group '{current_group_name}' as completed")
@@ -236,7 +240,7 @@ def classify():
     if not filename or not classification:
         return jsonify({'error': 'Missing filename or classification'})
 
-    if classification not in ['initial', 'medial', 'final', 'other']:
+    if classification not in ['initial', 'medial', 'final', 'other', 'ignore']:
         return jsonify({'error': 'Invalid classification'})
 
     classifier.classify_file(filename, classification)
