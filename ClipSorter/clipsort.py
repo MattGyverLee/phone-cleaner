@@ -7,6 +7,7 @@ A web interface for classifying phoneme audio clips by position (initial, medial
 import os
 import re
 import shutil
+import json
 from collections import defaultdict
 from flask import Flask, render_template, request, jsonify, send_file, url_for
 import librosa
@@ -23,6 +24,7 @@ app = Flask(__name__)
 SOURCE_DIR = r"D:\Github\phone-cleaner\phoneme-Samples\Glossika\tight-snips"
 OUTPUT_DIR = r"D:\Github\phone-cleaner\phoneme-Samples\Glossika\classified"
 STATIC_DIR = os.path.join(os.path.dirname(__file__), 'static')
+PROGRESS_FILE = os.path.join(os.path.dirname(__file__), 'classification_progress.json')
 
 # Create static directory for temporary files
 os.makedirs(STATIC_DIR, exist_ok=True)
@@ -33,7 +35,42 @@ class ClipClassifier:
         self.group_names = []
         self.current_group_index = 0
         self.classifications = {}
+        self.completed_groups = set()
+        self._load_progress()
         self._load_groups()
+        self._find_next_incomplete_group()
+
+    def _load_progress(self):
+        """Load completed groups from progress file"""
+        try:
+            if os.path.exists(PROGRESS_FILE):
+                with open(PROGRESS_FILE, 'r') as f:
+                    data = json.load(f)
+                    self.completed_groups = set(data.get('completed_groups', []))
+                    print(f"Loaded progress: {len(self.completed_groups)} completed groups")
+        except Exception as e:
+            print(f"Error loading progress: {e}")
+            self.completed_groups = set()
+
+    def _save_progress(self):
+        """Save completed groups to progress file"""
+        try:
+            data = {
+                'completed_groups': list(self.completed_groups)
+            }
+            with open(PROGRESS_FILE, 'w') as f:
+                json.dump(data, f, indent=2)
+        except Exception as e:
+            print(f"Error saving progress: {e}")
+
+    def _find_next_incomplete_group(self):
+        """Find the first incomplete group and set current index"""
+        for i, group_name in enumerate(self.group_names):
+            if group_name not in self.completed_groups:
+                self.current_group_index = i
+                return
+        # If all groups are completed, stay at current index
+        print("All groups completed!")
 
     def _load_groups(self):
         """Group audio files by phoneme (everything before '_clip_')"""
@@ -58,6 +95,7 @@ class ClipClassifier:
         self.groups = dict(grouped_files)
         self.group_names = sorted(self.groups.keys())
         print(f"Loaded {len(self.group_names)} phoneme groups")
+        print(f"Completed groups: {len(self.completed_groups)}")
 
     def get_current_group(self):
         """Get current group of files"""
@@ -69,17 +107,21 @@ class ClipClassifier:
         return group_name, files
 
     def next_group(self):
-        """Move to next group"""
-        if self.current_group_index < len(self.group_names) - 1:
-            self.current_group_index += 1
-            return True
+        """Move to next incomplete group"""
+        start_index = self.current_group_index + 1
+        for i in range(start_index, len(self.group_names)):
+            if self.group_names[i] not in self.completed_groups:
+                self.current_group_index = i
+                return True
         return False
 
     def previous_group(self):
-        """Move to previous group"""
-        if self.current_group_index > 0:
-            self.current_group_index -= 1
-            return True
+        """Move to previous incomplete group"""
+        start_index = self.current_group_index - 1
+        for i in range(start_index, -1, -1):
+            if self.group_names[i] not in self.completed_groups:
+                self.current_group_index = i
+                return True
         return False
 
     def generate_waveform(self, filename):
@@ -90,12 +132,14 @@ class ClipClassifier:
             # Load audio file
             y, sr = librosa.load(filepath)
 
-            # Create waveform plot
-            plt.figure(figsize=(12, 4))
+            # Create waveform plot (smaller for compact layout)
+            plt.figure(figsize=(4, 2))
             plt.plot(np.linspace(0, len(y)/sr, len(y)), y)
-            plt.title(f'Waveform: {filename}')
-            plt.xlabel('Time (s)')
-            plt.ylabel('Amplitude')
+            plt.title(filename, fontsize=8)
+            plt.xlabel('Time (s)', fontsize=8)
+            plt.ylabel('Amplitude', fontsize=8)
+            plt.xticks(fontsize=6)
+            plt.yticks(fontsize=6)
             plt.grid(True, alpha=0.3)
 
             # Save to base64 string
@@ -122,6 +166,7 @@ class ClipClassifier:
 
         os.makedirs(OUTPUT_DIR, exist_ok=True)
         copied_count = 0
+        current_group_name, _ = self.get_current_group()
 
         for filename, classification in self.classifications.items():
             source_path = os.path.join(SOURCE_DIR, filename)
@@ -133,6 +178,12 @@ class ClipClassifier:
                 copied_count += 1
             except Exception as e:
                 print(f"Error copying {filename}: {e}")
+
+        # Mark current group as completed
+        if current_group_name and copied_count > 0:
+            self.completed_groups.add(current_group_name)
+            self._save_progress()
+            print(f"Marked group '{current_group_name}' as completed")
 
         # Clear classifications after saving
         self.classifications.clear()
@@ -161,12 +212,17 @@ def get_current_group():
         if waveform:
             waveforms[filename] = waveform
 
+    remaining_groups = len(classifier.group_names) - len(classifier.completed_groups)
+    completed_in_total = len(classifier.completed_groups)
+
     return jsonify({
         'group_name': group_name,
         'files': files,
         'waveforms': waveforms,
         'group_index': classifier.current_group_index,
         'total_groups': len(classifier.group_names),
+        'remaining_groups': remaining_groups,
+        'completed_groups': completed_in_total,
         'classifications': classifier.classifications
     })
 

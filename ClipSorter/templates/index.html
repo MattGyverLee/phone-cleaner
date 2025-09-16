@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             padding: 20px;
             background-color: #f5f5f5;
@@ -70,23 +70,57 @@
             cursor: not-allowed;
         }
 
-        .file-container {
+        /* New compact layout */
+        .clips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .clip-item {
             background: white;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
-            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 15px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .clip-item.classified {
+            opacity: 0.4;
+            filter: grayscale(70%);
+            transform: scale(0.98);
+        }
+
+        .clip-item.classified::after {
+            content: "✓ CLASSIFIED";
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(40, 167, 69, 0.9);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 10px;
+            font-weight: bold;
         }
 
         .filename {
-            font-size: 16px;
+            font-size: 12px;
             font-weight: bold;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             color: #333;
+            word-break: break-all;
+            height: 36px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
         }
 
         .waveform-container {
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             text-align: center;
         }
 
@@ -94,38 +128,39 @@
             max-width: 100%;
             height: auto;
             border: 1px solid #ddd;
-            border-radius: 5px;
+            border-radius: 4px;
             cursor: pointer;
             transition: transform 0.2s;
         }
 
         .waveform:hover {
-            transform: scale(1.02);
+            transform: scale(1.05);
         }
 
         .audio-controls {
-            margin-bottom: 15px;
+            margin-bottom: 10px;
         }
 
         audio {
             width: 100%;
-            margin-bottom: 10px;
+            height: 32px;
         }
 
         .classification-buttons {
             display: flex;
-            gap: 10px;
-            justify-content: center;
-            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 5px;
         }
 
         .classify-btn {
-            padding: 8px 16px;
+            padding: 6px 12px;
             border: 2px solid #ddd;
-            border-radius: 5px;
+            border-radius: 4px;
             background: white;
             cursor: pointer;
             transition: all 0.3s;
+            font-size: 12px;
+            text-align: center;
         }
 
         .classify-btn:hover {
@@ -137,6 +172,7 @@
             background-color: #007bff;
             color: white;
             border-color: #007bff;
+            font-weight: bold;
         }
 
         .classify-btn.initial {
@@ -199,6 +235,30 @@
         .hidden {
             display: none;
         }
+
+        /* Progress stats */
+        .progress-stats {
+            background: #f8f9fa;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+
+        .progress-stats .stat {
+            margin: 2px 0;
+        }
+
+        @media (max-width: 768px) {
+            .clips-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 10px;
+            }
+
+            .clip-item {
+                padding: 10px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -208,6 +268,11 @@
             <div>
                 <h2 id="groupName">Loading...</h2>
                 <div class="progress" id="progressInfo">Loading...</div>
+                <div class="progress-stats">
+                    <div class="stat" id="completedStat">Completed groups: -</div>
+                    <div class="stat" id="remainingStat">Remaining groups: -</div>
+                    <div class="stat" id="currentGroupStat">Files in current group: -</div>
+                </div>
             </div>
             <div class="controls">
                 <button id="prevBtn" class="btn btn-secondary" onclick="previousGroup()">← Previous Group</button>
@@ -218,7 +283,7 @@
 
     <div id="message" class="message hidden"></div>
     <div id="loading" class="loading">Loading audio clips...</div>
-    <div id="filesContainer"></div>
+    <div id="filesContainer" class="clips-grid"></div>
 
     <script>
         let currentData = null;
@@ -247,11 +312,19 @@
             // Update header
             document.getElementById('groupName').textContent = data.group_name;
             document.getElementById('progressInfo').textContent =
-                `Group ${data.group_index + 1} of ${data.total_groups} (${data.files.length} files)`;
+                `Current: Group ${data.group_index + 1} of ${data.total_groups}`;
+
+            // Update progress stats
+            document.getElementById('completedStat').textContent =
+                `Completed groups: ${data.completed_groups || 0}`;
+            document.getElementById('remainingStat').textContent =
+                `Remaining groups: ${data.remaining_groups || 0}`;
+            document.getElementById('currentGroupStat').textContent =
+                `Files in current group: ${data.files.length}`;
 
             // Update navigation buttons
-            document.getElementById('prevBtn').disabled = data.group_index === 0;
-            document.getElementById('nextBtn').disabled = data.group_index === data.total_groups - 1;
+            document.getElementById('prevBtn').disabled = data.remaining_groups === data.total_groups;
+            document.getElementById('nextBtn').disabled = data.remaining_groups <= 1;
 
             // Create file containers
             const container = document.getElementById('filesContainer');
@@ -265,9 +338,11 @@
 
         function createFileElement(filename, waveform, classification) {
             const div = document.createElement('div');
-            div.className = 'file-container';
+            div.className = `clip-item ${classification ? 'classified' : ''}`;
+            div.id = `clip-${filename}`;
+
             div.innerHTML = `
-                <div class="filename">${filename}</div>
+                <div class="filename" title="${filename}">${filename}</div>
                 <div class="waveform-container">
                     <img src="${waveform}" class="waveform" onclick="playAudio('${filename}')" alt="Waveform for ${filename}">
                 </div>
@@ -316,18 +391,25 @@
 
                 if (result.success) {
                     // Update UI to show selection
-                    const buttons = document.querySelectorAll(`[onclick*="${filename}"]`);
+                    const clipItem = document.getElementById(`clip-${filename}`);
+                    const buttons = clipItem.querySelectorAll('.classify-btn');
                     buttons.forEach(btn => btn.classList.remove('selected'));
 
-                    const selectedBtn = document.querySelector(`[onclick="classify('${filename}', '${classification}')"]`);
+                    const selectedBtn = clipItem.querySelector(`[onclick="classify('${filename}', '${classification}')"]`);
                     if (selectedBtn) {
                         selectedBtn.classList.add('selected');
                     }
+
+                    // Add classified styling
+                    clipItem.classList.add('classified');
 
                     // Update current data
                     if (currentData) {
                         currentData.classifications[filename] = classification;
                     }
+
+                    // Check if all clips are now classified and auto-advance
+                    checkAllClassifiedAndAdvance();
                 } else {
                     showMessage('Error classifying file: ' + result.error, 'error');
                 }
@@ -351,7 +433,7 @@
                     }
                     await loadCurrentGroup();
                 } else {
-                    showMessage(result.message || 'No more groups', 'error');
+                    showMessage(result.message || 'No more groups available', 'error');
                     showLoading(false);
                 }
             } catch (error) {
@@ -372,7 +454,7 @@
                 if (result.success) {
                     await loadCurrentGroup();
                 } else {
-                    showMessage(result.message || 'Already at first group', 'error');
+                    showMessage(result.message || 'No previous incomplete groups', 'error');
                     showLoading(false);
                 }
             } catch (error) {
@@ -403,7 +485,25 @@
                 container.style.display = 'none';
             } else {
                 loadingDiv.classList.add('hidden');
-                container.style.display = 'block';
+                container.style.display = 'grid';
+            }
+        }
+
+        function checkAllClassifiedAndAdvance() {
+            if (!currentData) return;
+
+            // Check if all files in current group are classified
+            const allClassified = currentData.files.every(filename =>
+                currentData.classifications[filename] !== undefined
+            );
+
+            if (allClassified && currentData.files.length > 0) {
+                // Show a brief message and auto-advance after 2 seconds
+                showMessage(`All ${currentData.files.length} clips classified! Moving to next group...`, 'success');
+
+                setTimeout(() => {
+                    nextGroup();
+                }, 2000);
             }
         }
 
