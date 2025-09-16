@@ -88,22 +88,7 @@
         }
 
         .clip-item.classified {
-            opacity: 0.4;
-            filter: grayscale(70%);
-            transform: scale(0.98);
-        }
-
-        .clip-item.classified::after {
-            content: "✓ CLASSIFIED";
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background: rgba(40, 167, 69, 0.9);
-            color: white;
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-size: 10px;
-            font-weight: bold;
+            display: none;
         }
 
         .filename {
@@ -287,6 +272,7 @@
 
     <script>
         let currentData = null;
+        let currentClipIndex = 0;
 
         async function loadCurrentGroup() {
             try {
@@ -300,8 +286,12 @@
                 }
 
                 currentData = data;
+                currentClipIndex = 0; // Reset to first clip
                 updateUI(data);
                 showLoading(false);
+
+                // Auto-play first unclassified clip
+                playNextUnclassifiedClip();
             } catch (error) {
                 showMessage('Error loading group: ' + error.message, 'error');
                 showLoading(false);
@@ -400,13 +390,18 @@
                         selectedBtn.classList.add('selected');
                     }
 
-                    // Add classified styling
+                    // Add classified styling (hides the clip)
                     clipItem.classList.add('classified');
 
                     // Update current data
                     if (currentData) {
                         currentData.classifications[filename] = classification;
                     }
+
+                    // Play next unclassified clip
+                    setTimeout(() => {
+                        playNextUnclassifiedClip();
+                    }, 500);
 
                     // Check if all clips are now classified and auto-advance
                     checkAllClassifiedAndAdvance();
@@ -486,6 +481,20 @@
             } else {
                 loadingDiv.classList.add('hidden');
                 container.style.display = 'grid';
+            }
+        }
+
+        function playNextUnclassifiedClip() {
+            if (!currentData || !currentData.files) return;
+
+            // Find the first unclassified clip
+            for (let i = 0; i < currentData.files.length; i++) {
+                const filename = currentData.files[i];
+                if (!currentData.classifications[filename]) {
+                    currentClipIndex = i;
+                    playAudio(filename);
+                    break;
+                }
             }
         }
 
