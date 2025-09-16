@@ -374,15 +374,27 @@
         }
 
         function getProposedClassification(filename) {
-            // Extract clip number from filename pattern: "...clip_X.wav"
-            const match = filename.match(/_clip_(\d+)\.wav$/);
-            if (!match) return 'other';
+            if (!currentData || !currentData.files) return 'other';
 
-            const clipNumber = parseInt(match[1]);
+            // Find position among non-ignored clips
+            let visiblePosition = 0;
 
-            if (clipNumber >= 0 && clipNumber <= 2) return 'initial';
-            if (clipNumber === 3) return 'medial';
-            if (clipNumber === 4) return 'final';
+            for (const file of currentData.files) {
+                // If this is the file we're looking for
+                if (file === filename) {
+                    break;
+                }
+
+                // If the previous file is not ignored, increment position
+                if (!currentData.classifications[file] || currentData.classifications[file] !== 'ignore') {
+                    visiblePosition++;
+                }
+            }
+
+            // Classify based on position among visible (non-ignored) clips
+            if (visiblePosition >= 0 && visiblePosition <= 2) return 'initial';
+            if (visiblePosition === 3) return 'medial';
+            if (visiblePosition === 4) return 'final';
             return 'other';
         }
 
@@ -526,6 +538,13 @@
                         currentData.classifications[filename] = classification;
                     }
 
+                    // If this was an ignore classification, refresh remaining clips to update proposals
+                    if (classification === 'ignore') {
+                        setTimeout(() => {
+                            refreshRemainingClips();
+                        }, 100);
+                    }
+
                     // Play next unclassified clip
                     setTimeout(() => {
                         playNextUnclassifiedClip();
@@ -624,6 +643,30 @@
                     break;
                 }
             }
+        }
+
+        function refreshRemainingClips() {
+            if (!currentData) return;
+
+            // Update the visual highlighting for all unclassified clips
+            currentData.files.forEach(filename => {
+                if (!currentData.classifications[filename]) {
+                    const clipItem = document.getElementById(`clip-${filename}`);
+                    if (clipItem) {
+                        const proposedClassification = getProposedClassification(filename);
+
+                        // Remove old proposed classes
+                        const buttons = clipItem.querySelectorAll('.classify-btn');
+                        buttons.forEach(btn => btn.classList.remove('proposed'));
+
+                        // Add new proposed class to correct button
+                        const proposedBtn = clipItem.querySelector(`[onclick="classify('${filename}', '${proposedClassification}')"]`);
+                        if (proposedBtn) {
+                            proposedBtn.classList.add('proposed');
+                        }
+                    }
+                }
+            });
         }
 
         function checkAllClassifiedAndAdvance() {

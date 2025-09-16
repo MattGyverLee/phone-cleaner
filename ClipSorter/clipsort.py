@@ -140,6 +140,7 @@ class ClipClassifier:
             plt.ylabel('Amplitude', fontsize=8)
             plt.xticks(fontsize=6)
             plt.yticks(fontsize=6)
+            plt.ylim(-0.8, 0.8)  # Set y-axis limits to ±0.8
             plt.grid(True, alpha=0.3)
 
             # Save to base64 string
