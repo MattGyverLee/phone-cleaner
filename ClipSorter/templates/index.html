@@ -65,6 +65,15 @@
             background-color: #545b62;
         }
 
+        .btn-info {
+            background-color: #17a2b8;
+            color: white;
+        }
+
+        .btn-info:hover {
+            background-color: #138496;
+        }
+
         .btn:disabled {
             background-color: #ccc;
             cursor: not-allowed;
@@ -204,6 +213,27 @@
             background-color: #dc3545;
         }
 
+        .classify-btn.proposed {
+            border-color: #17a2b8;
+            background-color: #e1f7fa;
+            font-weight: bold;
+        }
+
+        .proposed-section {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #e1f7fa;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .proposed-label {
+            margin-bottom: 8px;
+            color: #0c5460;
+            font-size: 14px;
+        }
+
+
         .loading {
             text-align: center;
             padding: 40px;
@@ -272,6 +302,7 @@
                 </div>
             </div>
             <div class="controls">
+                <button id="acceptAllBtn" class="btn btn-info" onclick="acceptAllProposed()">Accept All Proposed</button>
                 <button id="prevBtn" class="btn btn-secondary" onclick="previousGroup()">← Previous Group</button>
                 <button id="nextBtn" class="btn btn-primary" onclick="nextGroup()">Next Group →</button>
             </div>
@@ -338,10 +369,26 @@
             });
         }
 
+        function getProposedClassification(filename) {
+            // Extract clip number from filename pattern: "...clip_X.wav"
+            const match = filename.match(/_clip_(\d+)\.wav$/);
+            if (!match) return 'other';
+
+            const clipNumber = parseInt(match[1]);
+
+            if (clipNumber >= 0 && clipNumber <= 2) return 'initial';
+            if (clipNumber === 3) return 'medial';
+            if (clipNumber === 4) return 'final';
+            return 'other';
+        }
+
         function createFileElement(filename, waveform, classification) {
             const div = document.createElement('div');
             div.className = `clip-item ${classification ? 'classified' : ''}`;
             div.id = `clip-${filename}`;
+
+            const proposedClassification = getProposedClassification(filename);
+            const isProposed = !classification; // Only show proposed if not already classified
 
             div.innerHTML = `
                 <div class="filename" title="${filename}">${filename}</div>
@@ -354,14 +401,17 @@
                         Your browser does not support the audio element.
                     </audio>
                 </div>
+                ${isProposed ? `<div class="proposed-section">
+                    <div class="proposed-label">Proposed: <strong>${proposedClassification}</strong></div>
+                </div>` : ''}
                 <div class="classification-buttons">
-                    <button class="classify-btn initial ${classification === 'initial' ? 'selected' : ''}"
+                    <button class="classify-btn initial ${classification === 'initial' ? 'selected' : ''} ${isProposed && proposedClassification === 'initial' ? 'proposed' : ''}"
                             onclick="classify('${filename}', 'initial')">Initial</button>
-                    <button class="classify-btn medial ${classification === 'medial' ? 'selected' : ''}"
+                    <button class="classify-btn medial ${classification === 'medial' ? 'selected' : ''} ${isProposed && proposedClassification === 'medial' ? 'proposed' : ''}"
                             onclick="classify('${filename}', 'medial')">Medial</button>
-                    <button class="classify-btn final ${classification === 'final' ? 'selected' : ''}"
+                    <button class="classify-btn final ${classification === 'final' ? 'selected' : ''} ${isProposed && proposedClassification === 'final' ? 'proposed' : ''}"
                             onclick="classify('${filename}', 'final')">Final</button>
-                    <button class="classify-btn other ${classification === 'other' ? 'selected' : ''}"
+                    <button class="classify-btn other ${classification === 'other' ? 'selected' : ''} ${isProposed && proposedClassification === 'other' ? 'proposed' : ''}"
                             onclick="classify('${filename}', 'other')">Other</button>
                     <button class="classify-btn ignore ${classification === 'ignore' ? 'selected' : ''}"
                             onclick="classify('${filename}', 'ignore')">Ignore</button>
@@ -375,6 +425,69 @@
             if (audio) {
                 audio.currentTime = 0;
                 audio.play();
+            }
+        }
+
+        async function acceptAllProposed() {
+            if (!currentData || !currentData.files) return;
+
+            let classifiedCount = 0;
+
+            // Classify all unclassified files with their proposed classifications
+            for (const filename of currentData.files) {
+                // Only classify if not already classified
+                if (!currentData.classifications[filename]) {
+                    const proposedClassification = getProposedClassification(filename);
+
+                    try {
+                        const response = await fetch('/api/classify', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify({
+                                filename: filename,
+                                classification: proposedClassification
+                            })
+                        });
+
+                        const result = await response.json();
+
+                        if (result.success) {
+                            // Update current data
+                            currentData.classifications[filename] = proposedClassification;
+
+                            // Update UI for this clip
+                            const clipItem = document.getElementById(`clip-${filename}`);
+                            if (clipItem) {
+                                const buttons = clipItem.querySelectorAll('.classify-btn');
+                                buttons.forEach(btn => btn.classList.remove('selected'));
+
+                                const selectedBtn = clipItem.querySelector(`[onclick="classify('${filename}', '${proposedClassification}')"]`);
+                                if (selectedBtn) {
+                                    selectedBtn.classList.add('selected');
+                                }
+
+                                clipItem.classList.add('classified');
+                            }
+
+                            classifiedCount++;
+                        }
+                    } catch (error) {
+                        console.error(`Error classifying ${filename}:`, error);
+                    }
+                }
+            }
+
+            if (classifiedCount > 0) {
+                showMessage(`Accepted proposed classifications for ${classifiedCount} clips!`, 'success');
+
+                // Check if all clips are now classified and auto-advance
+                setTimeout(() => {
+                    checkAllClassifiedAndAdvance();
+                }, 1000);
+            } else {
+                showMessage('All clips are already classified!', 'error');
             }
         }
 
