@@ -213,24 +213,28 @@
             background-color: #dc3545;
         }
 
-        .classify-btn.proposed {
-            border-color: #17a2b8;
-            background-color: #e1f7fa;
+        .classify-btn.initial.proposed {
+            border-color: #28a745;
+            background-color: #d4edda;
             font-weight: bold;
         }
 
-        .proposed-section {
-            margin-bottom: 10px;
-            padding: 10px;
-            background-color: #e1f7fa;
-            border-radius: 5px;
-            text-align: center;
+        .classify-btn.medial.proposed {
+            border-color: #ffc107;
+            background-color: #fff3cd;
+            font-weight: bold;
         }
 
-        .proposed-label {
-            margin-bottom: 8px;
-            color: #0c5460;
-            font-size: 14px;
+        .classify-btn.final.proposed {
+            border-color: #dc3545;
+            background-color: #f8d7da;
+            font-weight: bold;
+        }
+
+        .classify-btn.other.proposed {
+            border-color: #6c757d;
+            background-color: #e2e3e5;
+            font-weight: bold;
         }
 
 
@@ -401,9 +405,6 @@
                         Your browser does not support the audio element.
                     </audio>
                 </div>
-                ${isProposed ? `<div class="proposed-section">
-                    <div class="proposed-label">Proposed: <strong>${proposedClassification}</strong></div>
-                </div>` : ''}
                 <div class="classification-buttons">
                     <button class="classify-btn initial ${classification === 'initial' ? 'selected' : ''} ${isProposed && proposedClassification === 'initial' ? 'proposed' : ''}"
                             onclick="classify('${filename}', 'initial')">Initial</button>
