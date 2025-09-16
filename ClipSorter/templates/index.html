@@ -15,7 +15,7 @@
 
         .header {
             background: white;
-            padding: 20px;
+            padding: 15px;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             margin-bottom: 20px;
@@ -73,7 +73,7 @@
         /* New compact layout */
         .clips-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, 400px);
             gap: 15px;
             margin-bottom: 30px;
         }
@@ -85,6 +85,9 @@
             padding: 15px;
             transition: all 0.3s ease;
             position: relative;
+            width: 400px;
+            height: 600px;
+            box-sizing: border-box;
         }
 
         .clip-item.classified {
@@ -236,11 +239,13 @@
 
         @media (max-width: 768px) {
             .clips-grid {
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                grid-template-columns: repeat(auto-fit, 350px);
                 gap: 10px;
             }
 
             .clip-item {
+                width: 350px;
+                height: 500px;
                 padding: 10px;
             }
         }
@@ -248,7 +253,6 @@
 </head>
 <body>
     <div class="header">
-        <h1>Audio Clip Classifier</h1>
         <div class="group-info">
             <div>
                 <h2 id="groupName">Loading...</h2>

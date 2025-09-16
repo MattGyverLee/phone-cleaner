@@ -1,8 +1,16 @@
 {
   "completed_groups": [
-    "[ b ] voiced unaspirated bilabial stop",
-    "[ b\u02b1 ] voiced aspirated bilabial stop",
     "[ b\u02b2 ] voiced unaspirated palatalized bilabial stop",
-    "[ b\u02b7 ] voiced unaspirated labialized bilabial stop"
+    "[ b\u02b7 ] voiced unaspirated labialized bilabial stop",
+    "[ b\u0348 ] voiced bilabial tensed stop",
+    "[ c\u02b0 ] unvoiced aspirated front dorsal palatal stop",
+    "[ b\u032a ] voiced unaspirated labiodental stop",
+    "[ b\u032a\u02b1 ] voiced aspirated labiodental stop",
+    "[ b\u02e0 ] voiced unaspirated velarized bilabial stop",
+    "[ c\u02bc ] unvoiced front dorsal palatal ejective stop",
+    "[ b\u02c1 ] voiced unaspirated pharyngealized bilabial stop",
+    "[ b\u032a\u030e ] voiced labiodental tensed stop",
+    "[ b ] voiced unaspirated bilabial stop",
+    "[ b\u02b1 ] voiced aspirated bilabial stop"
   ]
 }
